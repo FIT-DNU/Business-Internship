@@ -10,7 +10,7 @@
 
 # 1. Cài đặt công cụ, môi trường và các thư viện cần thiết
 
-## 1.1. Clone project.
+## 1.1. Tải project.
 ```
 git clone https://gitlab.com/anhlta/odoo-fitdnu.git
 ```
