@@ -37,8 +37,8 @@ Platform ERP được áp dụng vào học phần Thực tập doanh nghiệp d
 ## 🔧 3. Các project đã thực hiện dựa trên Platform
 
 - ### Khoá 15
-    |   Tên đề tài  | Link git     | Model  | Shell  |
-    | ------------- | ----------- | ------ | ------ |
+    | Tên đề tài    | Link     | Tác giả|
+    | ------------- | ---------| ------ |
     |Quản lý nhân sự|[github](https://github.com/Thanhh-803/TTDN-15-01-N1)
 ## 📥 4. Cài đặt
 
