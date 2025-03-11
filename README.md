@@ -33,9 +33,13 @@ Platform ERP được áp dụng vào học phần Thực tập doanh nghiệp d
 ### Cơ sở dữ liệu
 [![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)](https://www.postgresql.org/)
 </div>
+
 ## 🔧 3. Các project đã thực hiện dựa trên Platform
 
-
+- ### Khoá 15
+    |   Tên đề tài  | Link git     | Model  | Shell  |
+    | ------------- | ----------- | ------ | ------ |
+    |Quản lý nhân sự|[github](https://github.com/Thanhh-803/TTDN-15-01-N1)
 ## 📥 4. Cài đặt
 
 ### 4.1. Cài đặt công cụ, môi trường và các thư viện cần thiết
