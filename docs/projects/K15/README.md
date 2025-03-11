@@ -5,7 +5,7 @@
 - #### CNTT 15-01
     | Tên đề tài    | Người thực hiện | Source code     |
     | ------------- | ----------------|---------------- |
-    | Quản lý nhân sự | Bùi Thị Thương, Trần Thị Thanh, Nguyễn Thị Trang| [github](https://github.com/Thanhh-803/TTDN-15-01-N1)|
+    | Quản lý nhân sự | Bùi Thị Thương, Trần Thị Thanh, Nguyễn Thị Trang| [:octocat:github](https://github.com/Thanhh-803/TTDN-15-01-N1)|
     | Quản lý dự án| Nguyễn Đức Việt, Trần Quốc Tuấn Anh, Lương Nguyễn Mạnh Tuấn| [github](https://github.com/mtuan3110/TTDN-15-01-N2.git)|
     | Quản lý tài sản | Phạm Minh Hiếu, Nguyễn Quốc Việt, Nguyễn Đại Khoản| [github](https://github.com/hieupham10032003/TTDN-15-01)|
     | Quản lý khách hàng| Lê Văn Mạnh, Phùng Xuân Huy, Nguyễn Xuân Thắng| [github](https://github.com/ToiYeuDaiNam/TTDN-15-01-N4.git)|
