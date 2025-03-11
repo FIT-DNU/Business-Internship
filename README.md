@@ -36,6 +36,9 @@ Platform ERP được áp dụng vào học phần Thực tập doanh nghiệp d
 
 ## 🔧 3. Các project đã thực hiện dựa trên Platform
 
+Một số project các khoá sinh viên đã thực hiện
+- #### Khoá 15: [xem tại đây]()
+
 ### Khoá 15
 - #### CNTT 15-01
     | Tên đề tài    | Link     |
@@ -59,8 +62,6 @@ Platform ERP được áp dụng vào học phần Thực tập doanh nghiệp d
     | Quản lý điều hành phương tiện giao thông| [github](https://github.com/Tranlong291003/TTDN-15-02-N6)|
     | Quản lý tài sản | [github](https://github.com/thang0305/TTDN-15-02-N3)|
     
-
-
 ## 📥 4. Cài đặt
 
 ### 4.1. Cài đặt công cụ, môi trường và các thư viện cần thiết
