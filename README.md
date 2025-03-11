@@ -42,7 +42,7 @@ Platform ERP được áp dụng vào học phần Thực tập doanh nghiệp d
     | ------------- | ---------|
     | Quản lý tài sản | [github](https://github.com/hieupham10032003/TTDN-15-01)|
     | Quản lý khách hàng| [github](https://github.com/ToiYeuDaiNam/TTDN-15-01-N4.git)|
-    | Chấm công| [github](https://github.com/dinhtuananh188/TTDN-15-01-N5|
+    | Chấm công| [github](https://github.com/dinhtuananh188/TTDN-15-01-N5)|
     | Quản lý điều hành phương tiện giao thông| [github](https://github.com/dainghia99/TTDN-15-01-N6)|
     | Quản lý văn bản| [github](https://github.com/tranhuan123/TTDN-15-01-N1)|
     | Quản lý phòng họp, hội trường| [github](https://github.com/nguyendat2610/TTDN-15-01-N8)|
