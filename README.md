@@ -19,8 +19,10 @@
 
 </div>
 
-## Introduction
+## 1. Giới thiệu
 Platform ERP được áp dụng vào học phần Thực tập doanh nghiệp dựa trên mã nguồn mở Odoo. 
+
+## 2. Các công nghệ được sử dụng
 
 # 1. Cài đặt công cụ, môi trường và các thư viện cần thiết
 
