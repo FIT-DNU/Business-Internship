@@ -39,7 +39,7 @@ Platform ERP được áp dụng vào học phần Thực tập doanh nghiệp d
 Một số project sinh viên đã thực hiện:
 - #### [Khoá 15](./docs/projects/K15/README.md)
 - #### [Khoá 16]() (Coming soon)
-## 📥 4. Cài đặt
+## ⚙️ 4. Cài đặt
 
 ### 4.1. Cài đặt công cụ, môi trường và các thư viện cần thiết
 
@@ -90,5 +90,11 @@ Lệnh chạy
 python3 odoo-bin.py -c odoo.conf -u all
 ```
 Người sử dụng truy cập theo đường dẫn _http://localhost:8069/_ để đăng nhập vào hệ thống.
+
+## 📝 5. License
+
+© 2024 AIoTLab, Faculty of Information Technology, DaiNam University. All rights reserved.
+
+---
 
     
