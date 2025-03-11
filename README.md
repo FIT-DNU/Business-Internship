@@ -1,6 +1,6 @@
-<h1 align="center">
+<h2 align="center">
     🎓 Faculty of Information Technology (DaiNam University) - Platform Business Internship (ERP)
-</h1>
+</h2>
 
 [![AIoTLab](https://img.shields.io/badge/AIoTLab-green?style=for-the-badge)](https://fit.dainam.edu.vn)
 [![Faculty of Information Technology](https://img.shields.io/badge/Faculty%20of%20Information%20Technology-blue?style=for-the-badge)](https://fit.dainam.edu.vn)
