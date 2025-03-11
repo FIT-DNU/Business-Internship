@@ -38,17 +38,11 @@ Platform ERP được áp dụng vào học phần Thực tập doanh nghiệp d
 
 ### Khoá 15
 - #### CNTT 15-01
-    | Tên đề tài    | Link     | Thực hiện |
-    | ------------- | ---------| ------ |
-    | Chấm công | [github](https://github.com/dinhtuananh188/TTDN-15-01-N5) | Hoàng Thị Kim Ngân, Nguyễn Ngọc Ánh, Đinh Tuấn Anh |
-    | Quản lý công việc | [github](https://github.com/baovan22/TTDN-15-01-N9) | Phạm Duy Đức, Lò Văn Bảo, Phạm Ánh Minh |
-    | Quản lý dự án | [github](https://github.com/mtuan3110/TTDN-15-01-N2.git) | Nguyễn Đức Việt, Trần Quốc Tuấn Anh, Lương Nguyễn Mạnh Tuấn |
-    | Quản lý khách hàng | [github](https://github.com/ToiYeuDaiNam/TTDN-15-01-N4.git) | Lê Văn Mạnh, Phùng Xuân Huy, Nguyễn Xuân Thắng, Phạm Quang Hiếu, Hà Tiến Trường, Trương Việt Hưng |
-    | Quản lý nhân sự | [github](https://github.com/Thanhh-803/TTDN-15-01-N1) | Bùi Thị Thương, Trần Thị Thanh, Nguyễn Thị Trang, Lê Danh Mạnh, Nguyễn Văn Mạnh  |
-    | Quản lý phòng họp, hội trường | [github](https://github.com/nguyendat2610/TTDN-15-01-N8) | Nguyễn Việt Châu, Nguyễn Tiến Đạt, Trần Trung Đức, Nguyễn Đức Anh, Vũ Ngọc Tuấn, Hoàng Văn Lâm |
-    | Quản lý tài sản | [github](https://github.com/hieupham10032003/TTDN-15-01) | Phạm Minh Hiếu, Nguyễn Quốc Việt, Nguyễn Đại Khoản |
-    | Quản lý văn bản | [github](https://github.com/tranhuan123/TTDN-15-01-N1) | Trần Thọ Hưng, Trần Quang Huấn, Vũ Minh Đức, Nguyễn Tuấn Hưng, Trần Văn Quang, Đoàn Duy Nhật Anh |
-    | Quản lý điều hành phương tiện giao thông | [github](https://github.com/dainghia99/TTDN-15-01-N6) | Lê Hồng Anh, Khoàng Đại Nghĩa, Trần Khánh Linh |
+    | Tên đề tài    | Link     |
+    | ------------- | ---------|
+    | Quản lý tài sản | [github](https://github.com/hieupham10032003/TTDN-15-01)|
+    | Quản lý khách hàng| [github](https://github.com/ToiYeuDaiNam/TTDN-15-01-N4.git)|
+
 
 ## 📥 4. Cài đặt
 
