@@ -4,7 +4,7 @@
     </a>
 </h2>
 <h2 align="center">
-    Platform ERP
+    PLATFORM ERP
 </h2>
 <div align="center">
     <p align="center">
@@ -20,7 +20,7 @@
 </div>
 
 ## Introduction
-    Platform ERP được áp dụng vào học phần Thực tập doanh nghiệp dựa trên mã nguồn mở Odoo. 
+Platform ERP được áp dụng vào học phần Thực tập doanh nghiệp dựa trên mã nguồn mở Odoo. 
 
 # 1. Cài đặt công cụ, môi trường và các thư viện cần thiết
 
