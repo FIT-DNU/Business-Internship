@@ -1,6 +1,6 @@
-<h1 align="center">
+<h2 align="center">
     🎓 Faculty of Information Technology (DaiNam University)
-</h1>
+</h2>
 <h1 align="center">
     Platform Business Internship (ERP)
 </h1>
