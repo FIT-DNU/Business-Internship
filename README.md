@@ -34,32 +34,31 @@ Platform ERP được áp dụng vào học phần Thực tập doanh nghiệp d
 [![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)](https://www.postgresql.org/)
 </div>
 
-# 1. Cài đặt công cụ, môi trường và các thư viện cần thiết
+## 📥 3. Cài đặt
 
-## 1.1. Clone project.
+### 3.1. Cài đặt công cụ, môi trường và các thư viện cần thiết
+
+#### 3.1.1. Tải project.
 ```
 git clone https://gitlab.com/anhlta/odoo-fitdnu.git
 ```
-
-```
-git checkout cntt15_01
-```
-
-
-## 1.2. cài đặt các thư viện cần thiết
-
+#### 3.1.2. cài đặt các thư viện cần thiết
 Người sử dụng thực thi các lệnh sau đề cài đặt các thư viện cần thiết
 
 ```
 sudo apt-get install libxml2-dev libxslt-dev libldap2-dev libsasl2-dev libssl-dev python3.10-distutils python3.10-dev build-essential libssl-dev libffi-dev zlib1g-dev python3.10-venv libpq-dev
 ```
-## 1.3. khởi tạo môi trường ảo.
-
-`python3.10 -m venv ./venv`
-Thay đổi trình thông dịch sang môi trường ảo và chạy requirements.txt để cài đặt tiếp các thư viện được yêu cầu
-
+#### 3.1.3. khởi tạo môi trường ảo.
+- Khởi tạo môi trường ảo
+```
+python3.10 -m venv ./venv
+```
+- Thay đổi trình thông dịch sang môi trường ảo
 ```
 source venv/bin/activate
+```
+- Chạy requirements.txt để cài đặt tiếp các thư viện được yêu cầu
+```
 pip3 install -r requirements.txt
 ```
 
