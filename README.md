@@ -72,7 +72,7 @@ Khởi tạo database trên docker bằng việc thực thi file dockercompose.y
 ```
 sudo docker-compose up -d
 ```
-### 4.3 .Setup tham số chạy cho hệ thống
+### 4.3. Setup tham số chạy cho hệ thống
 Tạo tệp **odoo.conf** có nội dung như sau:
 ```
 [options]
