@@ -33,22 +33,24 @@ Platform ERP được áp dụng vào học phần Thực tập doanh nghiệp d
 ### Cơ sở dữ liệu
 [![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)](https://www.postgresql.org/)
 </div>
+## 🔧 3. Các project đã thực hiện dựa trên Platform
 
-## 📥 3. Cài đặt
 
-### 3.1. Cài đặt công cụ, môi trường và các thư viện cần thiết
+## 📥 4. Cài đặt
 
-#### 3.1.1. Tải project.
+### 4.1. Cài đặt công cụ, môi trường và các thư viện cần thiết
+
+#### 4.1.1. Tải project.
 ```
 git clone https://gitlab.com/anhlta/odoo-fitdnu.git
 ```
-#### 3.1.2. Cài đặt các thư viện cần thiết
+#### 4.1.2. Cài đặt các thư viện cần thiết
 Người sử dụng thực thi các lệnh sau đề cài đặt các thư viện cần thiết
 
 ```
-sudo apt-get install libxml2-dev libxslt-dev libldap2-dev libsasl2-dev libssl-dev python3.10-distutils python3.10-dev build-essential libssl-dev libffi-dev zlib1g-dev python3.10-venv libpq-dev
+sudo apt-get install libxml2-dev libxslt-dev libldap2-dev libsasl2-dev libssl-dev python4.10-distutils python3.10-dev build-essential libssl-dev libffi-dev zlib1g-dev python3.10-venv libpq-dev
 ```
-#### 3.1.3. Khởi tạo môi trường ảo.
+#### 4.1.3. Khởi tạo môi trường ảo.
 - Khởi tạo môi trường ảo
 ```
 python3.10 -m venv ./venv
@@ -61,16 +63,13 @@ source venv/bin/activate
 ```
 pip3 install -r requirements.txt
 ```
-### 3.2. Setup database
+### 4.2. Setup database
 
 Khởi tạo database trên docker bằng việc thực thi file dockercompose.yml.
 ```
 sudo docker-compose up -d
 ```
-### 3.3 .Setup tham số chạy cho hệ thống
-
-#### 3.1. Khởi tạo odoo.conf
-
+### 4.3 .Setup tham số chạy cho hệ thống
 Tạo tệp **odoo.conf** có nội dung như sau:
 ```
 [options]
@@ -82,7 +81,7 @@ db_port = 5431
 xmlrpc_port = 8069
 ```
 Có thể kế thừa từ file **odoo.conf.template**
-#### 3.4. Chạy hệ thống và cài đặt các ứng dụng cần thiết
+### 4.4. Chạy hệ thống và cài đặt các ứng dụng cần thiết
 Lệnh chạy
 ```
 python3 odoo-bin.py -c odoo.conf -u all
