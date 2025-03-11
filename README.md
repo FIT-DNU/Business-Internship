@@ -36,10 +36,12 @@ Platform ERP được áp dụng vào học phần Thực tập doanh nghiệp d
 
 ## 🔧 3. Các project đã thực hiện dựa trên Platform
 
-- ### Khoá 15
-    | Tên đề tài    | Link     | Tác giả|
+### Khoá 15
+- #### CNTT 15-01
+    | Tên đề tài    | Link     | Thực hiện|
     | ------------- | ---------| ------ |
-    |Quản lý nhân sự|[github](https://github.com/Thanhh-803/TTDN-15-01-N1)
+    |Quản lý nhân sự|[github](https://github.com/Thanhh-803/TTDN-15-01-N1)| Bùi Thị Thương, Trần Thị Thanh, Nguyễn Thị Trang|
+    |Quản lý dự án|[github](https://github.com/mtuan3110/TTDN-15-01-N2.git)| Nguyễn Đức Việt, Trần Quốc Tuấn Anh, Lương Nguyễn Mạnh Tuấn|
 ## 📥 4. Cài đặt
 
 ### 4.1. Cài đặt công cụ, môi trường và các thư viện cần thiết
