@@ -37,7 +37,7 @@ Platform ERP được áp dụng vào học phần Thực tập doanh nghiệp d
 ## 🔧 3. Các project đã thực hiện dựa trên Platform
 
 Một số project các khoá sinh viên đã thực hiện
-- #### Khoá 15: [xem tại đây]()
+- #### [Khoá 15](./docs/projects/README.md)
 
 ### Khoá 15
 - #### CNTT 15-01
