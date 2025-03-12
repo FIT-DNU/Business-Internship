@@ -61,5 +61,18 @@
     | Tên đề tài             | Người thực hiện     | Source code     | Nổi bật     |
     | ---------------------- | --------------------| --------------- | ----------- |
     | Quản lý tài sản | Nguyễn Thế Huy Hoàng, Trịnh Văn Hiếu| [:octocat:github](https://github.com/HuyHoangFSDev/TTDN-15-05-N1)|
-    | Nguyễn Việt Hoàng, Nguyễn Thọ Quân, Trần Nguyễn Hải Nam| [:octocat:github](https://github.com/yukiharadev/TTDN-15-05-N2)|
+    | Quản lý khách hàng | Nguyễn Việt Hoàng, Nguyễn Thọ Quân, Trần Nguyễn Hải Nam| [:octocat:github](https://github.com/yukiharadev/TTDN-15-05-N2)|
     | Quản lý điều hành phương tiện giao thông | Lưu Trung Nghĩa, Chử Minh Đức| [:octocat:github](https://github.com/chuminhduc5/TTDN-15-05-N3)|
+    | Quản lý tài sản | Nguyễn Hải Đăng, Bùi Thế Hiếu, Nguyễn Đức Mạnh| [:octocat:github](https://github.com/Duongbe/TTDN-15-05-N4)|
+    | Quản lý văn bản | Nguyễn Hải Đăng, Bùi Thế Hiếu, Nguyễn Đức Mạnh| [:octocat:github](https://github.com/Haidang2k/TTDN-15-05-N5)|
+    | Quản lý nhân sự | Nguyễn Thị Kim Hoa, Trần Thị Ly, Đỗ Thanh Thảo| [:octocat:github](https://github.com/tranthily15/TTDN-15-05-N6.git)|
+    | Quản lý dự án | Đỗ Trọng Linh, Nguyễn Quyết Thắng, Nguyễn Văn Thuận| [:octocat:github](https://github.com/DoLinh2308/TTDN-1505-N7)|
+    | Quản lý phòng họp, hội trường | Hoàng Trung Đoàn, Đỗ Đăng Linh, Nguyễn Minh Hiếu| [:octocat:github](https://github.com/linhdang2k03/TTDN-15-05-N8)|
+
+
+    | Quản lý công việc | Nguyễn Thế Đức, Đặng Ninh Giang, Vũ Huy Hoàng| [:octocat:github](https://github.com/ambumin-c12/TTDN-15-05-N9)|
+    | Chấm công | Hoàng Công Minh, Lê Đức Mạnh, Phạm Văn Nam| [:octocat:github](https://github.com/ManhLe18/TTDN-15-05-N10/tree/master)|
+    | Quản lý văn bản | Đỗ Đức Công, Trần Văn Tâm, Vũ Hoàng Phong| [:octocat:github](https://github.com/Tamhss/TTDN-15-05-N11.git)|
+    | Quản lý điều hành phương tiện giao thông | Lưu Quyết Thắng, Nguyễn Trọng Đức, Lê Tuấn Anh| [:octocat:github](https://github.com/luuquyetthang/TTDN-15-05-N12)|
+
+     
