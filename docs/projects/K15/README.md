@@ -68,8 +68,6 @@
     | Quản lý nhân sự | Nguyễn Thị Kim Hoa, Trần Thị Ly, Đỗ Thanh Thảo| [:octocat:github](https://github.com/tranthily15/TTDN-15-05-N6.git)|
     | Quản lý dự án | Đỗ Trọng Linh, Nguyễn Quyết Thắng, Nguyễn Văn Thuận| [:octocat:github](https://github.com/DoLinh2308/TTDN-1505-N7)|
     | Quản lý phòng họp, hội trường | Hoàng Trung Đoàn, Đỗ Đăng Linh, Nguyễn Minh Hiếu| [:octocat:github](https://github.com/linhdang2k03/TTDN-15-05-N8)|
-
-
     | Quản lý công việc | Nguyễn Thế Đức, Đặng Ninh Giang, Vũ Huy Hoàng| [:octocat:github](https://github.com/ambumin-c12/TTDN-15-05-N9)|
     | Chấm công | Hoàng Công Minh, Lê Đức Mạnh, Phạm Văn Nam| [:octocat:github](https://github.com/ManhLe18/TTDN-15-05-N10/tree/master)|
     | Quản lý văn bản | Đỗ Đức Công, Trần Văn Tâm, Vũ Hoàng Phong| [:octocat:github](https://github.com/Tamhss/TTDN-15-05-N11.git)|
