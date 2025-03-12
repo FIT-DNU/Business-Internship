@@ -19,8 +19,8 @@
     | Quản lý khách hàng| Phạm Quang Hiếu, Hà Tiến Trường, Trương Việt Hưng|[:octocat:github](https://github.com/truonghungg/TTDN-15-01-N12)|
     | Quản lý nhân sự| Lê Danh Mạnh, Nguyễn Văn Mạnh |[:octocat:github](https://github.com/LeDanhManh24092002/TTDN)|
 - #### CNTT 15-02
-    | Tên đề tài    | Người thực hiện | Source code     | Nổi bật     |
-    | ------------- | ----------------|---------------- | ----------- |
+    | Tên đề tài             | Người thực hiện     | Source code     | Nổi bật     |
+    | ---------------------- | --------------------| --------------- | ----------- |
     | Quản lý công việc | Hoàng Trung Hiếu, Cao Thị Phương, Nguyễn Thành Đức| [:octocat:github](https://github.com/HieuK1502/TTDN-15-02-N1)|
     | Quản lý điều hành phương tiện giao thông| Nguyễn Mạnh Nguyên, Trần Khánh Long, Lê Mạnh Đạt| [:octocat:github](https://github.com/Tranlong291003/TTDN-15-02-N6)|
     | Quản lý tài sản | Nguyễn Trọng Thắng, Hoàng Thị Hòa, Ngô Trung Đức| [:octocat:github](https://github.com/thang0305/TTDN-15-02-N3)|
@@ -31,3 +31,17 @@
     | Quản lý tài sản | Nguyễn Trung Hiếu, Nguyễn Ngọc Hải| [:octocat:github](https://github.com/NgocHai77/TTDN-15-02-N10)|
     | Quản lý dự án | Lê Thị Minh, Phạm Văn Quyền, Lê Quốc Trung| [:octocat:github](https://github.com/vanquyen1/TTDN-15-02-N5)|
     | Quản lý tài sản | Vũ Thành Đạt, Nguyễn Đăng Chính| [:octocat:github](https://github.com/chinhnguyen-k15/TTDN-15-02-N9)|
+- #### CNTT 15-03
+    | Tên đề tài             | Người thực hiện     | Source code     | Nổi bật     |
+    | ---------------------- | --------------------| --------------- | ----------- |
+    | Chấm công | Vũ Mạnh Quân, Nguyễn Xuân Quỳnh, Lê Xuân Đạt| [:octocat:github](https://github.com/Veirea/TTDN-15-03-N1.git)|
+    | Quản lý tài sản| Phạm Minh Tâm, Nguyễn Thanh Hải, Bùi Khánh Hòa| [:octocat:github](https://github.com/MinhTam2804/TTDN-15-03-N2)|
+    | Quản lý nhân sự | Nguyễn Hoài Nam, Giáp Thiên Thanh, Hoàng Anh Tú| [:octocat:github](https://github.com/nam0942901062/TTDN-15-03-N3)|
+    | Quản lý phòng họp, hội trường | Lê Minh Đức, Ngô Xuân Thảo, Phan Văn Sơn| [:octocat:github](https://github.com/MinDuc2003/TTDN-15-03-N4)|
+    | Quản lý khách hàng | Đào Ngọc Bình Thiên, Nguyễn Trần Tiến Dũng, Nguyễn Tiến Đạt| [:octocat:github](https://github.com/ThinDao/TTDN-15-03-N5)|
+    | Quản lý công việc | Hoàng Văn Đạt, Nguyễn Đức Bình, Nguyễn Hữu Thịnh| [:octocat:github](https://github.com/HDatz/TTDN-15-03-N6)|
+    | Quản lý dự án | Lê Khắc Hoàn, Dương Văn Môn, Khuất Quang Thái, Vũ Hoàng Chương| [:octocat:github](https://github.com/lehoan2608/TTDN-15-03-N7)|
+    | Quản lý văn bản | Đào Hồng Sơn Hoàng Quốc Hạnh Nguyễn Minh Đức| [:octocat:github](https://github.com/anhken123/TTDN-1503-N9)|
+    | Quản lý phòng họp, hội trường | Lê Ngọc Tú, Thiều Khánh Phú| [:octocat:github](https://github.com/PHUPHU2310/TTDN-15-03-N10)|
+    | Quản lý khách hàng | Nguyễn Duy Quang, Tráng A Hiếu, Trần Quốc Hưng| [:octocat:github](https://github.com/tranghieu/TTDN-15-03-N11)|
+    | Quản lý dự án | Trần Trường Phước, Dương Thị Hương Lan, Hoàng Văn Hiệp| [:octocat:github](https://github.com/Tran-Truong-Phuoc/TTDN-15-03-N12)|
