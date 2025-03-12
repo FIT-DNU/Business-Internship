@@ -25,7 +25,7 @@ Platform ERP được áp dụng vào học phần Thực tập doanh nghiệp d
 ## 🔧 2. Các công nghệ được sử dụng
 <div align="center">
 
-### Hệ điều hành cài đặt
+### Hệ điều hành
 [![Ubuntu](https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white)](https://ubuntu.com/)
 ### Công nghệ chính
 [![Odoo](https://img.shields.io/badge/Odoo-714B67?style=for-the-badge&logo=odoo&logoColor=white)](https://www.odoo.com/)
