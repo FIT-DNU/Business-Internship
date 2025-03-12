@@ -21,13 +21,13 @@
 - #### CNTT 15-02
     | Tên đề tài    | Người thực hiện | Source code     | Nổi bật     |
     | ------------- | ----------------|---------------- | ----------- |
-    | Quản lý công việc |Hoàng Trung Hiếu, Cao Thị Phương, Nguyễn Thành Đức| [:octocat:github](https://github.com/HieuK1502/TTDN-15-02-N1)|
-    | Quản lý điều hành phương tiện giao thông|Nguyễn Mạnh Nguyên, Trần Khánh Long, Lê Mạnh Đạt| [:octocat:github](https://github.com/Tranlong291003/TTDN-15-02-N6)|
-    | Quản lý tài sản |Nguyễn Trọng Thắng, Hoàng Thị Hòa, Ngô Trung Đức| [:octocat:github](https://github.com/thang0305/TTDN-15-02-N3)|
-    | Quản lý phòng họp, hội trường |Trần Duy Phúc, Nguyễn Tuấn Anh, Vũ Xuân Sơn| [:octocat:github](https://github.com/duyphucceem/TTDN-15-02-N7)|
-    | Quản lý văn bản |Trần Quý Nhất, Nguyễn Quốc Việt, Nguyễn Đắc Lâm| [:octocat:github](https://github.com/TranQuyNhat/TTDN-15-02-N2)|
-    | Quản lý nhân sự |Nguyễn Văn Sinh, Trịnh Đức Doanh, Vũ Minh Đức| [:octocat:github](https://github.com/minhducvu0/TTDN-15-02-N4)|
-    | Quản lý nhân sự |Phạm Lê Tú, Nguyễn Văn Hùng, Nông thế Vương| [:octocat:github](https://github.com/NongTheVuong/TTDN-15-02-N8)|
-    | Quản lý tài sản |Nguyễn Trung Hiếu, Nguyễn Ngọc Hải| [:octocat:github](https://github.com/NgocHai77/TTDN-15-02-N10)|
-    | Quản lý dự án |Lê Thị Minh, Phạm Văn Quyền, Lê Quốc Trung| [:octocat:github](https://github.com/vanquyen1/TTDN-15-02-N5)|
-    | Quản lý tài sản |Vũ Thành Đạt, Nguyễn Đăng Chính| [:octocat:github](https://github.com/chinhnguyen-k15/TTDN-15-02-N9)|
+    | Quản lý công việc | Hoàng Trung Hiếu, Cao Thị Phương, Nguyễn Thành Đức| [:octocat:github](https://github.com/HieuK1502/TTDN-15-02-N1)|
+    | Quản lý điều hành phương tiện giao thông| Nguyễn Mạnh Nguyên, Trần Khánh Long, Lê Mạnh Đạt| [:octocat:github](https://github.com/Tranlong291003/TTDN-15-02-N6)|
+    | Quản lý tài sản | Nguyễn Trọng Thắng, Hoàng Thị Hòa, Ngô Trung Đức| [:octocat:github](https://github.com/thang0305/TTDN-15-02-N3)|
+    | Quản lý phòng họp, hội trường | Trần Duy Phúc, Nguyễn Tuấn Anh, Vũ Xuân Sơn| [:octocat:github](https://github.com/duyphucceem/TTDN-15-02-N7)|
+    | Quản lý văn bản | Trần Quý Nhất, Nguyễn Quốc Việt, Nguyễn Đắc Lâm| [:octocat:github](https://github.com/TranQuyNhat/TTDN-15-02-N2)|
+    | Quản lý nhân sự | Nguyễn Văn Sinh, Trịnh Đức Doanh, Vũ Minh Đức| [:octocat:github](https://github.com/minhducvu0/TTDN-15-02-N4)|
+    | Quản lý nhân sự | Phạm Lê Tú, Nguyễn Văn Hùng, Nông thế Vương| [:octocat:github](https://github.com/NongTheVuong/TTDN-15-02-N8)|
+    | Quản lý tài sản | Nguyễn Trung Hiếu, Nguyễn Ngọc Hải| [:octocat:github](https://github.com/NgocHai77/TTDN-15-02-N10)|
+    | Quản lý dự án | Lê Thị Minh, Phạm Văn Quyền, Lê Quốc Trung| [:octocat:github](https://github.com/vanquyen1/TTDN-15-02-N5)|
+    | Quản lý tài sản | Vũ Thành Đạt, Nguyễn Đăng Chính| [:octocat:github](https://github.com/chinhnguyen-k15/TTDN-15-02-N9)|
