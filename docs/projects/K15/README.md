@@ -57,3 +57,9 @@
     | Quản lý điều hành phương tiện giao thông | Phạm Quốc Tuấn, Lưu Anh Tú, Ngô Đức Hải| [:octocat:github](https://github.com/twotee2207/TTDN-15-04-N7)|
     | Quản lý khách hàng | Nguyễn Vũ Minh, Vũ Thành Lộc, Chu Hoàng Sơn| [:octocat:github](https://github.com/Drabula/TTDN-15-04-N8)|
     | Quản lý nhân sự | Nguyễn Quốc Huy, Phùng Đăng Hậu, Nông Lương Hoàng| [:octocat:github](https://github.com/PhungDangHau/TTDN-CNTT15-04-N9)|
+- #### CNTT 15-05
+    | Tên đề tài             | Người thực hiện     | Source code     | Nổi bật     |
+    | ---------------------- | --------------------| --------------- | ----------- |
+    | Quản lý tài sản | Nguyễn Thế Huy Hoàng, Trịnh Văn Hiếu| [:octocat:github](https://github.com/HuyHoangFSDev/TTDN-15-05-N1)|
+    | Nguyễn Việt Hoàng, Nguyễn Thọ Quân, Trần Nguyễn Hải Nam| [:octocat:github](https://github.com/yukiharadev/TTDN-15-05-N2)|
+    | Quản lý điều hành phương tiện giao thông | Lưu Trung Nghĩa, Chử Minh Đức| [:octocat:github](https://github.com/chuminhduc5/TTDN-15-05-N3)|
