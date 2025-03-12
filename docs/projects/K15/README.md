@@ -3,8 +3,8 @@
 </h2>
 
 - #### CNTT 15-01
-    | Tên đề tài    | Người thực hiện | Source code     | Nổi bật     |
-    | ------------- | ----------------| --------------- | ----------- |
+    | Tên đề tài             | Người thực hiện     | Source code     | Nổi bật     |
+    | ---------------------- | --------------------| --------------- | ----------- |
     | Quản lý nhân sự | Bùi Thị Thương, Trần Thị Thanh, Nguyễn Thị Trang| [:octocat:github](https://github.com/Thanhh-803/TTDN-15-01-N1)|
     | Quản lý dự án| Nguyễn Đức Việt, Trần Quốc Tuấn Anh, Lương Nguyễn Mạnh Tuấn| [:octocat:github](https://github.com/mtuan3110/TTDN-15-01-N2.git)|
     | Quản lý tài sản | Phạm Minh Hiếu, Nguyễn Quốc Việt, Nguyễn Đại Khoản| [:octocat:github](https://github.com/hieupham10032003/TTDN-15-01)|
