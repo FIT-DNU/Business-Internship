@@ -45,3 +45,15 @@
     | Quản lý phòng họp, hội trường | Lê Ngọc Tú, Thiều Khánh Phú| [:octocat:github](https://github.com/PHUPHU2310/TTDN-15-03-N10)|
     | Quản lý khách hàng | Nguyễn Duy Quang, Tráng A Hiếu, Trần Quốc Hưng| [:octocat:github](https://github.com/tranghieu/TTDN-15-03-N11)|
     | Quản lý dự án | Trần Trường Phước, Dương Thị Hương Lan, Hoàng Văn Hiệp| [:octocat:github](https://github.com/Tran-Truong-Phuoc/TTDN-15-03-N12)|
+- #### CNTT 15-04
+    | Tên đề tài             | Người thực hiện     | Source code     | Nổi bật     |
+    | ---------------------- | --------------------| --------------- | ----------- |
+    | Quản lý dự án | Nguyễn Thanh Tùng, Phạm Văn Phúc, Nguyễn Vũ Phúc| [:octocat:github](https://github.com/tungthanh1928/TTDN-15-04-N1)|
+    | Quản lý văn bản| Nguyễn Ngọc Anh, Phạm Duy Anh, Đinh Thế Bảo| [:octocat:github](https://github.com/ngocanhit201/TTDN-15-04-N2)|
+    | Quản lý phòng họp, hội trường | Nguyễn Việt Anh, Nguyễn Việt Hoàng, Nguyễn Xuân Thể| [:octocat:github](https://github.com/hoangtit123/TTDN-15-04-N3)|
+    | Quản lý chấm công | Nguyễn Mậu Lân Triệu Trí Trung Lê Đăng Duy| [:octocat:github](https://github.com/maulan1208/TTDN-15-04-N4)|
+    | Quản lý dự án | Trần Minh Quý, Nguyễn Văn Dũng, Trần Phúc Thuần| [:octocat:github](https://github.com/phucthuan12/TTDN-15-04-N5)|
+    | Quản lý tài sản | Nguyễn Ngọc Đan Trường, Dương Văn Tuân, Nguyễn Đức Hiệp| [:octocat:github](https://github.com/nguyenngocdantruong/TTDN-15-04-N6)|
+    | Quản lý điều hành phương tiện giao thông | Phạm Quốc Tuấn, Lưu Anh Tú, Ngô Đức Hải| [:octocat:github](https://github.com/twotee2207/TTDN-15-04-N7)|
+    | Quản lý khách hàng | Nguyễn Vũ Minh, Vũ Thành Lộc, Chu Hoàng Sơn| [:octocat:github](https://github.com/Drabula/TTDN-15-04-N8)|
+    | Quản lý nhân sự | Nguyễn Quốc Huy, Phùng Đăng Hậu, Nông Lương Hoàng| [:octocat:github](https://github.com/PhungDangHau/TTDN-CNTT15-04-N9)|
