@@ -53,7 +53,7 @@ git clone https://gitlab.com/anhlta/odoo-fitdnu.git
 Người sử dụng thực thi các lệnh sau đề cài đặt các thư viện cần thiết
 
 ```
-sudo apt-get install libxml2-dev libxslt-dev libldap2-dev libsasl2-dev libssl-dev python4.10-distutils python3.10-dev build-essential libssl-dev libffi-dev zlib1g-dev python3.10-venv libpq-dev
+sudo apt-get install libxml2-dev libxslt-dev libldap2-dev libsasl2-dev libssl-dev python3.10-distutils python3.10-dev build-essential libssl-dev libffi-dev zlib1g-dev python3.10-venv libpq-dev
 ```
 #### 4.1.3. Khởi tạo môi trường ảo.
 - Khởi tạo môi trường ảo
