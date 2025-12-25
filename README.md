@@ -47,7 +47,7 @@ Một số project sinh viên đã thực hiện:
 
 #### 4.1.1. Tải project.
 ```
-git clone https://gitlab.com/anhlta/odoo-fitdnu.git
+git clone https://github.com/FIT-DNU/Business-Internship.git
 ```
 #### 4.1.2. Cài đặt các thư viện cần thiết
 Người sử dụng thực thi các lệnh sau đề cài đặt các thư viện cần thiết
