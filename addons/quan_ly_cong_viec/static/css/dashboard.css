@@ -1,0 +1,72 @@
+.dashboard-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Tự động co giãn */
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.dashboard-card {
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+    background: white;
+    border: 1px solid #ddd;
+    transition: transform 0.2s ease-in-out;
+}
+
+.dashboard-card:hover {
+    transform: translateY(-5px);
+}
+
+.dashboard-card .title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #555;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.dashboard-card .value {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.blue { border-top: 4px solid #1565C0; }
+.green { border-top: 4px solid #2E7D32; }
+.brown { border-top: 4px solid #5D4037; }
+.red { border-top: 4px solid #C62828; }
+.yellow { border-top: 4px solid #F9A825; }
+
+/* Khối ngang như "Giá trị tài sản" hoặc "Thống kê mượn trả" */
+.wide-card {
+    grid-column: span 2;
+    background: #1976D2; /* Màu nền xanh đậm */
+    color: white;
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.wide-card .title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.wide-card .content {
+    display: flex;
+    justify-content: space-around;
+}
+
+.wide-card .content div {
+    font-size: 18px;
+    font-weight: bold;
+}
+

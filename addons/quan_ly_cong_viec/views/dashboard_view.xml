@@ -1,0 +1,62 @@
+<odoo>
+    <record id="view_dashboard_form" model="ir.ui.view">
+        <field name="name">Dashboard View</field>
+        <field name="model">dashboard</field>
+        <field name="arch" type="xml">
+            <form string="Dashboard">
+                <group>
+                    <!-- <separator string="Tổng Quan"/> -->
+                    <div class="dashboard-container">
+                        <div class="dashboard-card blue">
+                            <span class="title">Tổng Số Nhân Viên</span>
+                            <span class="value"><field name="so_luong_nhan_vien" readonly="1"/></span>
+                        </div>
+                        <div class="dashboard-card green oe_stat_button"
+                            data-action-id="action_du_an"
+                            data-view-mode="view_du_an_graph">
+                            <span class="title">Số Lượng Dự Án</span>
+                            <span class="value"><field name="so_luong_du_an" readonly="1"/></span>
+                        </div>
+
+                        <div class="dashboard-card brown">
+                            <span class="title">Số Lượng Công Việc</span>
+                            <span class="value"><field name="so_luong_cong_viec" readonly="1"/></span>
+                        </div>
+                        <div class="dashboard-card yellow">
+                            <span class="title">Số Lượng Đánh Giá</span>
+                            <span class="value"><field name="so_luong_danh_gia" readonly="1"/></span>
+                        </div>
+
+                    </div>
+
+                    <separator/>
+                    <div class="dashboard-container">
+                        <div class="dashboard-card brown">
+                            <span class="title">Dự Án Hoàn Thành</span>
+                            <span class="value"><field name="du_an_hoan_thanh" readonly="1"/></span>
+                        </div>
+                        <div class="dashboard-card green">
+                            <span class="title">Dự Án Đang Thực Hiện</span>
+                            <span class="value"><field name="du_an_dang_thuc_hien" readonly="1"/></span>
+                        </div>
+                        <div class="dashboard-card blue">
+                            <span class="title">Dự Án Chưa Bắt Đầu</span>
+                            <span class="value"><field name="du_an_chua_bat_dau" readonly="1"/></span>
+                        </div>
+                        <div class="dashboard-card red">
+                            <span class="title">Dự Án Tạm Dừng</span>
+                            <span class="value"><field name="du_an_tam_dung" readonly="1"/></span>
+                        </div>
+                    </div>
+
+                </group>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_dashboard" model="ir.actions.act_window">
+        <field name="name">Dashboard</field>
+        <field name="res_model">dashboard</field>
+        <field name="view_mode">form</field>
+    </record>
+</odoo>

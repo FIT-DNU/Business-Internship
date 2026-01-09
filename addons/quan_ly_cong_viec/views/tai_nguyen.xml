@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="view_tai_nguyen_tree" model="ir.ui.view">
+        <field name="name">tai_nguyen.tree</field>
+        <field name="model">tai_nguyen</field>
+        <field name="arch" type="xml">
+            <tree string="Tài Nguyên Dự Án">
+                <field name="ten_tai_nguyen"/>
+                <field name="so_luong"/>
+                <field name="du_an_id"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_tai_nguyen_form" model="ir.ui.view">
+        <field name="name">tai_nguyen.form</field>
+        <field name="model">tai_nguyen</field>
+        <field name="arch" type="xml">
+            <form string="Tài Nguyên Dự Án">
+                <sheet>
+                    <group>
+                        <field name="ten_tai_nguyen"/>
+                        <field name="so_luong"/>
+                        <field name="du_an_id"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_tai_nguyen_search" model="ir.ui.view">
+        <field name="name">tai_nguyen.search</field>
+        <field name="model">tai_nguyen</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="ten_tai_nguyen"/>
+                <field name="du_an_id"/>
+                <searchpanel>
+                    <field name="du_an_id" select="multi"/>
+                </searchpanel>
+             </search>
+        </field>
+    </record>
+
+    <record id="action_tai_nguyen" model="ir.actions.act_window">
+        <field name="name">Tài Nguyên Dự Án</field>
+        <field name="res_model">tai_nguyen</field>
+        <field name="view_mode">tree,form</field>
+        <!-- <field name="search_view_id" ref="view_tai_nguyen_search"/> -->
+    </record>
+</odoo>

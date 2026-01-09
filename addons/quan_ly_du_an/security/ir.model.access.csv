@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_du_an,du_an.du_an,model_du_an,base.group_user,1,1,1,1
+access_du_an_nhan_vien,du_an_nhan_vien.du_an_nhan_vien,model_du_an_nhan_vien,base.group_user,1,1,1,1
