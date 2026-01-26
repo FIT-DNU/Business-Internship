@@ -31,6 +31,10 @@
         'views/lich_su_cong_tac.xml',
         'views/chung_chi_bang_cap.xml',
         'views/danh_sach_chung_chi_bang_cap.xml',
+        'views/cham_cong.xml', # Thêm dòng này
+        'views/tinh_luong.xml', # Thêm dòng này
+        'views/du_an.xml', # Thêm dòng này
+        'views/cong_viec.xml', # Thêm dòng này
         'views/menu.xml',
     ],
     # only loaded in demonstration mode

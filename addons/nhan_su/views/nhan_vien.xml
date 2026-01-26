@@ -19,6 +19,8 @@
                             <field name="que_quan"/>
                             <field name="email"/>
                             <field name="anh" widget="image"/>
+                            <field name="luong_co_ban"/>
+                            <field name="phu_cap"/>
                         </group>
                         <notebook>
                             <page string="Danh sách lịch sử công tác">

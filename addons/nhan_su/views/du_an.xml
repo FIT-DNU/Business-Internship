@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="view_du_an_tree" model="ir.ui.view">
+            <field name="name">du_an.tree</field>
+            <field name="model">du_an</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                    <field name="nguoi_quan_tri_id"/>
+                    <field name="ngay_bat_dau"/>
+                    <field name="ngay_ket_thuc"/>
+                    <field name="tien_do" widget="progressbar"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="view_du_an_form" model="ir.ui.view">
+            <field name="name">du_an.form</field>
+            <field name="model">du_an</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <div class="oe_title">
+                            <h1><field name="name" placeholder="Tên dự án..."/></h1>
+                        </div>
+                        <group col="4">
+                            <field name="nguoi_quan_tri_id"/>
+                            <field name="tien_do" widget="progressbar"/>
+                            <field name="ngay_bat_dau"/>
+                            <field name="ngay_ket_thuc"/>
+                        </group>
+                        <notebook>
+                            <page string="Danh sách công việc">
+                                <field name="cong_viec_ids">
+                                    <tree editable="bottom">
+                                        <field name="name"/>
+                                        <field name="nguoi_thuc_hien_id"/>
+                                        <field name="thoi_han"/>
+                                        <field name="trang_thai" widget="badge" 
+                                               decoration-info="trang_thai == 'todo'" 
+                                               decoration-warning="trang_thai == 'doing'" 
+                                               decoration-success="trang_thai == 'done'"/>
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="action_du_an" model="ir.actions.act_window">
+            <field name="name">Dự án</field>
+            <field name="res_model">du_an</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+    </data>
+</odoo>

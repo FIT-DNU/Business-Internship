@@ -5,3 +5,7 @@ access_chuc_vu,chuc_vu.chuc_vu,model_chuc_vu,base.group_user,1,1,1,1
 access_lich_su_cong_tac,lich_su_cong_tac.lich_su_cong_tac,model_lich_su_cong_tac,base.group_user,1,1,1,1
 access_chung_chi_bang_cap,chung_chi_bang_cap.chung_chi_bang_cap,model_chung_chi_bang_cap,base.group_user,1,1,1,1
 access_danh_sach_chung_chi_bang_cap,danh_sach_chung_chi_bang_cap.danh_sach_chung_chi_bang_cap,model_danh_sach_chung_chi_bang_cap,base.group_user,1,1,1,1
+access_cham_cong,cham_cong.cham_cong,model_cham_cong,base.group_user,1,1,1,1
+access_tinh_luong,tinh_luong.tinh_luong,model_tinh_luong,base.group_user,1,1,1,1
+access_du_an,du_an.du_an,model_du_an,base.group_user,1,1,1,1
+access_cong_viec,cong_viec.cong_viec,model_cong_viec,base.group_user,1,1,1,1

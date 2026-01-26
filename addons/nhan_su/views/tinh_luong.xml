@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="view_tinh_luong_form" model="ir.ui.view">
+            <field name="name">tinh_luong.form</field>
+            <field name="model">tinh_luong</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <div class="oe_title">
+                            <h1><field name="nhan_vien_id" placeholder="Chọn nhân viên"/></h1>
+                        </div>
+                        <group col="4">
+                            <field name="thang"/>
+                            <field name="nam"/>
+                            <field name="cong_chuan"/>
+                        </group>
+                        <group string="Chi tiết lương" col="4">
+                            <field name="luong_co_ban"/>
+                            <field name="luong_ngay"/>
+                            <field name="so_cong_thuc_te"/>
+                            <field name="phu_cap"/>
+                            <field name="tien_ot"/>
+                            <field name="thuong_phat"/>
+                        </group>
+                        <group class="oe_subtotal_footer oe_right">
+                            <field name="tong_luong" class="oe_subtotal_footer_separator" widget="monetary"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="view_tinh_luong_tree" model="ir.ui.view">
+            <field name="name">tinh_luong.tree</field>
+            <field name="model">tinh_luong</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="nhan_vien_id"/>
+                    <field name="thang"/>
+                    <field name="nam"/>
+                    <field name="so_cong_thuc_te"/>
+                    <field name="tien_ot"/>
+                    <field name="thuong_phat"/>
+                    <field name="tong_luong" sum="Tổng lương phải trả"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="view_tinh_luong_search" model="ir.ui.view">
+            <field name="name">tinh_luong.search</field>
+            <field name="model">tinh_luong</field>
+            <field name="arch" type="xml">
+                <search>
+                    <field name="nhan_vien_id"/>
+                    <field name="nam"/>
+                    <filter string="Tháng này" name="thang_nay" domain="[('thang', '=', context_today().strftime('%m'))]"/>
+                    <group expand="0" string="Gom nhóm">
+                        <filter string="Theo Tháng" name="group_by_thang" context="{'group_by': 'thang'}"/>
+                        <filter string="Theo Năm" name="group_by_nam" context="{'group_by': 'nam'}"/>
+                    </group>
+                </search>
+            </field>
+        </record>
+
+        <record id="action_tinh_luong" model="ir.actions.act_window">
+            <field name="name">Bảng lương</field>
+            <field name="res_model">tinh_luong</field>
+            <field name="view_mode">tree,form</field>
+            <field name="search_view_id" ref="view_tinh_luong_search"/>
+            <field name="context">{'search_default_group_by_thang': 1}</field>
+        </record>
+    </data>
+</odoo>

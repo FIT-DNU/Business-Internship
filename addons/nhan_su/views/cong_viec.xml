@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="view_cong_viec_tree" model="ir.ui.view">
+            <field name="name">cong_viec.tree</field>
+            <field name="model">cong_viec</field>
+            <field name="arch" type="xml">
+                <tree decoration-success="trang_thai == 'done'" decoration-warning="trang_thai == 'doing'">
+                    <field name="name"/>
+                    <field name="du_an_id"/>
+                    <field name="nguoi_thuc_hien_id"/>
+                    <field name="thoi_han"/>
+                    <field name="trang_thai" widget="badge" 
+                           decoration-info="trang_thai == 'todo'" 
+                           decoration-warning="trang_thai == 'doing'" 
+                           decoration-success="trang_thai == 'done'"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="view_cong_viec_search" model="ir.ui.view">
+            <field name="name">cong_viec.search</field>
+            <field name="model">cong_viec</field>
+            <field name="arch" type="xml">
+                <search>
+                    <field name="name"/>
+                    <field name="nguoi_thuc_hien_id"/>
+                    <field name="du_an_id"/>
+                    <filter string="Chưa hoàn thành" name="not_done" domain="[('trang_thai', '!=', 'done')]"/>
+                    <group expand="0" string="Gom nhóm">
+                        <filter string="Theo Dự án" name="group_by_du_an" context="{'group_by': 'du_an_id'}"/>
+                        <filter string="Theo Người thực hiện" name="group_by_nhan_vien" context="{'group_by': 'nguoi_thuc_hien_id'}"/>
+                    </group>
+                </search>
+            </field>
+        </record>
+
+        <record id="action_cong_viec" model="ir.actions.act_window">
+            <field name="name">Công việc</field>
+            <field name="res_model">cong_viec</field>
+            <field name="view_mode">tree,form</field>
+            <field name="search_view_id" ref="view_cong_viec_search"/>
+        </record>
+    </data>
+</odoo>

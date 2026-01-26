@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="view_cham_cong_tree" model="ir.ui.view">
+            <field name="name">cham_cong.tree</field>
+            <field name="model">cham_cong</field>
+            <field name="arch" type="xml">
+                <tree decoration-danger="trang_thai == 've_som'" decoration-info="so_gio_ot > 0">
+                    <field name="nhan_vien_id"/>
+                    <field name="ngay_cham_cong"/>
+                    <field name="gio_vao"/>
+                    <field name="gio_ra"/>
+                    <field name="tong_gio"/>
+                    <field name="so_gio_ot"/>
+                    <field name="tien_ot" sum="Tổng tiền OT"/>
+                    <field name="trang_thai" widget="badge" decoration-danger="trang_thai == 've_som'" decoration-success="trang_thai == 'binh_thuong'"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="view_cham_cong_search" model="ir.ui.view">
+            <field name="name">cham_cong.search</field>
+            <field name="model">cham_cong</field>
+            <field name="arch" type="xml">
+                <search>
+                    <field name="nhan_vien_id"/>
+                    <filter string="Về sớm/Thiếu giờ" name="ve_som" domain="[('trang_thai', '=', 've_som')]"/>
+                    <separator/>
+                    <group expand="0" string="Gom nhóm">
+                        <filter string="Nhân viên" name="group_by_nhan_vien" context="{'group_by': 'nhan_vien_id'}"/>
+                        <filter string="Theo Tuần" name="group_by_tuan" context="{'group_by': 'ngay_cham_cong:week'}"/>
+                    </group>
+                </search>
+            </field>
+        </record>
+
+        <record id="action_cham_cong" model="ir.actions.act_window">
+            <field name="name">Chấm công</field>
+            <field name="res_model">cham_cong</field>
+            <field name="view_mode">tree,form</field>
+            <field name="search_view_id" ref="view_cham_cong_search"/>
+            <field name="context">{'search_default_group_by_tuan': 1}</field>
+        </record>
+    </data>
+</odoo>

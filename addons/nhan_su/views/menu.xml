@@ -49,5 +49,34 @@
             sequence="4"
             action="action_danh_sach_chung_chi_bang_cap"
         />
+        <menuitem name="Chấm công" 
+            id="menu_cham_cong" 
+            parent="menu_root" 
+            sequence="2"
+            action="action_cham_cong"
+        />
+        <menuitem name="Tính lương" 
+            id="menu_tinh_luong" 
+            parent="menu_root" 
+            sequence="3"
+            action="action_tinh_luong"
+        />
+        <menuitem name="Quản lý dự án" 
+            id="menu_du_an_parent" 
+            parent="menu_root" 
+            sequence="10"
+        />
+        <menuitem name="Dự án" 
+            id="menu_du_an_child" 
+            parent="menu_du_an_parent" 
+            action="action_du_an" 
+            sequence="1"
+        />
+        <menuitem name="Công việc" 
+            id="menu_cong_viec_child" 
+            parent="menu_du_an_parent" 
+            action="action_cong_viec" 
+            sequence="2"
+        />
     </data>
 </odoo>
