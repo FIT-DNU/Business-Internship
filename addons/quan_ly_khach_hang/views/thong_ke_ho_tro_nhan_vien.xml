@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <!-- Tree View để hiển thị danh sách thống kê -->
+    <record id="view_thong_ke_ho_tro_nhan_vien_tree" model="ir.ui.view">
+        <field name="name">thong.ke.ho.tro.nhan.vien.tree</field>
+        <field name="model">thong_ke_ho_tro_nhan_vien</field>
+        <field name="arch" type="xml">
+            <tree string="Thống kê hỗ trợ nhân viên" create="0" edit="0">
+                <field name="nhan_vien_id" string="Nhân viên"/>
+                <field name="so_lan_ho_tro" string="Số lần hỗ trợ"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- Form View để hiển thị chi tiết thống kê (nếu cần) -->
+    <record id="view_thong_ke_ho_tro_nhan_vien_form" model="ir.ui.view">
+        <field name="name">thong.ke.ho.tro.nhan.vien.form</field>
+        <field name="model">thong_ke_ho_tro_nhan_vien</field>
+        <field name="arch" type="xml">
+            <form string="Thống kê hỗ trợ nhân viên">
+                <sheet>
+                    <group>
+                        <field name="nhan_vien_id" readonly="1"/>
+                        <field name="so_lan_ho_tro" readonly="1"/>
+                    </group>
+                    <!-- Thêm Tree View để hiển thị danh sách hỗ trợ -->
+                    <field name="ho_tro_ids" readonly="1">
+                        <tree string="Danh sách hỗ trợ">
+                            <field name="ten_khach_hang" string="Khách hàng"/>
+                            <field name="phuong_thuc_lien_lac" string="Phương thức liên lạc"/>
+                            <field name="thoi_gian_bat_dau" string="Thời gian bắt đầu"/>
+                            <field name="thoi_gian_ket_thuc" string="Thời gian kết thúc"/>
+                            <field name="trang_thai" string="Trạng thái"/>
+                        </tree>
+                    </field>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <!-- Graph View để hiển thị biểu đồ thống kê -->
+    <record id="view_thong_ke_ho_tro_nhan_vien_graph" model="ir.ui.view">
+        <field name="name">thong.ke.ho.tro.nhan.vien.graph</field>
+        <field name="model">thong_ke_ho_tro_nhan_vien</field>
+        <field name="arch" type="xml">
+            <graph string="Thống kê hỗ trợ nhân viên">
+                <!-- Trục ngang: Tên nhân viên -->
+                <field name="nhan_vien_id" type="row"/>
+                <!-- Trục dọc: Số lần hỗ trợ -->
+                <field name="so_lan_ho_tro" type="measure"/>
+            </graph>
+        </field>
+    </record>
+
+    <!-- Action để mở view thống kê -->
+    <record id="action_thong_ke_ho_tro_nhan_vien" model="ir.actions.act_window">
+        <field name="name">Thống kê hỗ trợ nhân viên</field>
+        <field name="res_model">thong_ke_ho_tro_nhan_vien</field>
+        <!-- Thêm graph vào view_mode -->
+        <field name="view_mode">tree,form,graph</field>
+        <field name="view_id" ref="view_thong_ke_ho_tro_nhan_vien_tree"/>
+        <field name="context">{'search_default_group_by_nhan_vien': 1}</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">Không có dữ liệu thống kê.</p>
+        </field>
+    </record>
+</odoo>

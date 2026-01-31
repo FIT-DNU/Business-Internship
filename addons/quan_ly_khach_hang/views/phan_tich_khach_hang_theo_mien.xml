@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <!-- Tree View (Danh sách phân tích) -->
+    <record id="view_phan_tich_khach_hang_theo_mien_tree" model="ir.ui.view">
+        <field name="name">phan.tich.khach.hang.tree</field>
+        <field name="model">phan_tich_khach_hang_theo_mien</field>
+        <field name="arch" type="xml">
+            <tree string="Phân Tích Khách Hàng Theo Miền" create="0" edit="0">
+                <field name="vung_mien" string="Vùng miền"/>
+                <field name="so_luong_khach" string="Số lượng khách"/>
+                <field name="tong_doanh_thu" string="Tổng doanh thu" widget="monetary"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- Graph View (Biểu đồ khách hàng theo miền) -->
+    <record id="view_phan_tich_khach_hang_theo_mien_graph" model="ir.ui.view">
+        <field name="name">phan.tich.khach.hang.graph</field>
+        <field name="model">phan_tich_khach_hang_theo_mien</field>
+        <field name="arch" type="xml">
+            <graph string="Biểu đồ khách hàng theo miền">
+                <field name="vung_mien" type="row"/>
+                <field name="so_luong_khach" type="measure"/>
+                <field name="tong_doanh_thu" type="measure"/>
+            </graph>
+        </field>
+    </record>
+
+    <!-- Pivot View (Phân tích dạng bảng) -->
+    <record id="view_phan_tich_khach_hang_theo_mien_pivot" model="ir.ui.view">
+        <field name="name">phan.tich.khach.hang.pivot</field>
+        <field name="model">phan_tich_khach_hang_theo_mien</field>
+        <field name="arch" type="xml">
+            <pivot string="Phân Tích Khách Hàng Theo Miền">
+                <field name="vung_mien"/>
+                <field name="so_luong_khach" type="measure"/>
+                <field name="tong_doanh_thu" type="measure"/>
+            </pivot>
+        </field>
+    </record>
+
+    <!-- Form View (Chi tiết miền) -->
+    <record id="view_phan_tich_khach_hang_theo_mien_form" model="ir.ui.view">
+        <field name="name">phan.tich.khach.hang.form</field>
+        <field name="model">phan_tich_khach_hang_theo_mien</field>
+        <field name="arch" type="xml">
+            <form string="Chi tiết phân tích khách hàng">
+                <sheet>
+                    <group>
+                        <field name="vung_mien" readonly="1"/>
+                        <field name="so_luong_khach" readonly="1"/>
+                        <field name="tong_doanh_thu" readonly="1" widget="monetary"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+
+
+    <!-- Action mở phân tích khách hàng -->
+    <record id="action_phan_tich_khach_hang_theo_mien" model="ir.actions.act_window">
+        <field name="name">Phân Tích Khách Hàng Theo Miền</field>
+        <field name="res_model">phan_tich_khach_hang_theo_mien</field>
+        <field name="view_mode">tree,form,graph,pivot</field>
+        <field name="view_id" ref="view_phan_tich_khach_hang_theo_mien_tree"/>
+        <field name="context">{}</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">Chưa có dữ liệu thống kê.</p>
+        </field>
+    </record>
+
+</odoo>

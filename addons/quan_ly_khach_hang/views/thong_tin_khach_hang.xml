@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="view_thong_tin_khach_hang_form" model="ir.ui.view">
+            <field name="name">thong_tin_khach_hang_form</field>
+            <field name="model">thong_tin_khach_hang</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <div class="oe_read_only" style="font-size:25px">Thông Tin Khách Hàng</div>
+
+                        <group col="4" string="Thông tin chung">
+                            <field name="ten_khach_hang"/>
+                            <field name="dia_chi"/>
+                            <field name="vung_mien"/>
+                            <field name="so_dien_thoai"/>
+                            <field name="email"/>
+                            <field name="cong_ty"/>
+                            <field name="chuc_vu"/>
+                            <field name="phan_loai" readonly="1"/>
+                            <field name="ngay_sinh"/>
+                            <field name="gioi_tinh"/>
+                            <field name="facebook"/>
+                            <field name="zalo"/>
+                            <field name="website"/>
+                        </group>
+
+                        <group col="4" string="Trạng thái">
+                            <field name="trang_thai"/>
+                            <field name="muc_do_hai_long"/>
+                        </group>
+
+                        <group string="Lịch sử giao dịch">
+                            <group>
+                                <field name="tong_tien_chi_tieu" readonly="1"/>
+                                <field name="don_hang_ids" mode="tree,form" readonly="1">
+                                    <tree editable="bottom">
+                                        <field name="order_id"/>
+                                        <field name="ngay_dat_hang"/>
+                                        <field name="product_id"/>
+                                        <field name="quantity"/>
+                                        <field name="price_unit"/>
+                                        <field name="subtotal"/>
+                                        <field name="trang_thai"/>
+                                    </tree>
+                                </field>
+                            </group>
+                        </group>
+
+                        <group col="4" string="Khác">
+                            <field name="ghi_chu"/>
+                            <field name="ngay_tao" readonly="1"/>
+                            <field name="ngay_cap_nhat" readonly="1"/>
+                        </group>
+
+                        <group string="Danh sách hỗ trợ">
+                            <field name="ho_tro_ids" readonly="1">
+                                <tree>
+                                    <field name="nhan_vien_phu_trach" string="Nhân viên phụ trách" readonly="1"/>
+                                    <field name="phuong_thuc_lien_lac" string="Phương thức liên lạc" readonly="1"/>
+                                    <field name="thoi_gian_bat_dau" string="Thời gian bắt đầu" readonly="1"/>
+                                    <field name="thoi_gian_ket_thuc" string="Thời gian kết thúc" readonly="1"/>
+                                    <field name="trang_thai" string="Trạng thái" readonly="1"/>
+                                </tree>
+                            </field>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+
+        <record id="view_thong_tin_khach_hang_tree" model="ir.ui.view">
+            <field name="name">thong_tin_khach_hang_tree</field>
+            <field name="model">thong_tin_khach_hang</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="ten_khach_hang"/>
+                    <field name="so_dien_thoai"/>
+                    <field name="email"/>
+                    <field name="cong_ty"/>
+                    <field name="phan_loai" readonly="1"/>
+                    <field name="trang_thai"/>
+                    <field name="so_lan_mua_hang"/>
+                    <field name="ngay_tao"/>
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="thong_tin_khach_hang_search">
+            <field name="model">thong_tin_khach_hang</field>
+            <field name="arch" type="xml">
+                <search>
+                    <field name="ten_khach_hang"/>
+                    <field name="so_dien_thoai"/>
+                    <field name="email"/>
+                    <field name="phan_loai"/>
+                    <field name="trang_thai"/>
+                    <field name="muc_do_hai_long"/>
+                    <field name="ngay_tao"/>
+                </search>
+            </field>
+        </record>
+
+        <record id="action_thong_tin_khach_hang" model="ir.actions.act_window">
+            <field name="name">Thông Tin Khách Hàng</field>
+            <field name="res_model">thong_tin_khach_hang</field>
+            <field name="view_mode">tree,form</field>
+            <field name="search_view_id" ref="thong_tin_khach_hang_search"/>
+        </record>
+    </data>
+</odoo>
