@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="view_chung_chi_tree" model="ir.ui.view">
+            <field name="model">chung_chi</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="ten_chung_chi"/>
+                    <field name="nhan_vien_id"/>
+                    <field name="ngay_cap"/>
+                    <field name="noi_cap"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="view_chung_chi_form" model="ir.ui.view">
+            <field name="model">chung_chi</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <field name="ten_chung_chi"/>
+                            <field name="nhan_vien_id"/>
+                            <field name="ngay_cap"/>
+                            <field name="noi_cap"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="action_chung_chi" model="ir.actions.act_window">
+            <field name="name">Chứng chỉ</field>
+            <field name="res_model">chung_chi</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+    </data>
+</odoo>

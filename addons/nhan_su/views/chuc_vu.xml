@@ -1,40 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <data>
-        <record id="view_chuc_vu_form" model="ir.ui.view">
-            <field name="name">chuc_vu</field>
-            <field name="model">chuc_vu</field>
-            <field name="arch" type="xml">
-                <form>
-                    <sheet>
-                        <div class="oe_read_only" style="font-size:25px">Chức vụ</div>
-                        <group col="4" string="Thông tin chung">
-                            <field name="ma_chuc_vu"/>
-                            <field name="ten_chuc_vu"/>
-                        </group>
-                    </sheet>
-                </form>
-            </field>
-        </record>
 
         <record id="view_chuc_vu_tree" model="ir.ui.view">
-            <field name="name">chuc_vu</field>
             <field name="model">chuc_vu</field>
             <field name="arch" type="xml">
                 <tree>
                     <field name="ma_chuc_vu"/>
                     <field name="ten_chuc_vu"/>
+                    <field name="phu_cap"/>
                 </tree>
             </field>
         </record>
 
-        <record model="ir.ui.view" id="chuc_vu_search">
+        <record id="view_chuc_vu_form" model="ir.ui.view">
             <field name="model">chuc_vu</field>
             <field name="arch" type="xml">
-                <search>
-                    <field name="ma_chuc_vu"/>
-                    <field name="ten_chuc_vu"/>
-                </search>
+                <form>
+                    <sheet>
+                        <group>
+                            <field name="ma_chuc_vu"/>
+                            <field name="ten_chuc_vu"/>
+                            <field name="phu_cap"/>
+                            <field name="mo_ta"/>
+                        </group>
+                    </sheet>
+                </form>
             </field>
         </record>
 
@@ -42,9 +33,7 @@
             <field name="name">Chức vụ</field>
             <field name="res_model">chuc_vu</field>
             <field name="view_mode">tree,form</field>
-            <field name="search_view_id" ref = "chuc_vu_search"/>
         </record>
+
     </data>
 </odoo>
-        
-    
