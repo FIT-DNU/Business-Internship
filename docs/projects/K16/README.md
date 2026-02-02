@@ -37,6 +37,41 @@
 | Quản lý dự án + Quản lý công việc| Trần Hồng Quân, Phạm Đức Long, Đào Trần Lê Việt Anh|[:octocat:github](https://github.com/DucLong1206/TTDN-16-02-N12)|
 | Quản lý tài sản + Quản lý Tài chính/Kế toán| Lê Văn Việt, Ngô Thị Mừng, Vũ Tài Sang |[:octocat:github](https://github.com/VietHann/TTDN-16-02-N13)|
 
+- #### CNTT 16-03
+  | Tên đề tài                                  | Người thực hiện                                        | Source code                                                            | Nổi bật |
+  | ------------------------------------------- | ------------------------------------------------------ | ---------------------------------------------------------------------- | ------- |
+  | Quản lý khách hàng + Quản lý công việc      | Nguyễn Thị Lan Anh, Đỗ Ngọc Nghĩa, Ngô Ngọc Phú        | [:octocat:github](https://github.com/Nghia2624/TTND-16-03-N3)          |         |
+  | Quản lý khách hàng + Quản lý công việc      | Phạm Thanh Phương, Đỗ Huy Dũng                         | [:octocat:github](https://github.com/huydunghrun/TTDN-16-03-N4.git)    |         |
+  | Chấm công + Tính lương                      | Đỗ Trọng Minh Tiến, Phạm Văn Duy, Nguyễn Chí Nhật      | [:octocat:github](https://github.com/nhatali/TTDN-16-03-N2)            |         |
+  | Chấm công + Tính lương                      | Nguyễn Nam Hưng, Nguyễn Công Uẩn, Lê Đức Khánh Long    | [:octocat:github](https://github.com/namhung1910/TTDN-16-03-N13)       |         |
+  | Quản lý dự án + Quản lý công việc           | Hoàng Công Sơn, Nguyễn Danh Phóng, Bùi Văn Trường      | [:octocat:github](https://github.com/TruongDev10/TTDN-16_03-N7)        |         |
+  | Quản lý dự án + Quản lý công việc           | Lê Xuân Dương, Trần Đình Hiệp, Mẫn Bá Sâm              | [:octocat:github](https://github.com/duongcutohaha/TTDN-16-03-N8)      |         |
+  | Quản lý dự án + Quản lý công việc           | Lò Đức Mạnh, Nguyễn Trường Nam, Nguyễn Hoàng Liêm      | [:octocat:github](https://github.com/ntnguyen03/TTDN-16-03-N11)        |         |
+  | Quản lý khách hàng + Quản lý văn bản        | Đặng Bùi Thanh Tùng                                    | [:octocat:github](https://github.com/maidkalstit/TTDN-16-03-N1)        |         |
+  | Quản lý khách hàng + Quản lý văn bản        | Đậu Cao Minh Nhật, Hoàng Mạnh Linh, Vũ Giang Nam       | [:octocat:github](https://github.com/RobiRobin555/TTDN-16-03-N9)       |         |
+  | Quản lý khách hàng + Quản lý văn bản        | Nguyễn Thị Kiều Hoa, Đặng Văn Khánh, Nguyễn Thành Hưng | [:octocat:github](https://github.com/Balie768/TTDN-16-03-N12)          |         |
+  | Quản lý tài sản + Quản lý Tài chính/Kế toán | Trần Trí Duy, Nguyễn Đức Tâm, Nguyễn Quang Tiến        | [:octocat:github](https://github.com/ductam2594/TTDN-16-03-N6)         |         |
+  | Quản lý tài sản + Quản lý Tài chính/Kế toán | Lê Thành Long, Nguyễn Duy Đạt, Bùi Tuấn Dương          | [:octocat:github](https://github.com/ThanhLog/TTDN-16-03-N10)          |         |
+  | Quản lý tài sản + Quản lý Tài chính/Kế toán | Trần Hiếu Nghĩa, Nguyễn Cao Tùng, Đào Đức Mạnh         | [:octocat:github](https://github.com/Nek0h1me/TTDN_16-03_N16)          |         |
+  | Quản lý tài sản + Phòng họp                 | Hoàng Thế Khải, Trịnh Minh Thành, Nguyễn Đức Ngọc      | [:octocat:github](https://github.com/mthanh04/TTDN-16-03-N5)           |         |
+  | Quản lý tài sản + Phòng họp                 | Bùi Anh Tuấn, Nguyễn Minh Hiếu                         | [:octocat:github](https://github.com/tuancntt1603/TTDN-1603-N14.git)   |         |
+  | Quản lý tài sản + Phòng họp                 | Nguyễn Ngọc Khánh, Cao Văn Huy, Bùi Văn Tiến           | [:octocat:github](https://github.com/NguyenKhanh04/TTDN-16-03-N15.git) |         |
+
+- #### CNTT 16-04
+  | Tên đề tài                                  | Người thực hiện                                          | Source code | Nổi bật |
+  | ------------------------------------------- | -------------------------------------------------------- | ----------- | ------- |
+  | Quản lý khách hàng + Quản lý văn bản        | Phạm Thị Hồng Ngọc, Nguyễn Hoài Nam, Nguyễn Thúy Hằng    | LINK        |         |
+  | Quản lý dự án + Quản lý công việc           | Vũ Duy Thái, Vũ Đình Quân, Nguyễn Tuấn Anh               | LINK        |         |
+  | Quản lý tài sản + Quản lý Tài chính/Kế toán | Phạm Thành Hưng, Nguyễn Đức Anh, Nguyễn Trọng Đàn        | LINK        |         |
+  | Quản lý khách hàng + Quản lý công việc      | Lương Quốc Diệu, Đào Duy Mạnh, Lã Việt Hoàng             | LINK        |         |
+  | Quản lý tài sản + Phòng họp                 | Nguyễn Tiến Đạt, Lê Bá Hoan, Đào Gia Hưng                | LINK        |         |
+  | Chấm công + Tính lương                      | Nguyễn Việt Ninh, Đặng Thanh Bình, Lê Hải Đăng           | LINK        |         |
+  | Quản lý khách hàng + Quản lý văn bản        | Tạ Việt Anh, Nguyễn Đức Thường, Nguyễn Thế Vinh          | LINK        |         |
+  | Quản lý tài sản + Quản lý Tài chính/Kế toán | Nguyễn Bá Chí Khiêm, Hoàng Anh Tú                        | LINK        |         |
+  | Quản lý dự án + Quản lý công việc           | Vũ Hải Đức, Nguyễn Hải Đăng, Trịnh Hữu Hiệu              | LINK        |         |
+  | Chấm công + Tính lương                      | Nguyễn Văn Giang, Nguyễn Văn Bắc, Nguyễn Thu Hồng        | LINK        |         |
+  | Quản lý tài sản + Phòng họp                 | Trịnh Việt Hưng, Khổng Minh Hoài, Nguyễn Đào Nguyên Giáp | LINK        |         |
+
 - #### CNTT 16-05
 | Tên đề tài | Người thực hiện | Source code | Nổi bật |
 |-----------|----------------|-------------|---------|
@@ -68,5 +103,6 @@
 | Chấm công và Tính lương| Nguyễn Trung Kiên, Ngô Tuấn Minh, Triệu Vũ Hà My|[:octocat:github](https://github.com/ngotuanminh1/16-06-N11)|
 | Quản lý tài sản và Phòng học| Hoàng Minh Phụng, Nguyễn Mạnh Đức, Vương Quốc Khánh|[:octocat:github](https://github.com/ManhDuc204/TTDN-1606-N12.git)|
 | Chấm công và Tính lương| Hà Tuấn Anh, Nguyễn Thành Phong, Nguyễn Đình Tráng |[:octocat:github](https://github.com/NguyenDinhTrang04/TTDN-16-06-N13.git)|
+
 
 
