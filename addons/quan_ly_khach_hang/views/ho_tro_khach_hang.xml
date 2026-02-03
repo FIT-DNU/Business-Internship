@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <!-- Tree View (Danh sách hỗ trợ khách hàng) -->
+    <record id="view_ho_tro_khach_hang_tree" model="ir.ui.view">
+        <field name="name">ho.tro.khach.hang.tree</field>
+        <field name="model">ho_tro_khach_hang</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="ten_khach_hang"/>
+                <field name="phuong_thuc_lien_lac"/>
+                <field name="ngay_ho_tro"/>
+                <field name="thoi_gian_bat_dau"/>
+                <field name="thoi_gian_ket_thuc"/>
+                <field name="trang_thai"/>
+                <field name="nhan_vien_phu_trach"/>
+                <field name="diem_danh_gia"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- Form View (Chi tiết hỗ trợ khách hàng) -->
+    <record id="view_ho_tro_khach_hang_form" model="ir.ui.view">
+        <field name="name">ho.tro.khach.hang.form</field>
+        <field name="model">ho_tro_khach_hang</field>
+        <field name="arch" type="xml">
+            <form string="Hỗ trợ khách hàng">
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="ten_khach_hang"/>
+                            <field name="phuong_thuc_lien_lac"/>
+                            <field name="ngay_ho_tro"/>
+                            <field name="thoi_gian_bat_dau"/>
+                            <field name="thoi_gian_ket_thuc" attrs="{'readonly': [('trang_thai', '!=', 'resolved')]}"/>
+                        </group>
+                        <group>
+                            <field name="trang_thai"/>
+                            <field name="nhan_vien_phu_trach"/>
+                            <field name="diem_danh_gia" attrs="{'readonly': [('trang_thai', '!=', 'resolved')]}"/>
+                        </group>
+                    </group>
+                    <notebook>
+                        <page string="Yêu cầu khách hàng">
+                            <field name="yeu_cau_cua_khach" string="Yêu cầu của khách hàng"/>
+                            <field name="mo_ta_chi_tiet" string="Mô tả chi tiết"/>
+                        </page>
+                        <page string="Phản hồi khách hàng">
+                            <field name="phan_hoi_khach_hang" string="Phản hồi của khách hàng"/>
+                        </page>
+                        <page string="File đính kèm">
+                            <field name="file_dinh_kem" widget="many2many_binary"/>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- Action để hiển thị dữ liệu trong menu -->
+    <record id="action_ho_tro_khach_hang" model="ir.actions.act_window">
+        <field name="name">Hỗ trợ khách hàng</field>
+        <field name="res_model">ho_tro_khach_hang</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <!-- Menu Hiển Thị -->
+    <menuitem id="menu_ho_tro_khach_hang" name="Hỗ trợ khách hàng"
+              action="action_ho_tro_khach_hang"
+              parent="base.menu_management"/>
+</odoo>

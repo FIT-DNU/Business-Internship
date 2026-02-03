@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- Menu Gốc -->
+        <menuitem id="menu_root" name="Quản Lý Khách Hàng" sequence="0"/>
+
+        <!-- Dashboard -->
+        <menuitem id="menu_dashboard_khach_hang" name="Dashboard Khách Hàng" sequence="1" action="action_dashboard" parent="menu_root"/>
+
+        <!-- Nhóm Quản Lý Khách Hàng -->
+        <menuitem id="menu_group_khach_hang" name="Quản lý khách hàng" parent="menu_root" sequence="2"/>
+        <menuitem id="menu_thong_tin_khach_hang" name="Thông tin khách hàng" parent="menu_group_khach_hang" action="action_thong_tin_khach_hang" sequence="3"/>
+        <menuitem id="menu_ho_tro_khach_hang" name="Hỗ trợ khách hàng" parent="menu_group_khach_hang" action="action_ho_tro_khach_hang" sequence="4"/>
+        <menuitem id="menu_thong_ke_ho_tro" name="Thống kê hỗ trợ" parent="menu_group_khach_hang" action="action_thong_ke_ho_tro_nhan_vien" sequence="5"/>
+        <menuitem id="menu_bang_xep_hang" name="Bảng xếp hạng khách VIP" parent="menu_group_khach_hang" action="action_bang_xep_hang_khach_hang" sequence="6"/>
+        <menuitem id="menu_email_sender" name="Gửi và Quản lý Email" parent="menu_group_khach_hang" action="action_email_sender" sequence="7"/>
+        <menuitem id="menu_phan_tich_khach_hang" name="Phân tích khách hàng theo miền" parent="menu_group_khach_hang" action="action_phan_tich_khach_hang_theo_mien" sequence="8"/>
+
+        <!-- Nhóm Quản Lý Đơn Hàng -->
+        <menuitem id="menu_group_don_hang" name="Quản lý đơn hàng" parent="menu_root" sequence="9"/>
+        <menuitem id="menu_chi_tiet_don_hang" name="Chi tiết đơn hàng" parent="menu_group_don_hang" action="action_order_detail" sequence="10"/>
+        <menuitem id="menu_chi_tiet_san_pham" name="Chi tiết sản phẩm" parent="menu_group_don_hang" action="action_product_detail" sequence="11"/>
+    </data>
+</odoo>

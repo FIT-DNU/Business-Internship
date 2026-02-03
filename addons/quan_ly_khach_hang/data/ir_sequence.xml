@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="seq_chi_tiet_don_hang" model="ir.sequence">
+            <field name="name">Đơn Hàng</field>
+            <field name="code">chi_tiet_don_hang</field>
+            <field name="prefix">DHH</field>
+            <field name="padding">5</field>
+            <field name="number_next">1</field>
+            <field name="number_increment">1</field>
+        </record>
+    </data>
+</odoo>

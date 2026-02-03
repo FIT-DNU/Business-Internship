@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Giao diện Form để gửi email -->
+    <record id="view_email_sender_form" model="ir.ui.view">
+        <field name="name">email_sender.form</field>
+        <field name="model">email_sender</field>
+        <field name="arch" type="xml">
+            <form string="Gửi Email">
+                <sheet>
+                    <group>
+                        <field name="recipient_ids" widget="many2many_tags" string="Người nhận" required="1"/>
+                        <field name="recipient_emails" string="Emails" readonly="1"/>
+                        <field name="subject" string="Chủ đề"/>
+                        <field name="body" string="Nội dung" widget="html"/>
+                        <field name="state" string="Trạng thái" readonly="1"/>
+                    </group>
+                    <footer>
+                        <button name="send_email" type="object" string="Gửi" class="oe_highlight"/>
+                    </footer>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- Giao diện Tree để hiển thị danh sách email đã gửi -->
+    <record id="view_email_sender_tree" model="ir.ui.view">
+        <field name="name">email_sender.tree</field>
+        <field name="model">email_sender</field>
+        <field name="arch" type="xml">
+            <tree string="Danh sách Email đã gửi">
+                <field name="recipient_emails" string="Emails"/>
+                <field name="subject" string="Chủ đề"/>
+                <field name="state" string="Trạng thái"/>
+                <field name="sent_date" string="Ngày gửi"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- Hành động mở danh sách email đã gửi -->
+    <record id="action_email_sender" model="ir.actions.act_window">
+        <field name="name">Gửi và Quản lý Email</field>
+        <field name="res_model">email_sender</field>
+        <field name="view_mode">tree,form</field>
+        <field name="view_id" ref="view_email_sender_tree"/>
+    </record>
+</odoo>

@@ -1,0 +1,10 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_thong_tin_khach_hang,thong_tin_khach_hang.thong_tin_khach_hang,model_thong_tin_khach_hang,base.group_user,1,1,1,1
+access_chi_tiet_don_hang,chi_tiet_don_hang.chi_tiet_don_hang_hang,model_chi_tiet_don_hang,base.group_user,1,1,1,1
+access_ho_tro_khach_hang,ho_tro_khach_hang.ho_tro_khach_hang,model_ho_tro_khach_hang,base.group_user,1,1,1,1
+access_chi_tiet_san_pham,chi_tiet_san_pham,model_chi_tiet_san_pham,base.group_user,1,1,1,1
+access_thong_ke_ho_tro_nhan_vien,thong_ke_ho_tro_nhan_vien,model_thong_ke_ho_tro_nhan_vien,base.group_user,1,1,1,1
+access_bang_xep_hang_khach_hang,bang_xep_hang_khach_hang.bang_xep_hang_khach_hang,model_bang_xep_hang_khach_hang,base.group_user,1,1,1,1
+access_email_sender,email_sender.email_sender,model_email_sender,base.group_user,1,1,1,1
+access_phan_tich_khach_hang_theo_mien,phan_tich_khach_hang_theo_mien.phan_tich_khach_hang_theo_mien,model_phan_tich_khach_hang_theo_mien,base.group_user,1,1,1,1
+access_dashboard,dashboard.dashboard,model_dashboard,base.group_user,1,1,1,1

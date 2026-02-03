@@ -1,0 +1,87 @@
+/* Tùy chỉnh tiêu đề */
+.oe_title h1 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #2C3E50;
+    padding: 10px 0;
+    text-transform: uppercase;
+}
+
+/* Khung chứa các biểu đồ và bảng */
+.oe_box {
+    background: linear-gradient(135deg, #f8f9fa, #ffffff);
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.oe_box:hover {
+    transform: scale(1.02);
+}
+
+/* Tiêu đề trong các hộp */
+.oe_box h2, .oe_box h3 {
+    text-align: center;
+    color: #34495E;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Tùy chỉnh separator */
+.separator {
+    font-size: 20px;
+    font-weight: bold;
+    color: #3498db;
+    margin: 30px 0;
+    text-align: center;
+    border-bottom: 3px solid #3498db;
+    padding-bottom: 10px;
+}
+
+/* Tùy chỉnh bảng */
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: #f2f2f2;
+}
+
+.table thead th {
+    background-color: #3498db;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Nút cập nhật dữ liệu */
+.oe_highlight {
+    background-color: #27ae60;
+    color: white;
+    border-radius: 6px;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.oe_highlight:hover {
+    background-color: #219150;
+}
+
+/* Bố cục linh hoạt của biểu đồ */
+.chart-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.chart-box {
+    width: 48%;
+    max-width: 600px;
+    min-width: 300px;
+    height: 400px;
+}
