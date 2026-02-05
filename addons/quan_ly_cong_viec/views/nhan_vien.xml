@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- Extend nhan_vien form view to add cong_viec tab -->
+        <record id="view_nhan_vien_form_inherit_cong_viec" model="ir.ui.view">
+            <field name="name">nhan_vien.form.inherit.cong_viec</field>
+            <field name="model">nhan_vien</field>
+            <field name="inherit_id" ref="nhan_su.view_nhan_vien_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//notebook" position="inside">
+                    <page string="Danh sách công việc tham gia">
+                        <field name="cong_viec_ids">
+                            <tree>
+                                <field name="ten_cong_viec"/>
+                                <field name="du_an_id"/>
+                                <field name="han_chot" widget="datetime"/>
+                                <field name="phan_tram_cong_viec" widget="progressbar"/>
+                                <field name="thoi_gian_con_lai"/>
+                            </tree>
+                        </field>
+                    </page>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

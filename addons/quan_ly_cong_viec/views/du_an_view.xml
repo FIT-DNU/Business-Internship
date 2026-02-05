@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <!-- Inherit tree view để thêm thông tin công việc -->
+    <record id="view_du_an_tree_inherit" model="ir.ui.view">
+        <field name="name">du_an.tree.inherit</field>
+        <field name="model">du_an</field>
+        <field name="inherit_id" ref="quan_ly_du_an.view_du_an_tree"/>
+        <field name="arch" type="xml">
+            <field name="tien_do" position="after">
+                <field name="tong_so_cong_viec"/>
+                <field name="so_cong_viec_hoan_thanh"/>
+            </field>
+        </field>
+    </record>
+
+    <!-- Inherit form view để thêm notebook công việc -->
+    <record id="view_du_an_form_inherit" model="ir.ui.view">
+        <field name="name">du_an.form.inherit</field>
+        <field name="model">du_an</field>
+        <field name="inherit_id" ref="quan_ly_du_an.view_du_an_form"/>
+        <field name="arch" type="xml">
+            <!-- Thêm thông tin thống kê công việc sau field tien_do -->
+            <field name="tien_do" position="after">
+                <field name="tong_so_cong_viec" readonly="1"/>
+                <field name="so_cong_viec_hoan_thanh" readonly="1"/>
+            </field>
+            
+            <!-- Thêm tab công việc vào notebook -->
+            <xpath expr="//notebook" position="inside">
+                <page string="Công Việc">
+                    <field name="cong_viec_ids">
+                        <tree>
+                            <field name="ten_cong_viec"/>
+                            <field name="nhan_vien_ids" widget="many2many_tags"/>
+                            <field name="han_chot"/>
+                            <field name="thoi_gian_con_lai"/>
+                            <field name="phan_tram_cong_viec" widget="progressbar"/>
+                            <field name="giai_doan_id"/>
+                        </tree>
+                        <form>
+                            <group col="4">
+                                <field name="ten_cong_viec"/>
+                                <field name="mo_ta"/>
+                                <field name="du_an_id" readonly="1"/>
+                                <field name="nhan_vien_ids" widget="many2many_tags"/>
+                                <field name="han_chot"/>
+                                <field name="giai_doan_id"/>
+                                <field name="phan_tram_cong_viec" widget="progressbar"/>
+                            </group>
+                        </form>
+                    </field>
+                </page>
+            </xpath>
+        </field>
+    </record>
+
+</odoo>
