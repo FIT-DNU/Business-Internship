@@ -49,7 +49,7 @@ Dự án này là một giải pháp quản trị doanh nghiệp tập trung, k�
      ├── views/              # Dashboard, Kanban, Biểu đồ ngân sách
      └── data/               # Kịch bản dự án mẫu (Core Banking, ERP)
 ```
-# 4. Chạy hệ thống và cài đặt các ứng dụng cần thiết
+## 4. Chạy hệ thống và cài đặt các ứng dụng cần thiết
 
 Người sử dụng truy cập theo đường dẫn _http://localhost:8069/_ để đăng nhập vào hệ thống.
    
