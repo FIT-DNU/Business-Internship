@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_quan_ly_cong_viec_tree" model="ir.ui.view">
+        <field name="name">quan_ly.cong_viec.tree</field>
+        <field name="model">quan_ly.cong_viec</field>
+        <field name="arch" type="xml">
+            <tree decoration-danger="is_overdue == True">
+                <field name="name"/>
+                <field name="project_id"/>
+                <field name="nguoi_thuc_hien_id"/>
+                <field name="deadline"/>
+                <field name="is_overdue" invisible="1"/>
+                <field name="tien_do" widget="progressbar"/>
+                <field name="trang_thai" widget="badge" 
+                       decoration-success="trang_thai == 'xong'" 
+                       decoration-info="trang_thai == 'dang_lam'"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_cong_viec_kanban" model="ir.ui.view">
+        <field name="name">quan_ly.cong_viec.kanban</field>
+        <field name="model">quan_ly.cong_viec</field>
+        <field name="arch" type="xml">
+            <kanban default_group_by="nguoi_thuc_hien_id">
+                <field name="name"/>
+                <field name="tien_do"/>
+                <templates>
+                    <t t-name="kanban-box">
+                        <div class="oe_kanban_global_click">
+                            <strong><field name="name"/></strong>
+                            <div>Dự án: <field name="project_id"/></div>
+                            <div>Tiến độ: <field name="tien_do"/>%</div>
+                            <field name="tien_do" widget="progressbar"/>
+                        </div>
+                    </t>
+                </templates>
+            </kanban>
+        </field>
+    </record>
+
+    <record id="action_quan_ly_cong_viec" model="ir.actions.act_window">
+        <field name="name">Công việc cá nhân</field>
+        <field name="res_model">quan_ly.cong_viec</field>
+        <field name="view_mode">tree,form,kanban</field>
+    </record>
+</odoo>

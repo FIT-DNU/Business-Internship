@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <menuitem id="menu_du_an_root" name="Quản lý Dự án" sequence="10"/>
+        
+        <menuitem id="menu_du_an_main" name="Dự án" parent="menu_du_an_root" 
+                  action="action_quan_ly_du_an" sequence="10"/>
+                  
+        <menuitem id="menu_cong_viec_main" name="Công việc" parent="menu_du_an_root" 
+                  action="action_quan_ly_cong_viec" sequence="20"/>
+
+        <menuitem id="menu_dashboard_root" name="Báo cáo &amp; Phân tích" 
+                  parent="menu_du_an_root" sequence="30"/>
+
+        <menuitem id="menu_du_an_analysis" name="Phân tích Dự án" 
+                  parent="menu_dashboard_root" action="action_quan_ly_du_an" sequence="10"/>
+    </data>
+</odoo>

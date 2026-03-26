@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- DỰ ÁN 1: CORE BANKING -->
+        <record id="project_core_banking" model="quan_ly.du_an">
+            <field name="name">Hệ thống Core Banking 2026</field>
+            <field name="ngan_sach">1500000000</field>
+            <field name="manager_id" ref="nhan_su.nhan_vien_manager"/>
+            <field name="ngay_bat_dau">2026-01-01</field>
+            <field name="ngay_ket_thuc">2026-12-31</field>
+        </record>
+
+        <!-- Tasks của Core Banking (Deadline phải trước 31/12/2026) -->
+        <record id="task_banking_01" model="quan_ly.cong_viec">
+            <field name="name">Thiết kế kiến trúc hệ thống</field>
+            <field name="project_id" ref="project_core_banking"/>
+            <field name="nguoi_thuc_hien_id" ref="nhan_su.nhan_vien_lead"/>
+            <field name="deadline">2026-03-31</field> <!-- Thêm deadline -->
+            <field name="tien_do">100</field>
+            <field name="trang_thai">xong</field>
+        </record>
+
+        <record id="task_banking_02" model="quan_ly.cong_viec">
+            <field name="name">Xây dựng API Backend</field>
+            <field name="project_id" ref="project_core_banking"/>
+            <field name="nguoi_thuc_hien_id" ref="nhan_su.nhan_vien_dev1"/>
+            <field name="deadline">2026-07-15</field> <!-- Thêm deadline -->
+            <field name="tien_do">45</field>
+            <field name="trang_thai">dang_lam</field>
+        </record>
+
+        <record id="task_banking_03" model="quan_ly.cong_viec">
+            <field name="name">Phát triển giao diện người dùng</field>
+            <field name="project_id" ref="project_core_banking"/>
+            <field name="nguoi_thuc_hien_id" ref="nhan_su.nhan_vien_dev2"/>
+            <field name="deadline">2026-08-20</field> <!-- Thêm deadline -->
+            <field name="tien_do">30</field>
+            <field name="trang_thai">dang_lam</field>
+        </record>
+
+        <record id="task_banking_04" model="quan_ly.cong_viec">
+            <field name="name">Kiểm thử bảo mật (Security Test)</field>
+            <field name="project_id" ref="project_core_banking"/>
+            <field name="nguoi_thuc_hien_id" ref="nhan_su.nhan_vien_qa"/>
+            <field name="deadline">2026-11-10</field> <!-- Thêm deadline -->
+            <field name="trang_thai">moi</field>
+        </record>
+
+        <!-- DỰ ÁN 2: LANDING PAGE DNU -->
+        <record id="project_landing_page" model="quan_ly.du_an">
+            <field name="name">Landing Page Tuyển sinh DNU</field>
+            <field name="ngan_sach">80000000</field>
+            <field name="manager_id" ref="nhan_su.nhan_vien_lead"/>
+            <field name="ngay_bat_dau">2026-03-01</field>
+            <field name="ngay_ket_thuc">2026-04-01</field>
+        </record>
+
+        <!-- Tasks mới cho Landing Page (Deadline phải trước 01/04/2026) -->
+        <record id="task_landing_01" model="quan_ly.cong_viec">
+            <field name="name">Thiết kế UI/UX trên Figma</field>
+            <field name="project_id" ref="project_landing_page"/>
+            <field name="nguoi_thuc_hien_id" ref="nhan_su.nhan_vien_dev2"/> <!-- Assign cho Tuấn -->
+            <field name="deadline">2026-03-15</field>
+            <field name="tien_do">100</field>
+            <field name="trang_thai">xong</field>
+        </record>
+
+        <record id="task_landing_02" model="quan_ly.cong_viec">
+            <field name="name">Cắt HTML/CSS và tích hợp form</field>
+            <field name="project_id" ref="project_landing_page"/>
+            <field name="nguoi_thuc_hien_id" ref="nhan_su.nhan_vien_dev1"/> <!-- Assign cho Cường -->
+            <field name="deadline">2026-03-28</field> <!-- Deadline gắt nha -->
+            <field name="tien_do">60</field>
+            <field name="trang_thai">dang_lam</field>
+        </record>
+
+    </data>
+</odoo>

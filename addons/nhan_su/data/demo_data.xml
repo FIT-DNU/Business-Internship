@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="nhan_vien_manager" model="nhan_vien">
+            <field name="ma_dinh_danh">NV001</field>
+            <field name="ten_nhan_vien">Nguyễn Chiến Thắng</field>
+            <field name="chuc_vu">Trưởng phòng Kỹ thuật</field>
+            <field name="bang_cap">thac_si</field>
+            <field name="email">thang.nc@dnu.edu.vn</field>
+            <field name="ngay_sinh">1985-05-15</field>
+            <field name="que_quan">Hà Nội</field>
+            <field name="chuyen_nganh">Khoa học Máy tính</field>
+        </record>
+
+        <record id="nhan_vien_lead" model="nhan_vien">
+            <field name="ma_dinh_danh">NV002</field>
+            <field name="ten_nhan_vien">Trần Thị Mai</field>
+            <field name="chuc_vu">Trưởng nhóm lập trình</field>
+            <field name="bang_cap">dai_hoc</field>
+            <field name="email">mai.tt@dnu.edu.vn</field>
+            <field name="ngay_sinh">1992-08-20</field>
+            <field name="que_quan">Hải Phòng</field>
+            <field name="chuyen_nganh">Kỹ thuật Phần mềm</field>
+        </record>
+
+        <record id="nhan_vien_dev1" model="nhan_vien">
+            <field name="ma_dinh_danh">NV003</field>
+            <field name="ten_nhan_vien">Lê Văn Cường</field>
+            <field name="chuc_vu">Lập trình viên Backend</field>
+            <field name="email">cuong.lv@dnu.edu.vn</field>
+            <field name="ngay_sinh">1998-11-02</field>
+            <field name="que_quan">Thanh Hóa</field>
+            <field name="chuyen_nganh">Hệ thống Thông tin</field>
+        </record>
+
+        <record id="nhan_vien_dev2" model="nhan_vien">
+            <field name="ma_dinh_danh">NV004</field>
+            <field name="ten_nhan_vien">Phạm Minh Tuấn</field>
+            <field name="chuc_vu">Lập trình viên Frontend</field>
+            <field name="email">tuan.pm@dnu.edu.vn</field>
+            <field name="ngay_sinh">2000-02-14</field>
+            <field name="que_quan">Nam Định</field>
+            <field name="chuyen_nganh">Thiết kế Đa phương tiện</field>
+        </record>
+
+        <record id="nhan_vien_qa" model="nhan_vien">
+            <field name="ma_dinh_danh">NV005</field>
+            <field name="ten_nhan_vien">Hoàng Thu Thủy</field>
+            <field name="chuc_vu">Kiểm thử viên (QA)</field>
+            <field name="email">thuy.ht@dnu.edu.vn</field>
+            <field name="ngay_sinh">1999-07-30</field>
+            <field name="que_quan">Ninh Bình</field>
+            <field name="chuyen_nganh">Đảm bảo Chất lượng Phần mềm</field>
+        </record>
+    </data>
+</odoo>

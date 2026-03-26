@@ -1,16 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <data>
-        <menuitem
-            id="menu_root"
-            name="QLNS"
-            sequence="0"/>
-          
-        <menuitem name="Quản lý nhân viên" 
-            id="menu_nhan_vien" 
-            parent="menu_root" 
-            sequence="1"
-            action="action_nhan_vien"
-        />
-    </data>
+    <record id="view_nhan_vien_form" model="ir.ui.view">
+        <field name="name">nhan_vien.form</field>
+        <field name="model">nhan_vien</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <div class="oe_title">
+                        <label for="ten_nhan_vien" class="oe_edit_only" string="Tên nhân viên"/>
+                        <h1><field name="ten_nhan_vien" placeholder="Ví dụ: Nguyễn Văn A"/></h1>
+                    </div>
+                    <group>
+                        <group string="Thông tin công việc">
+                            <field name="ma_dinh_danh"/>
+                            <field name="chuc_vu"/>
+                            <field name="ngay_vao_lam"/>
+                        </group>
+                        <group string="Trình độ &amp; Liên hệ">
+                            <field name="bang_cap"/>
+                            <field name="chuyen_nganh"/>
+                            <field name="email"/>
+                            <field name="so_dien_thoai"/>
+                        </group>
+                    </group>
+                    <group string="Thông tin cá nhân">
+                        <field name="ngay_sinh"/>
+                        <field name="que_quan"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_nhan_vien_tree" model="ir.ui.view">
+        <field name="name">nhan_vien.tree</field>
+        <field name="model">nhan_vien</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="ma_dinh_danh"/>
+                <field name="ten_nhan_vien"/>
+                <field name="chuc_vu"/>
+                <field name="email"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="action_nhan_vien" model="ir.actions.act_window">
+        <field name="name">Nhân viên</field>
+        <field name="res_model">nhan_vien</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Tạo nhân viên đầu tiên của bạn!
+            </p>
+        </field>
+    </record>
+
+    <menuitem id="menu_nhan_su_root" name="QLNS" sequence="10"/>
+
+    <menuitem id="menu_nhan_vien" 
+              name="Nhân viên" 
+              parent="menu_nhan_su_root" 
+              action="action_nhan_vien" 
+              sequence="10"/>
 </odoo>

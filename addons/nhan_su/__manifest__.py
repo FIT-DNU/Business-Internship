@@ -27,9 +27,12 @@
         'security/ir.model.access.csv',
         'views/nhan_vien.xml',
         'views/menu.xml',
+        'data/demo_data.xml',
     ],
     # only loaded in demonstration mode
     'demo': [
         'demo/demo.xml',
     ],
+    'application': True,
+    'installable': True,
 }
