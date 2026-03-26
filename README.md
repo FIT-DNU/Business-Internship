@@ -49,7 +49,20 @@ Dự án này là một giải pháp quản trị doanh nghiệp tập trung, k�
      ├── views/              # Dashboard, Kanban, Biểu đồ ngân sách
      └── data/               # Kịch bản dự án mẫu (Core Banking, ERP)
 ```
-## 4. Chạy hệ thống và cài đặt các ứng dụng cần thiết
+### 4. Chạy hệ thống và cài đặt các ứng dụng cần thiết
 
 Người sử dụng truy cập theo đường dẫn _http://localhost:8069/_ để đăng nhập vào hệ thống.
-   
+
+## 🚀 Hướng dẫn cài đặt & Chạy thử  
+1. Sao chép hai thư mục `nhan_su` và `quan_ly_du_an` vào thư mục `addons` của Odoo.
+2. Cài đặt module `nhan_su` trước để thiết lập nền tảng nhân sự.
+3. Cài đặt module `quan_ly_du_an` để kích hoạt tính năng quản trị dự án.
+4. Để nạp dữ liệu mẫu và kiểm tra các tính năng Dashboard, hãy chạy lệnh nâng cấp module:
+```
+./odoo-bin -c odoo.conf -u nhan_su,quan_ly_du_an
+```
+
+## 📊 Dữ liệu mẫu (Demo Data)  
+Hệ thống đi kèm với bộ dữ liệu mẫu bao gồm:
+   * 05 nhân sự với các cấp bậc: Trưởng phòng, Trưởng nhóm, Developer, QA.
+   * 02 kịch bản dự án: Dự án Core Banking (1.5 tỷ) và Dự án Landing Page (80 triệu).
