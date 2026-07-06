@@ -1,53 +1,83 @@
-# sphinx build directories
-_build/
-
-# dotfiles
-.*
-!.gitignore
-!.github
-!.mailmap
-# compiled python files
-*.py[co]
+# Python
 __pycache__/
-# setup.py egg_info
-*.egg-info
-# emacs backup files
-*~
-# hg stuff
-*.orig
-status
-# odoo filestore
-odoo/filestore
-# maintenance migration scripts
-odoo/addons/base/maintenance
-# window installation config file
-/odoo.conf
+*.py[cod]
+*.pyo
+*.pyd
 
-# generated for windows installer?
-install/win32/*.bat
-install/win32/meta.py
+# Virtual environment
+venv/
+.venv/
+env/
 
-# needed only when building for win32
-setup/win32/static/less/
-setup/win32/static/wkhtmltopdf/
-setup/win32/static/postgresql*.exe
+# Odoo local/runtime
+*.log
+*.pid
+sessions/
+filestore/
+*.dump
+*.sql
 
-# js tooling
-node_modules
-jsconfig.json
-tsconfig.json
-package-lock.json
-package.json
-.husky
+# Local config
+odoo.conf
+*.conf.local
 
-# various virtualenv
-/bin/
-/build/
-/dist/
-/include/
-/lib/
-/man/
-/share/
-/src/
-/venv/
-/venv_15_01/
+# Editor
+.vscode/
+.idea/
+
+# Backup
+*.bak
+*.tmp
+EOFcat > docs/sprint/backlog.md <<'EOF'
+# Backlog và kế hoạch phát triển
+
+## 1. Product Backlog
+
+| STT | Chức năng | Mức ưu tiên | Trạng thái |
+|---|---|---|---|
+| 1 | Cài đặt môi trường Odoo 15 | Cao | Hoàn thành |
+| 2 | Tích hợp module Quản lý nhân sự | Cao | Hoàn thành |
+| 3 | Tích hợp module Quản lý dự án | Cao | Hoàn thành |
+| 4 | Tích hợp module Quản lý công việc | Cao | Hoàn thành |
+| 5 | Sửa xung đột module nhân sự cũ | Cao | Hoàn thành |
+| 6 | Chuẩn hóa dữ liệu nhân viên làm dữ liệu gốc | Cao | Hoàn thành |
+| 7 | Gắn nhân viên vào dự án | Cao | Hoàn thành |
+| 8 | Gắn nhân viên vào công việc | Cao | Hoàn thành |
+| 9 | Tự động kiểm tra nhân viên công việc thuộc dự án | Trung bình | Hoàn thành |
+| 10 | Tạo module AI sinh công việc từ mô tả dự án | Cao | Hoàn thành |
+| 11 | Tạo wizard preview trước khi ghi task thật | Cao | Hoàn thành |
+| 12 | Viết README hướng dẫn chạy | Cao | Hoàn thành |
+| 13 | Viết tài liệu business flow | Cao | Hoàn thành |
+| 14 | Viết báo cáo bài tập lớn | Cao | Đang thực hiện |
+| 15 | Làm poster/video giới thiệu | Trung bình | Chưa thực hiện |
+
+## 2. Sprint 1 - Khởi tạo và audit
+
+- Clone mã nguồn Odoo.
+- Cài môi trường Python, PostgreSQL, Odoo.
+- Chạy thử hệ thống.
+- Audit mã nguồn cũ.
+- Xác định module bị xung đột.
+
+## 3. Sprint 2 - Tích hợp nghiệp vụ chính
+
+- Tích hợp HRM với dự án.
+- Tích hợp dự án với công việc.
+- Chuẩn hóa dữ liệu nhân viên.
+- Kiểm thử tạo dự án và phân công nhân viên.
+
+## 4. Sprint 3 - Cải tiến nâng cao bằng AI
+
+- Tạo module `quan_ly_ai`.
+- Gọi Ollama/Qwen2.5 cục bộ.
+- Sinh task từ mô tả dự án.
+- Hiển thị preview cho quản lý duyệt.
+- Ghi task thật vào model `cong_viec`.
+
+## 5. Sprint 4 - Hoàn thiện nộp bài
+
+- Viết README.
+- Viết sơ đồ luồng nghiệp vụ.
+- Viết báo cáo.
+- Push source lên GitHub.
+- Chuẩn bị demo.

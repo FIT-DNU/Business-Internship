@@ -1,123 +1,37 @@
-# AUDIT CODE - K16
+# Audit mã nguồn ban đầu
 
-## Đề tài
+## 1. Mục tiêu
 
-Quản lý dự án và quản lý công việc.
+Dự án được phát triển dựa trên các module Odoo có sẵn, sau đó tái cấu trúc và mở rộng để đáp ứng yêu cầu bài tập lớn.
 
----
+Module chính:
 
-# Module hiện có
+- `quan_ly_nhan_su`: Quản lý nhân sự.
+- `quan_ly_du_an`: Quản lý dự án.
+- `quan_ly_cong_viec`: Quản lý công việc.
+- `quan_ly_ai`: AI hỗ trợ sinh công việc từ mô tả dự án.
 
-## 1. Quản lý nhân sự
+## 2. Vấn đề phát hiện
 
-### Chức năng
+- Có module nhân sự cũ `nhan_su` gây xung đột với module `quan_ly_nhan_su`.
+- Có trùng model `nhan_vien`.
+- Một số file Python bị lỗi tab/space.
+- Quy trình HRM - Dự án - Công việc chưa được mô tả rõ.
+- Chưa có tính năng AI/API nâng cao.
 
-- Quản lý nhân viên
-- Chức vụ
-- Phòng ban
-- Nhóm dự án
-- Lịch sử làm việc
+## 3. Hướng xử lý
 
-### Đánh giá
+- Vô hiệu hóa module nhân sự cũ.
+- Dùng `quan_ly_nhan_su` làm dữ liệu gốc.
+- Tích hợp nhân viên HRM vào dự án và công việc.
+- Sửa lỗi indentation trong module công việc.
+- Bổ sung module `quan_ly_ai` dùng Ollama/Qwen2.5 để sinh công việc.
 
-✔ CRUD đầy đủ
+## 4. Kết quả
 
-Thiếu
-
-- Avatar
-- Import Excel
-- Dashboard
-
----
-
-## 2. Quản lý dự án
-
-### Chức năng
-
-- CRUD dự án
-- Người phụ trách
-- Thành viên
-- Giai đoạn
-- Ngân sách
-- Chi phí
-- Tài nguyên
-
-### Đánh giá
-
-✔ Hoạt động tốt
-
-Thiếu
-
-- Progress tự tính
-- Deadline Warning
-- KPI
-
----
-
-## 3. Quản lý công việc
-
-### Chức năng
-
-- CRUD công việc
-- Nhật ký
-- Đánh giá nhân viên
-
-### Đánh giá
-
-✔ Hoạt động
-
-Thiếu
-
-- Phân công thông minh
-- Workflow
-- Notification
-
----
-
-# Kiến trúc
-
-HRM
-
-↓
-
-Project
-
-↓
-
-Task
-
-↓
-
-Evaluation
-
----
-
-# Điểm mạnh
-
-- Module tách rõ
-- Dữ liệu liên kết
-- Có nhiều relation
-
----
-
-# Điểm yếu
-
-- Thiếu Automation
-- Thiếu Dashboard
-- Thiếu AI
-- Thiếu External API
-- Progress nhập tay
-- Chưa có Notification
-# GAP ANALYSIS
-
-| Chức năng | K16 | K17 |
-|------------|------|------|
-| CRUD HRM | ✔ | ✔ |
-| CRUD Project | ✔ | ✔ |
-| CRUD Task | ✔ | ✔ |
-| Progress tự động | ✘ | ✔ |
-| Status tự động | ✘ | ✔ |
-| Deadline Notification | ✘ | ✔ |
-| Telegram | ✘ | ✔ |
-| AI Planning | ✘ | ✔ |
-| Dashboard | ✘ | ✔ |
+- Hệ thống chạy trên Odoo 15.
+- Dữ liệu nhân sự được dùng làm dữ liệu gốc.
+- Dự án có nhân viên tham gia.
+- Công việc được phân công cho nhân viên.
+- AI có thể sinh danh sách công việc từ mô tả dự án.
+- Quản lý có thể duyệt task AI trước khi tạo task thật.
