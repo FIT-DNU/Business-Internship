@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="view_du_an_form_ai_extend" model="ir.ui.view">
+        <field name="name">du_an.form.ai.extend</field>
+        <field name="model">du_an</field>
+        <field name="inherit_id" ref="quan_ly_du_an.view_du_an_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//form/sheet" position="before">
+                <header>
+                    <button name="action_open_ai_generate_task_wizard"
+                            string="🤖 AI Tạo Công Việc"
+                            type="object"
+                            class="btn-primary"
+                            attrs="{'invisible': [('id', '=', False)]}"/>
+                </header>
+            </xpath>
+        </field>
+    </record>
+</odoo>

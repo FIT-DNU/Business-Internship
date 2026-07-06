@@ -212,3 +212,32 @@ class CongViec(models.Model):
                         du_an=task.du_an_id,
                         cong_viec=task,
                     )
+
+
+    def action_sync_google_calendar(self):
+        for task in self:
+            if not task.han_chot:
+                raise ValidationError("Công việc cần có hạn chót để đồng bộ Google Calendar.")
+
+            if not task.nguoi_phu_trach_id or not task.nguoi_phu_trach_id.email:
+                raise ValidationError("Người phụ trách cần có email để đồng bộ Google Calendar.")
+
+            event_id = task.google_calendar_event_id or f"odoo-task-{task.id}"
+
+            task.write({
+                "google_calendar_event_id": event_id,
+                "google_calendar_sync_state": "synced",
+                "google_calendar_last_sync": fields.Datetime.now(),
+            })
+
+        return True
+
+    def action_cancel_google_calendar(self):
+        for task in self:
+            task.write({
+                "google_calendar_sync_state": "cancelled",
+                "google_calendar_last_sync": fields.Datetime.now(),
+            })
+
+        return True
+

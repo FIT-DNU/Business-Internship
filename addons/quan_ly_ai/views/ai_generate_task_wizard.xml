@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="view_ai_generate_task_wizard_form" model="ir.ui.view">
+        <field name="name">ai.generate.task.wizard.form</field>
+        <field name="model">ai.generate.task.wizard</field>
+        <field name="arch" type="xml">
+            <form string="AI Tạo Công Việc">
+                <sheet>
+                    <group>
+                        <field name="project_id"/>
+                        <field name="note" nolabel="1"/>
+                    </group>
+
+                    <group>
+                        <button name="action_generate_tasks"
+                                string="Sinh gợi ý AI"
+                                type="object"
+                                class="btn-primary"/>
+                    </group>
+
+                    <separator string="Danh sách công việc AI đề xuất"/>
+
+                    <field name="task_line_ids" nolabel="1">
+                        <tree editable="bottom">
+                            <field name="selected"/>
+                            <field name="title"/>
+                            <field name="priority"/>
+                            <field name="estimated_days"/>
+                            <field name="responsible_id"/>
+                            <field name="description"/>
+                        </tree>
+                    </field>
+
+                    <notebook>
+                        <page string="Phản hồi gốc từ AI">
+                            <field name="ai_raw_response" nolabel="1"/>
+                        </page>
+                    </notebook>
+                </sheet>
+
+                <footer>
+                    <button name="action_create_tasks"
+                            string="Tạo công việc"
+                            type="object"
+                            class="btn-primary"/>
+                    <button string="Đóng"
+                            class="btn-secondary"
+                            special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+</odoo>

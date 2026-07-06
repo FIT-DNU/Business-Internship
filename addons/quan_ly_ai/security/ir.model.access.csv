@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_ai_generate_task_wizard,access_ai_generate_task_wizard,model_ai_generate_task_wizard,,1,1,1,1
+access_ai_generate_task_line,access_ai_generate_task_line,model_ai_generate_task_line,,1,1,1,1
