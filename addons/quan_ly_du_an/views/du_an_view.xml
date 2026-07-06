@@ -13,8 +13,8 @@
                 <field name="ten_du_an"/>
                 <field name="nguoi_phu_trach_id"/>
                 <field name="nhan_vien_ids" widget="many2many_tags"/>
-                <field name="tien_do_du_an"/>
-                <field name="phan_tram_du_an" widget="progressbar"/>
+                <field name="tien_do_du_an" readonly="1"/>
+                <field name="phan_tram_du_an" readonly="1"/>
             </tree>
         </field>
     </record>
