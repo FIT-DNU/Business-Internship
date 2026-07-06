@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="view_nhan_vien_tree" model="ir.ui.view">
+        <field name="name">view.nhan.vien.tree</field>
+        <field name="model">nhan_vien</field>
+        <field name="arch" type="xml">
+            <tree string="Danh sách nhân viên">
+                <field name="ma_dinh_danh"/>
+                <field name="ho_va_ten"/>
+                <field name="ngay_sinh"/>
+                <field name="email"/>
+                <field name="gioi_tinh"/>
+                <field name="chuc_vu_id"/>
+                <field name="phong_ban_id"/>
+                <field name="so_dien_thoai"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_nhan_vien_form" model="ir.ui.view">
+        <field name="name">view.nhan.vien.form</field>
+        <field name="model">nhan_vien</field>
+        <field name="arch" type="xml">
+            <form string="Thông tin nhân viên">
+                <sheet>
+                    <div class="oe_button_box" name="button_box">
+                        <field name="image" widget="image" class="oe_avatar"/>
+                    </div>
+                    <group>
+                        <group>
+                            <field name="ma_dinh_danh"/>
+                            <field name="ho_ten_dem"/>
+                            <field name="ten"/>
+                            <field name="ho_va_ten" readonly="1"/>
+                            <field name="chuc_vu_id"/>
+                            <field name="phong_ban_id"/>
+                        </group>
+                        <group>
+                            <field name="ngay_sinh"/>
+                            <field name="que_quan"/>
+                            <field name="email"/>
+                            <field name="gioi_tinh"/>
+                            <field name="so_dien_thoai"/>
+                        </group>
+                    </group>
+                    <notebook>
+                        <page string="Lịch sử làm việc">
+                            <field name="lich_su_lam_viec_ids">
+                                <tree>
+                                    <field name="ten_cong_viec"/>
+                                    <field name="chuc_vu_id"/>
+                                    <field name="phong_ban_id"/>
+                                    <field name="ngay_bat_dau"/>
+                                    <field name="ngay_ket_thuc"/>
+                                </tree>
+                            </field>
+                        </page>
+                        <page string="Nhóm Dự Án">
+                            <field name="nhom_du_an_ids" widget="many2many_tags"/>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+   <record id="view_nhan_vien_search" model="ir.ui.view">
+        <field name="name">view.nhan.vien.search</field>
+        <field name="model">nhan_vien</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="ma_dinh_danh"/>
+                <field name="ho_va_ten"/>
+                <field name="email"/>
+                <field name="so_dien_thoai"/>
+                <filter string="Nam" name="nam" domain="[('gioi_tinh', '=', 'nam')]"/>
+                <filter string="Nữ" name="nu" domain="[('gioi_tinh', '=', 'nu')]"/>
+                <searchpanel>
+                    <field name="chuc_vu_id" select="multi"/>
+                    <field name="phong_ban_id" select="multi"/>
+                    <field name="nhom_du_an_ids" select="multi"/>
+                </searchpanel>
+            </search>
+        </field>
+    </record>
+
+    <record id="action_nhan_vien" model="ir.actions.act_window">
+        <field name="name">Nhân Viên</field>
+        <field name="res_model">nhan_vien</field>
+        <field name="view_mode">tree,form</field>
+        <field name="search_view_id" ref="view_nhan_vien_search"/>
+    </record>
+</odoo>
+
+
+
+
+

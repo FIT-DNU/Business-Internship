@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="view_chuc_vu_tree" model="ir.ui.view">
+            <field name="name">chuc.vu.tree</field>
+            <field name="model">chuc_vu</field>
+            <field name="arch" type="xml">
+                <tree string="Danh sách Chức vụ">
+                    <field name="ma_chuc_vu"/>
+                    <field name="ten_chuc_vu"/>
+                    <field name="mo_ta"/>
+                </tree>
+            </field>
+        </record>
+        <record id="view_chuc_vu_form" model="ir.ui.view">
+            <field name="name">chuc.vu.form</field>
+            <field name="model">chuc_vu</field>
+            <field name="arch" type="xml">
+                <form string="Chi tiết Chức vụ">
+                    <sheet>
+                        <group>
+                            <field name="ma_chuc_vu"/>
+                            <field name="ten_chuc_vu"/>
+                            <field name="mo_ta"/>
+                        </group>
+                        <group>
+                            <field name="nhan_vien_ids" widget="many2many_tags"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="action_chuc_vu" model="ir.actions.act_window">
+            <field name="name">Chức vụ</field>
+            <field name="res_model">chuc_vu</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+    </data>
+</odoo>
+
+
+
+
+

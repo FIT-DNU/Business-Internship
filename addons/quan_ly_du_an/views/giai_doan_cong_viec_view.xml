@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="view_giai_doan_cong_viec_tree" model="ir.ui.view">
+        <field name="name">giai_doan_cong_viec.tree</field>
+        <field name="model">giai_doan_cong_viec</field>
+        <field name="arch" type="xml">
+            <tree string="Giai đoạn">
+                <field name="ten_giai_doan"/>
+                <field name="thu_tu"/>
+                <field name="du_an_id"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_giai_doan_cong_viec_form" model="ir.ui.view">
+        <field name="name">giai_doan_cong_viec.form</field>
+        <field name="model">giai_doan_cong_viec</field>
+        <field name="arch" type="xml">
+            <form string="Giai đoạn">
+                <sheet>
+                    <group>
+                        <field name="ten_giai_doan"/>
+                        <field name="thu_tu"/>
+                        <field name="du_an_id"/>
+                    </group>
+                    <group>
+                        <field name="mo_ta"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_giai_doan_cong_viec" model="ir.actions.act_window">
+        <field name="name">Giai Đoạn Công Việc</field>
+        <field name="res_model">giai_doan_cong_viec</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+</odoo>
+
+

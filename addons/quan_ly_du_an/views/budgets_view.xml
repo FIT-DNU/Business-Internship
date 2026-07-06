@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="view_budgets_tree" model="ir.ui.view">
+        <field name="name">budgets.tree</field>
+        <field name="model">budgets</field>
+        <field name="arch" type="xml">
+            <tree string="Ngân sách">
+                <field name="budgets_id"/>
+                <field name="budgets_name"/>
+                <field name="du_an_id"/>
+                <field name="budget_planned"/>
+                <field name="budget_spent"/>
+                <field name="budget_difference"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_budgets_form" model="ir.ui.view">
+        <field name="name">budgets.form</field>
+        <field name="model">budgets</field>
+        <field name="arch" type="xml">
+            <form string="Ngân sách">
+                <sheet>
+                    <group>
+                        <field name="budgets_id"/>
+                        <field name="budgets_name"/>
+                        <field name="du_an_id"/>
+                    </group>
+                    <group>
+                        <field name="budget_planned"/>
+                        <field name="budget_allocated"/>
+                        <field name="budget_reserved"/>
+                        <field name="budget_spent"/>
+                        <field name="budget_difference"/>
+                    </group>
+                    <group>
+                        <field name="expense_ids">
+                            <tree>
+                                <field name="expenses_name"/>
+                                <field name="amount"/>
+                                <field name="date"/>
+                            </tree>
+                        </field>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_budgets" model="ir.actions.act_window">
+        <field name="name">Ngân Sách</field>
+        <field name="res_model">budgets</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+</odoo>
+
+
+
+
+

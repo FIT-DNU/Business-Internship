@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="view_thong_bao_noi_bo_tree" model="ir.ui.view">
+        <field name="name">thong_bao_noi_bo.tree</field>
+        <field name="model">thong_bao_noi_bo</field>
+        <field name="arch" type="xml">
+            <tree string="Thông Báo Nội Bộ" decoration-muted="trang_thai == 'read'">
+                <field name="create_date"/>
+                <field name="name"/>
+                <field name="nhan_vien_id"/>
+                <field name="loai"/>
+                <field name="trang_thai"/>
+                <field name="du_an_id"/>
+                <field name="cong_viec_id"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_thong_bao_noi_bo_form" model="ir.ui.view">
+        <field name="name">thong_bao_noi_bo.form</field>
+        <field name="model">thong_bao_noi_bo</field>
+        <field name="arch" type="xml">
+            <form string="Thông Báo Nội Bộ">
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="nhan_vien_id"/>
+                        <field name="loai"/>
+                        <field name="trang_thai"/>
+                    </group>
+                    <group>
+                        <field name="du_an_id"/>
+                        <field name="cong_viec_id"/>
+                    </group>
+                    <group>
+                        <field name="noi_dung"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_thong_bao_noi_bo" model="ir.actions.act_window">
+        <field name="name">Thông Báo Nội Bộ</field>
+        <field name="res_model">thong_bao_noi_bo</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+</odoo>

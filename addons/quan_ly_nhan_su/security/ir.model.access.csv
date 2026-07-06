@@ -1,0 +1,11 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_chuc_vu,chuc_vu.chuc_vu,model_chuc_vu,base.group_user,1,1,1,1
+access_phong_ban,phong_ban.phong_ban,model_phong_ban,base.group_user,1,1,1,1
+access_nhan_vien,nhan_vien.nhan_vien,model_nhan_vien,base.group_user,1,1,1,1
+access_lich_su_lam_viec,lich_su_lam_viec.lich_su_lam_viec,model_lich_su_lam_viec,base.group_user,1,1,1,1
+access_nhom_du_an,nhom_du_an.nhom_du_an,model_nhom_du_an,base.group_user,1,1,1,1
+
+
+
+
+

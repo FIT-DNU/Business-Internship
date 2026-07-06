@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <!-- Extend view du_an.form để thêm tab Công Việc và Đánh Giá Nhân Viên -->
+    <record id="view_du_an_form_extend" model="ir.ui.view">
+        <field name="name">du_an.form.extend</field>
+        <field name="model">du_an</field>
+        <field name="inherit_id" ref="quan_ly_du_an.view_du_an_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//notebook" position="inside">
+                <page string="Công Việc">
+                    <field name="cong_viec_ids">
+                        <tree>
+                            <field name="ma_cong_viec"/>
+                            <field name="ten_cong_viec"/>
+                            <field name="status"/>
+                            <field name="phan_tram_cong_viec" widget="progressbar"/>
+                        </tree>
+                    </field>
+                </page>
+                <page string="Đánh Giá Nhân Viên">
+                    <field name="danh_gia_nhan_vien_ids">
+                        <tree>
+                            <field name="nhan_vien_id"/>
+                            <field name="diem_so"/>
+                            <field name="nhan_xet"/>
+                            <field name="ngay_danh_gia"/>
+                        </tree>
+                    </field>
+                </page>
+            </xpath>
+        </field>
+    </record>
+    
+    <!-- Extend view giai_doan_cong_viec.form để thêm field cong_viec_ids -->
+    <record id="view_giai_doan_cong_viec_form_extend" model="ir.ui.view">
+        <field name="name">giai_doan_cong_viec.form.extend</field>
+        <field name="model">giai_doan_cong_viec</field>
+        <field name="inherit_id" ref="quan_ly_du_an.view_giai_doan_cong_viec_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//group[field[@name='mo_ta']]" position="after">
+                <group>
+                    <field name="cong_viec_ids">
+                        <tree>
+                            <field name="ma_cong_viec"/>
+                            <field name="ten_cong_viec"/>
+                            <field name="status"/>
+                        </tree>
+                    </field>
+                </group>
+            </xpath>
+        </field>
+    </record>
+</odoo>
+

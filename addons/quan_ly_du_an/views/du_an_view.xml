@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="view_du_an_tree" model="ir.ui.view">
+        <field name="name">du_an.tree</field>
+        <field name="model">du_an</field>
+        <field name="arch" type="xml">
+            <tree string="Dự Án" 
+                decoration-info="tien_do_du_an == 'chua_bat_dau'"
+                decoration-success="tien_do_du_an == 'dang_thuc_hien'"
+                decoration-muted="tien_do_du_an == 'hoan_thanh'"
+                decoration-danger="tien_do_du_an == 'tam_dung'">
+                <field name="ma_du_an"/>
+                <field name="ten_du_an"/>
+                <field name="nguoi_phu_trach_id"/>
+                <field name="nhan_vien_ids" widget="many2many_tags"/>
+                <field name="tien_do_du_an"/>
+                <field name="phan_tram_du_an" widget="progressbar"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_du_an_form" model="ir.ui.view">
+        <field name="name">du_an.form</field>
+        <field name="model">du_an</field>
+        <field name="arch" type="xml">
+            <form string="Dự Án">
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="ma_du_an"/>
+                            <field name="ten_du_an"/>
+                            <field name="nguoi_phu_trach_id"/>
+                            <field name="nhan_vien_ids" widget="many2many_tags"/>
+                        </group>
+                        <group>
+                            <field name="ngay_bat_dau"/>
+                            <field name="ngay_ket_thuc_du_kien"/>
+                            <field name="ngay_ket_thuc_thuc_te"/>
+                            <field name="tien_do_du_an"/>
+                            <field name="phan_tram_du_an" widget="progressbar"/>
+                        </group>
+                    </group>
+                    <group>
+                        <field name="mo_ta" placeholder="Mô tả dự án..."/>
+                    </group>
+                    <group>
+                        <field name="ly_do_huy_bo" 
+                               attrs="{'invisible': [('tien_do_du_an', '!=', 'huy_bo')]}"
+                               placeholder="Nhập lý do hủy bỏ..."/>
+                    </group>
+
+                    <notebook>
+                        <page string="Ngân Sách">
+                            <field name="budget_ids">
+                                <tree>
+                                    <field name="budgets_id"/>
+                                    <field name="budgets_name"/>
+                                    <field name="budget_planned"/>
+                                    <field name="budget_spent"/>
+                                    <field name="budget_difference"/>
+                                </tree>
+                            </field>
+                        </page>
+                        <page string="Tài Nguyên">
+                            <field name="tai_nguyen_ids">
+                                <tree>
+                                    <field name="ten_tai_nguyen"/>
+                                    <field name="so_luong"/>
+                                    <field name="don_vi"/>
+                                </tree>
+                            </field>
+                        </page>
+                        <page string="Giai Đoạn">
+                            <field name="giai_doan_ids">
+                                <tree>
+                                    <field name="ten_giai_doan"/>
+                                    <field name="thu_tu"/>
+                                </tree>
+                            </field>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_du_an" model="ir.actions.act_window">
+        <field name="name">Dự Án</field>
+        <field name="res_model">du_an</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+</odoo>
+
+

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="view_cong_viec_tree" model="ir.ui.view">
+        <field name="name">cong_viec.tree</field>
+        <field name="model">cong_viec</field>
+        <field name="arch" type="xml">
+            <tree string="Công Việc" 
+                decoration-info="status == 'not_started'"
+                decoration-success="status == 'in_progress'"
+                decoration-muted="status == 'completed'"
+                decoration-danger="status == 'delayed'">
+                <field name="ma_cong_viec"/>
+                <field name="ten_cong_viec"/>
+                <field name="du_an_id"/>
+                <field name="nhan_vien_ids" widget="many2many_tags"/>
+                <field name="priority"/>
+                <field name="status"/>
+                <field name="phan_tram_cong_viec" widget="progressbar"/>
+                <field name="han_chot"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_cong_viec_form" model="ir.ui.view">
+        <field name="name">cong_viec.form</field>
+        <field name="model">cong_viec</field>
+        <field name="arch" type="xml">
+            <form string="Công Việc">
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="ma_cong_viec"/>
+                            <field name="ten_cong_viec"/>
+                            <field name="du_an_id"/>
+                            <field name="giai_doan_id"/>
+                            <field name="nguoi_phu_trach_id"/>
+                        </group>
+                        <group>
+                            <field name="ngay_bat_dau"/>
+                            <field name="han_chot"/>
+                            <field name="priority"/>
+                            <field name="status"/>
+                            <field name="phan_tram_cong_viec" widget="progressbar"/>
+                        </group>
+                    </group>
+                    <group>
+                        <field name="nhan_vien_ids" widget="many2many_tags"/>
+                    </group>
+                    <group>
+                        <field name="mo_ta" placeholder="Mô tả công việc..."/>
+                    </group>
+                    <group>
+                        <field name="ly_do_huy_bo" 
+                               attrs="{'invisible': [('status', '!=', 'cancelled')]}"
+                               placeholder="Nhập lý do hủy bỏ..."/>
+                    </group>
+
+                    <notebook>
+                        <page string="Nhật Ký Công Việc">
+                            <field name="nhat_ky_cong_viec_ids">
+                                <tree>
+                                    <field name="ngay_thuc_hien"/>
+                                    <field name="nhan_vien_ids" widget="many2many_tags"/>
+                                    <field name="muc_do"/>
+                                    <field name="trang_thai"/>
+                                </tree>
+                            </field>
+                        </page>
+                        <page string="Đánh Giá Nhân Viên">
+                            <field name="danh_gia_nhan_vien_ids">
+                                <tree>
+                                    <field name="nhan_vien_id"/>
+                                    <field name="diem_so"/>
+                                    <field name="nhan_xet"/>
+                                    <field name="ngay_danh_gia"/>
+                                </tree>
+                            </field>
+                        </page>
+                        <page string="Chi Phí">
+                            <field name="expense_ids">
+                                <tree>
+                                    <field name="expenses_name"/>
+                                    <field name="amount"/>
+                                    <field name="date"/>
+                                </tree>
+                            </field>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_cong_viec" model="ir.actions.act_window">
+        <field name="name">Công Việc</field>
+        <field name="res_model">cong_viec</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+</odoo>
+
+
+
+
+

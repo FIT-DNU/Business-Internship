@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <menuitem
+            id="menu_root"
+            name="Quản Lý Công Việc"
+            sequence="20"/>
+
+        <menuitem name="Công Việc" 
+            id="menu_cong_viec" 
+            parent="menu_root" 
+            sequence="1"
+            action="action_cong_viec"
+        />
+
+        <menuitem name="Nhật Ký Công Việc"
+            id="menu_nhat_ky_cong_viec"
+            parent="menu_root"
+            sequence="2"
+            action="action_nhat_ky_cong_viec"/>
+
+        <menuitem name="Đánh Giá Nhân Viên"
+            id="menu_danh_gia_nhan_vien"
+            parent="menu_root"
+            sequence="3"
+            action="action_danh_gia_nhan_vien"/>
+
+    </data>
+</odoo>
+
+
+
+
+

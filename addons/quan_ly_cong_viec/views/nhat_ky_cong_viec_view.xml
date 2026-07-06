@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="view_nhat_ky_cong_viec_tree" model="ir.ui.view">
+        <field name="name">nhat_ky_cong_viec.tree</field>
+        <field name="model">nhat_ky_cong_viec</field>
+        <field name="arch" type="xml">
+            <tree string="Nhật Ký Công Việc">
+                <field name="cong_viec_id"/>
+                <field name="du_an_id"/>
+                <field name="nhan_vien_ids" widget="many2many_tags"/>
+                <field name="ngay_thuc_hien"/>
+                <field name="muc_do"/>
+                <field name="trang_thai"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_nhat_ky_cong_viec_form" model="ir.ui.view">
+        <field name="name">nhat_ky_cong_viec.form</field>
+        <field name="model">nhat_ky_cong_viec</field>
+        <field name="arch" type="xml">
+            <form string="Nhật Ký Công Việc">
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="cong_viec_id"/>
+                            <field name="du_an_id" readonly="1"/>
+                            <field name="giai_doan_id" readonly="1"/>
+                        </group>
+                        <group>
+                            <field name="ngay_thuc_hien"/>
+                            <field name="muc_do"/>
+                            <field name="trang_thai"/>
+                        </group>
+                    </group>
+                    <group>
+                        <field name="nhan_vien_ids" widget="many2many_tags"/>
+                    </group>
+                    <group>
+                        <field name="mo_ta"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_nhat_ky_cong_viec" model="ir.actions.act_window">
+        <field name="name">Nhật Ký Công Việc</field>
+        <field name="res_model">nhat_ky_cong_viec</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+</odoo>
+
+
+
+
+

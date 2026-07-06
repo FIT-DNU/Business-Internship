@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="view_nhom_du_an_tree" model="ir.ui.view">
+        <field name="name">view.nhom.du.an.tree</field>
+        <field name="model">nhom_du_an</field>
+        <field name="arch" type="xml">
+            <tree string="Các Nhóm">
+                <field name="ten_nhom"/>
+                <field name="nhan_vien_ids" widget="many2many_tags"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_nhom_du_an_form" model="ir.ui.view">
+        <field name="name">view.nhom.du.an.form</field>
+        <field name="model">nhom_du_an</field>
+        <field name="arch" type="xml">
+            <form string="Các Nhóm">
+                <sheet>
+                    <group>
+                        <field name="ten_nhom"/>
+                        <field name="mo_ta"/>
+                    </group>
+                    <group>
+                        <field name="nhan_vien_ids" widget="many2many_tags"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_nhom_du_an_search" model="ir.ui.view">
+        <field name="name">view.nhom.du.an.search</field>
+        <field name="model">nhom_du_an</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="ten_nhom"/>
+                <field name="nhan_vien_ids"/>
+            </search>
+        </field>
+    </record>
+
+    <record id="action_nhom_du_an" model="ir.actions.act_window">
+        <field name="name">Nhóm Dự Án</field>
+        <field name="res_model">nhom_du_an</field>
+        <field name="view_mode">tree,form</field>
+        <field name="search_view_id" ref="view_nhom_du_an_search"/>
+    </record>
+</odoo>
+
+
+
+
+

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="view_nhan_vien_tree_extend_workload" model="ir.ui.view">
+        <field name="name">view.nhan.vien.tree.extend.workload</field>
+        <field name="model">nhan_vien</field>
+        <field name="inherit_id" ref="quan_ly_nhan_su.view_nhan_vien_tree"/>
+        <field name="arch" type="xml">
+            <xpath expr="//tree/field[@name='so_dien_thoai']" position="after">
+                <field name="so_cong_viec_dang_lam"/>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="view_nhan_vien_form_extend_workload" model="ir.ui.view">
+        <field name="name">view.nhan.vien.form.extend.workload</field>
+        <field name="model">nhan_vien</field>
+        <field name="inherit_id" ref="quan_ly_nhan_su.view_nhan_vien_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//group/group/field[@name='phong_ban_id']" position="after">
+                <field name="so_cong_viec_dang_lam" readonly="1"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>
