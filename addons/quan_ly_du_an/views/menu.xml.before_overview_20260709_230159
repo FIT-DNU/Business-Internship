@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <menuitem
+            id="menu_root"
+            name="Quản Lý Dự Án"
+            sequence="10"/>
+
+        <menuitem name="Dự Án" 
+            id="menu_du_an" 
+            parent="menu_root" 
+            sequence="1"
+            action="action_du_an"
+        />
+
+        <menuitem name="Giai Đoạn"
+            id="menu_giai_doan"
+            parent="menu_root"
+            sequence="2"
+            action="action_giai_doan_cong_viec"/>
+
+        <menuitem name="Ngân Sách"
+            id="menu_budgets"
+            parent="menu_root"
+            sequence="3"
+            action="action_budgets"/>
+
+        <menuitem name="Chi Phí"
+            id="menu_expenses"
+            parent="menu_root"
+            sequence="4"
+            action="action_expenses"/>
+
+        <menuitem name="Tài Nguyên"
+            id="menu_tai_nguyen"
+            parent="menu_root"
+            sequence="5"
+            action="action_tai_nguyen"/>
+    </data>
+</odoo>
+
+
+
+
+
