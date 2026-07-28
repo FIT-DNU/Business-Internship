@@ -29,7 +29,7 @@
   | Hội Nhập và Quản Trị Phần Mềm Doanh Nghiệp     | Trần Nhật Minh, Trần Đức Duy, Lê Thị Lý, Đỗ Tiến Đạt     | [:octocat:github](https://github.com/NhatMinh1905/HN_QTDN-17-02-N3)                  |         |
   | Hệ Thống Quản Lý Khách Hàng + Văn Bản | Vũ Quang Chung, Nguyễn Thanh Bình, Vũ Tuấn Hiệp   | [:octocat:github](https://github.com/crr45/HN-QTDN-17-02-N4..git)                         |         |
   | Hệ Thống Quản Lý Tài Sản                | Lê Ngọc Minh, Nguyễn Vũ Yến Nhi, Đỗ Khánh Hùng, Nguyễn Quang Trung  | [:octocat:github](https://github.com/YeNhi22/HN-QTDN-17-02-N5.git )        |         |
-  | Hệ Thống Quản Lý Tài Sản Và Phòng Họp              | Tạ Văn Phong, Bùi Trọng Tài, Hoàng Hải Đăng, Nguyễn Phương Nam   | [:octocat:github](httphttps://github.com/TaVanPhong/HN-QTDN-17-02-N6.git)                     |         |
+  | Hệ Thống Quản Lý Tài Sản Và Phòng Họp              | Tạ Văn Phong, Bùi Trọng Tài, Hoàng Hải Đăng, Nguyễn Phương Nam   | [:octocat:github](https://github.com/TaVanPhong/HN-QTDN-17-02-N6.git)                     |         |
   | Quản Lý Khách Hàng + Công Việc    | Nguyễn Trọng Đức, Dương Đức Quyết, Nguyễn Minh Hùng, Nguyễn Chính Việt Anh| [:octocat:github](https://github.com/tphuc2311/HN-QTDN-17-02-N7.git)                     |         |
   | Hệ Thống Chấm Công + Tính Lương| Lò Thanh Bình,Nguyễn Thị Bích Ngọc, Nguyễn Thị Yến, Nguyễn Thanh Bình | [:octocat:github](https://github.com/bngoc04/HN_QTDN_CNTT17_02_N8.git)             |         |
   | Hệ Thống Quản Lý Dự Án + Quản Lý Công Việc | Hạ Thị Hằng, Nguyễn Trung Kiên, Nguyễn Phương Nam, Lê Văn Sinh| [:octocat:github](https://github.com/nambirthday/HN-QTDN-17-02-N9.git)            |         |
