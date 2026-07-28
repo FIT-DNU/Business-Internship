@@ -36,7 +36,7 @@
   | Hệ Thống Quản Lý Tài Sản + Phòng Họp| Hoàng Đức Trung, Phạm Gia Khiêm    | [:octocat:github](https://github.com/ductrungokokokok/HN-QTDN-17-02-N12)                   |         |
  
   
-  - #### CNTT 17-03
+- #### CNTT 17-03
   | Tên đề tài                                  | Người thực hiện                                           | Source code                                                                        | Nổi bật |
   | ------------------------------------------- | --------------------------------------------------------- | ---------------------------------------------------------------------------------- | ------- |
   | Quản lý khách hàng + Quản lý công việc      | Đinh Anh Trúc, Hoàng Minh Quân, Đỗ Thị Phương Thảo, Trương Thị Trang Linh | [:octocat:github](https://github.com/truongthitranglinh/BTL-Odoo-KhachHang-CongViec.git)                    |         |
@@ -53,115 +53,98 @@
 
 
   
-  - #### CNTT 17-04
-  | Tên đề tài                                  | Người thực hiện                                           | Source code                                                                        | Nổi bật |
-  | ------------------------------------------- | --------------------------------------------------------- | ---------------------------------------------------------------------------------- | ------- |
-  | Quản lý khách hàng + Quản lý công việc      | Nguyễn Đào Phúc Nguyên, Đoàn Tuấn Nam, Nguyễn Thị Lan Anh | [:octocat:github](https://github.com/pnguyen1310/TTDN-16-01-N1)                    |         |
-  | Quản lý khách hàng + Quản lý công việc      | Đặng Trường Dương, Lê Ngọc Hưng, Trịnh Hoàng Hà           | [:octocat:github](https://github.com/DangTruongDuong/TTDN-16-01-N7)                |         |
-  | Quản lý khách hàng + Quản lý công việc      | Dương Xuân Thành, Ngô Thành Đạt, Nguyễn Trung Hiếu        | [:octocat:github](https://github.com/thanhdatdzhp/TTDN-16-01-N13)                  |         |
-  | Chấm công + Tính lương                      | Nguyễn Tiến Thái, Nguyễn Việt Đức, Lù Ngọc Tân            | [:octocat:github](https://github.com/mmr-09/TTDN-16-01-N2)                         |         |
-  | Chấm công + Tính lương                      | Lê Đức Mạnh, Đỗ Trường Anh, Phạm Trọng Toàn               | [:octocat:github](https://github.com/manhskillgood/TTDN-16-01-N8)                  |         |
-  | Chấm công + Tính lương                      | Nguyễn Đức Hoàn, Nguyễn Tiến Dũng, Trịnh Kế Quang         | [:octocat:github](https://github.com/duchoan25/TTDN-16-01-N14)                     |         |
-  | Quản lý dự án + Quản lý công việc           | Hồ Quang Huy, Nguyễn Thanh Sơn, Đinh Thế Thành            | [:octocat:github](https://github.com/Tank97king/TTDN-16-01-N3)                     |         |
-  | Quản lý dự án + Quản lý công việc           | Nguyễn Xuân Thuận, Nguyễn Quang Hiệp, Võ Vĩnh Thái        | [:octocat:github](https://github.com/NguyenQuangHiep234/TTDN-16-01-N9)             |         |
-  | Quản lý khách hàng + Quản lý văn bản        | Nguyễn Hữu Huy, Nguyễn Thanh Bình, Đào Thị Phương Long    | [:octocat:github](https://github.com/nguyenthanhbinh0411/TTDN-16-01-N4)            |         |
-  | Quản lý tài sản + Quản lý Tài chính/Kế toán | Phạm Đình Nghĩa, Đỗ Hoàng Quý, Vũ Đức Anh                 | [:octocat:github](https://github.com/dinhnghia204/TTDN-16-01-N5)                   |         |
-  | Quản lý tài sản + Quản lý Tài chính/Kế toán | Đặng Lê Hoàng Anh, Nguyễn Khôi Nguyên, Mai Đức Hoà        | [:octocat:github](https://github.com/danglehoanganh/DangLeHoangAnh-TTDN-16-01-N11) |         |
-  | Quản lý tài sản + Phòng họp                 | Lâm Ngọc Tú, Trịnh Thị Yến Mai, Ngô Văn Kiên              | [:octocat:github](https://github.com/lamngoctuu18/TTDN-16-01-N6.git)               |         |
-  | Quản lý tài sản + Phòng họp                 | Nguyễn Đức Duy, Nguyễn Minh Đức, Lê Thị Mỹ Duyên          | [:octocat:github](https://github.com/nguyenducduy2612/TTDN-16-01-N12)              |         |
-  | Quản lý văn bản + Quản lý khách hàng        | Nguyễn Văn Nguyên, Nguyễn Tất Toàn, Bùi Tuấn Đức          | [:octocat:github](https://github.com/Vnguiien/TTDN-16-01-N10.git)
+- #### CNTT 17-04
+  | Tên đề tài                                  | Người thực hiện                                                           | Source code                                                                           | Nổi bật |
+  | ------------------------------------------- | ------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- | ------- |
+  | Quản lý khách hàng + Quản lý công việc      | Lương Thị Trà My, Trần Minh Nghĩa, Nguyễn Thị Hương Giang, Lưu Trường An  | [:octocat:github](https://github.com/ae-minhhnghia/HN-QTDN-17-04-N1)                  |         |
+  | Chấm công + Tính lương                      | Đoàn Mai Lan, Nguyễn Hải Nam, Ngô Văn Minh, Lương Đức Thành               | [:octocat:github](https://github.com/lanmmmmai/HN-QTDN-17-04-N2)                      |         |
+  | Quản lý dự án + Quản lý công việc           | Nguyễn Xuân Hiếu, Lương Mạnh Chiến, Nguyễn Trung Hiếu, Đàm Minh Vương     | [:octocat:github](https://github.com/hieunguyen962005/HNQTDN-17-04-N3.git)            |         |
+  | Quản lý khách hàng + quản lý văn bản        | Đào Duy Hồng, Nguyễn Mạnh Tuân, Trương Mỹ Hoa, Lưu Hương Giang            | [:octocat:github](https://github.com/duyhong2005/HN-QTDN-17-04-N4)                    |         |
+  | Quản lý tài sản + Quản lý Tài chính/Kế toán | Mai Ngọc Ánh, Vương Thị Nhung, Trần Đức Lương, Nguyễn Thành Lộc           | [:octocat:github](https://github.com/Tranluong2105/HN-QTDN-17-04-N5)                  |         |
+  | Quản lý tài sản + Phòng họp                 | Nguyễn Ngọc Hưng, Lê Đại Gia Kiệt, Lê Đình Chiến, Đỗ Tuấn Anh             | [:octocat:github](https://github.com/dotuananh19/Do_Tuan_Anh_project)                 |         |
+  | Quản lý khách hàng + Quản lý công việc      | Đặng Thị Yến Nhi, Phan Văn Đạt, Vi Minh Đức, Đặng Minh Quang              | [:octocat:github](https://github.com/Duc17017/-HN-QTDN-17_04-N7-Business-Internship-) |         |
+  | Chấm công + Tính lương                      | Nguyễn Đắc Đạt, Nguyễn Trọng Đông, Lê Công Trường, Nguyễn Minh Đức        | [:octocat:github](https://github.com/trongdong20051605-art/HN-QTDN-17_04-N8)          |         |
+  | Quản lý dự án + Quản lý công việc           | Cao Thái Sơn, Đỗ Quốc Bảo, Nguyễn Ngọc Ánh, Bùi Phương Nam                | [:octocat:github](https://github.com/anhkeo2/HN-QTDN-17-04-N9)                        |         |
+  | Quản lý khách hàng + quản lý văn bản        | Hà Minh Đức, Trương Minh Hiếu , Phạm Quang Vinh, Trần Tuấn Quỳnh          | [:octocat:github](https://github.com/haduc572005/HN-QTDN-17-04-N10.git)               |         |
+  | Quản lý tài sản + Quản lý Tài chính/Kế toán | Đinh Công Hữu, Đỗ Đình Khôi, Lê Nguyên Bình, Bùi Hải Nam                  | [:octocat:github](https://github.com/binhCNTT17-09/HN-QTDN-17-04-N11.git)             |         |
+  | Quản lý tài sản + Phòng họp                 | Nguyễn Tiến Đức, Dặng Ngọc Trường, Nguyễn Long Hải                        | [:octocat:github](https://github.com/DUC06012005/HN-QTDN-17-04-N12)                   |         |
+ 
+ 
+- #### CNTT 17-05
+  | Tên đề tài                                  | Người thực hiện                                                                       | Source code                                                                           | Nổi bật |
+  | ------------------------------------------- | ------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- | ------- |
+  | Quản lý khách hàng + Quản lý công việc      | Nguyễn Quang Huy, Đinh Minh Đức, Đỗ Trọng Nguyên, Lê Thành An                         | [:octocat:github](https://github.com/Quanghuyyz/HN-QTDN-17-05-N1)                     |         |
+  | Chấm công + Tính lương                      | Trịnh Minh Quân, Trần Dương Anh, Đinh Văn Hoàng, Nguyễn Hồng Sơn                      | [:octocat:github](https://github.com/vanhoang09112005/HN-QTDN-17-05-N2)               |         |
+  | Quản lý dự án + Quản lý công việc           | Trần Đình Khải, Triệu Khắc Tuấn Khoa, Nguyễn Văn Ngọc Hoàn, Nguyễn Văn Sắc            | [:octocat:github](https://github.com/test-gif123/HN-QTDN-17-05-N3)                    |         |
+  | Chấm công + Tính lương                      | Tạ Quang Thắng, Nguyễn Đình Đức Chính, Nguyễn Văn Thành, Đinh Tuấn Anh                | [:octocat:github](https://github.com/TTDZY/HN-QTDN-1705-N4)                           |         |
+  | Quản lý khách hàng + Quản lý văn bản        | Phạm Văn Trà, Đinh Mai Phương, Trịnh Kiều Trinh, Phạm Thị Ngọc Thanh                  | [:octocat:github](https://github.com/trinhkieutrinh100705/HN-QTDN-17-05-N5.git)       |         |
+  | Chấm công + Tính lương                      | Lâm Thúy Kiều Trinh, Tòng Văn Quảng, Nguyễn Thái Hải Triều, Trần Lê Bảo Long          | [:octocat:github](https://github.com/kieutrinh15082004/HN-QTDN-17-05-N6.git)          |         |
+  | Quản lý tài sản + Phòng họp                 | Nguyễn Thúy Hằng, Ma Phương Thảo, Lâm Thị Thúy Vui, Lê Thái Dương                     | [:octocat:github](https://github.com/Phuongthao35/HN-QTDN-17-05-N7)                   |         |
+  | Quản lý khách hàng + Quản lý công việc      | Nguyễn Đức Việt Anh, Đặng Trường Sơn, Lã Tiến Đạt, Nguyễn Hoàng Anh                   | [:octocat:github](https://github.com/VietAnh110205/HN-QTDN-17-05-N8)                  |         |
+  | Quản lý dự án + Quản lý công việc           | Đinh Thị Ngọc Bích, Trần Xuân Bắc, Trần Thị Thanh Hiền, Đỗ Hữu Việt                   | [:octocat:github](https://github.com/huuvietaz22/HN-QTDN-17-05-N9)                    |         |
+  | Chấm công + Tính lương                      | Nguyễn Quang Huy, Lê Mạnh Linh, Đinh Tuấn Anh, Nguyễn Bình An, Nguyễn Khắc Nam Khánh  | [:octocat:github](https://github.com/Quanghuy0808/HN-QTDN-17-05-N10)                  |         |
+  | Quản lý tài sản + Phòng họp                 | Trần Quốc Hùng, Bùi Huy Phúc, Nguyễn Hoàng Anh, Trần Bá Đạt                           | [:octocat:github](https://github.com/Ho4ng4nh/HN-QTDN-17-05-N11)                      |         |
+  | Quản lý dự án + Quản lý công việc           | Nguyễn Bá Hùng, Nguyễn Minh Hiếu, Nguyễn Công Thành, Nguyễn Văn Mạnh                  | [:octocat:github](https://github.com/CThanh11/HN-QTDN-17-05-N12)                      |         |
+
   
-  - #### CNTT 17-05
-  | Tên đề tài                                  | Người thực hiện                                           | Source code                                                                        | Nổi bật |
-  | ------------------------------------------- | --------------------------------------------------------- | ---------------------------------------------------------------------------------- | ------- |
-  | Quản lý khách hàng + Quản lý công việc      | Nguyễn Đào Phúc Nguyên, Đoàn Tuấn Nam, Nguyễn Thị Lan Anh | [:octocat:github](https://github.com/pnguyen1310/TTDN-16-01-N1)                    |         |
-  | Quản lý khách hàng + Quản lý công việc      | Đặng Trường Dương, Lê Ngọc Hưng, Trịnh Hoàng Hà           | [:octocat:github](https://github.com/DangTruongDuong/TTDN-16-01-N7)                |         |
-  | Quản lý khách hàng + Quản lý công việc      | Dương Xuân Thành, Ngô Thành Đạt, Nguyễn Trung Hiếu        | [:octocat:github](https://github.com/thanhdatdzhp/TTDN-16-01-N13)                  |         |
-  | Chấm công + Tính lương                      | Nguyễn Tiến Thái, Nguyễn Việt Đức, Lù Ngọc Tân            | [:octocat:github](https://github.com/mmr-09/TTDN-16-01-N2)                         |         |
-  | Chấm công + Tính lương                      | Lê Đức Mạnh, Đỗ Trường Anh, Phạm Trọng Toàn               | [:octocat:github](https://github.com/manhskillgood/TTDN-16-01-N8)                  |         |
-  | Chấm công + Tính lương                      | Nguyễn Đức Hoàn, Nguyễn Tiến Dũng, Trịnh Kế Quang         | [:octocat:github](https://github.com/duchoan25/TTDN-16-01-N14)                     |         |
-  | Quản lý dự án + Quản lý công việc           | Hồ Quang Huy, Nguyễn Thanh Sơn, Đinh Thế Thành            | [:octocat:github](https://github.com/Tank97king/TTDN-16-01-N3)                     |         |
-  | Quản lý dự án + Quản lý công việc           | Nguyễn Xuân Thuận, Nguyễn Quang Hiệp, Võ Vĩnh Thái        | [:octocat:github](https://github.com/NguyenQuangHiep234/TTDN-16-01-N9)             |         |
-  | Quản lý khách hàng + Quản lý văn bản        | Nguyễn Hữu Huy, Nguyễn Thanh Bình, Đào Thị Phương Long    | [:octocat:github](https://github.com/nguyenthanhbinh0411/TTDN-16-01-N4)            |         |
-  | Quản lý tài sản + Quản lý Tài chính/Kế toán | Phạm Đình Nghĩa, Đỗ Hoàng Quý, Vũ Đức Anh                 | [:octocat:github](https://github.com/dinhnghia204/TTDN-16-01-N5)                   |         |
-  | Quản lý tài sản + Quản lý Tài chính/Kế toán | Đặng Lê Hoàng Anh, Nguyễn Khôi Nguyên, Mai Đức Hoà        | [:octocat:github](https://github.com/danglehoanganh/DangLeHoangAnh-TTDN-16-01-N11) |         |
-  | Quản lý tài sản + Phòng họp                 | Lâm Ngọc Tú, Trịnh Thị Yến Mai, Ngô Văn Kiên              | [:octocat:github](https://github.com/lamngoctuu18/TTDN-16-01-N6.git)               |         |
-  | Quản lý tài sản + Phòng họp                 | Nguyễn Đức Duy, Nguyễn Minh Đức, Lê Thị Mỹ Duyên          | [:octocat:github](https://github.com/nguyenducduy2612/TTDN-16-01-N12)              |         |
-  | Quản lý văn bản + Quản lý khách hàng        | Nguyễn Văn Nguyên, Nguyễn Tất Toàn, Bùi Tuấn Đức          | [:octocat:github](https://github.com/Vnguiien/TTDN-16-01-N10.git)
+- #### CNTT 17-06
+  | Tên đề tài                                  | Người thực hiện                                                               | Source code                                                                         | Nổi bật |
+  | ------------------------------------------- | ----------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- | ------- |
+  | Quản lý khách hàng + Quản lý công việc      | Nguyễn Đức Bách, Bùi Việt Tiến, Nguyễn Văn Bảo Ngọc                           | [:octocat:github](https://github.com/DucBach05/HN-QTPM-DN-17-06-N1)                 |         |
+  | Chấm công + Tính lương                      | Nguyễn Duy Anh, Lê Nguyễn Hoàng Long                                          | [:octocat:github](https://github.com/duyanh2012/HN-QTPM-DN-17-06-N2)                |         |
+  | Quản lý dự án + Quản lý công việc           | Phạm Văn Vinh, Phạm Ngọc Quân, Nguyễn Thị Quỳnh Hương, Hoàng Thị Trang        | [:octocat:github](https://github.com/phamvinh05/HN-QTDN-17-06-N3)                   |         |
+  | Quản lý khách hàng + quản lý văn bản        | Nguyễn Thị Thanh Trà, Nguyễn Thu Hằng, Nguyễn Thị Ngọc Ánh                    | [:octocat:github](https://github.com/ThanhTra675/HN-QTDN-17-06-N4.git)              |         |
+  | Quản lý tài sản + Quản lý Tài chính/Kế toán | Nguyễn Quý Trung, Vũ Đức Hải Đăng, ĐInh Thị Quỳnh Như, Nguyễn Tử Minh Hoàng   | [:octocat:github](https://github.com/hihitrung/HN-QTDN-17-06-N5)                    |         |
+  | Quản lý tài sản + Phòng họp                 | Lê Quốc Nhật, Lương Ngọc Bảo, Lưu Thị Thu Hằng, Nguyễn Thái Sơn               | [:octocat:github](https://github.com/LQNhat1206/HN-QTDN-17-06-N6)                   |         |
+  | Quản lý khách hàng + Quản lý công việc      | Nguyễn Thùy Dương, Nguyễn Thị Tình, Nguyễn Văn Đạt, Đỗ Trọng Đạt              | [:octocat:github](https://github.com/thuyduong05/HN-QTDN-17-06-N7)                  |         |
+  | Chấm công + Tính lương                      | Nguyễn Đăng Dũng, Nguyễn Phú Việt An, Trần Quốc Việt                          | [:octocat:github](https://github.com/NguyenPhuVietAn/HN-QTPM-DN-17-06-N8)           |         |
+  | Quản lý dự án + Quản lý công việc           | Nguyễn Đức Thắng, Nguyễn Văn Bằng , Hoàng Thị Thuỳ Dung, Dương Duy Thương     | [:octocat:github](https://github.com/ndthang004/HN-QTDN-17-06-N9)                   |         |
+  | Quản lý khách hàng + quản lý văn bản        | Nguyễn Anh Vũ, Nguyễn Huy Quang, Nguyễn Tuấn Khoa, Hoàng Đức Giang            | [:octocat:github](https://github.com/nguyentuankhoa11/HN-QTDN-17-05-N6)             |         |
+  | Quản lý tài sản + Quản lý Tài chính/Kế toán | Nguyễn Văn Hiếu, Lê Nguyễn Khánh Tùng, Hoàng Trường Giang, Đoàn Trung Hiếu    | [:octocat:github](https://github.com/Hieu1771020275/HN-QTDN-17-06-N11.git)          |         |
+  | Quản lý tài sản + Phòng họp                 | Phạm Ngọc Nguyên, Nguyễn Đình Hùng, Vương Quốc Anh, Đồng Lâm Dũng             | [:octocat:github](https://github.com/npham270888/DNU-Business-Internship)           |         |
+  | Quản lý khách hàng + Quản lý công việc      | Nguyễn Ngọc Anh, Mai Thu Phương                                               | [:octocat:github](https://github.com/ngocanh-1201/HN-QTDN-17-06-N13)                |         |
   
-  - #### CNTT 17-06
-  | Tên đề tài                                  | Người thực hiện                                           | Source code                                                                        | Nổi bật |
-  | ------------------------------------------- | --------------------------------------------------------- | ---------------------------------------------------------------------------------- | ------- |
-  | Quản lý khách hàng + Quản lý công việc      | Nguyễn Đào Phúc Nguyên, Đoàn Tuấn Nam, Nguyễn Thị Lan Anh | [:octocat:github](https://github.com/pnguyen1310/TTDN-16-01-N1)                    |         |
-  | Quản lý khách hàng + Quản lý công việc      | Đặng Trường Dương, Lê Ngọc Hưng, Trịnh Hoàng Hà           | [:octocat:github](https://github.com/DangTruongDuong/TTDN-16-01-N7)                |         |
-  | Quản lý khách hàng + Quản lý công việc      | Dương Xuân Thành, Ngô Thành Đạt, Nguyễn Trung Hiếu        | [:octocat:github](https://github.com/thanhdatdzhp/TTDN-16-01-N13)                  |         |
-  | Chấm công + Tính lương                      | Nguyễn Tiến Thái, Nguyễn Việt Đức, Lù Ngọc Tân            | [:octocat:github](https://github.com/mmr-09/TTDN-16-01-N2)                         |         |
-  | Chấm công + Tính lương                      | Lê Đức Mạnh, Đỗ Trường Anh, Phạm Trọng Toàn               | [:octocat:github](https://github.com/manhskillgood/TTDN-16-01-N8)                  |         |
-  | Chấm công + Tính lương                      | Nguyễn Đức Hoàn, Nguyễn Tiến Dũng, Trịnh Kế Quang         | [:octocat:github](https://github.com/duchoan25/TTDN-16-01-N14)                     |         |
-  | Quản lý dự án + Quản lý công việc           | Hồ Quang Huy, Nguyễn Thanh Sơn, Đinh Thế Thành            | [:octocat:github](https://github.com/Tank97king/TTDN-16-01-N3)                     |         |
-  | Quản lý dự án + Quản lý công việc           | Nguyễn Xuân Thuận, Nguyễn Quang Hiệp, Võ Vĩnh Thái        | [:octocat:github](https://github.com/NguyenQuangHiep234/TTDN-16-01-N9)             |         |
-  | Quản lý khách hàng + Quản lý văn bản        | Nguyễn Hữu Huy, Nguyễn Thanh Bình, Đào Thị Phương Long    | [:octocat:github](https://github.com/nguyenthanhbinh0411/TTDN-16-01-N4)            |         |
-  | Quản lý tài sản + Quản lý Tài chính/Kế toán | Phạm Đình Nghĩa, Đỗ Hoàng Quý, Vũ Đức Anh                 | [:octocat:github](https://github.com/dinhnghia204/TTDN-16-01-N5)                   |         |
-  | Quản lý tài sản + Quản lý Tài chính/Kế toán | Đặng Lê Hoàng Anh, Nguyễn Khôi Nguyên, Mai Đức Hoà        | [:octocat:github](https://github.com/danglehoanganh/DangLeHoangAnh-TTDN-16-01-N11) |         |
-  | Quản lý tài sản + Phòng họp                 | Lâm Ngọc Tú, Trịnh Thị Yến Mai, Ngô Văn Kiên              | [:octocat:github](https://github.com/lamngoctuu18/TTDN-16-01-N6.git)               |         |
-  | Quản lý tài sản + Phòng họp                 | Nguyễn Đức Duy, Nguyễn Minh Đức, Lê Thị Mỹ Duyên          | [:octocat:github](https://github.com/nguyenducduy2612/TTDN-16-01-N12)              |         |
-  | Quản lý văn bản + Quản lý khách hàng        | Nguyễn Văn Nguyên, Nguyễn Tất Toàn, Bùi Tuấn Đức          | [:octocat:github](https://github.com/Vnguiien/TTDN-16-01-N10.git)
+- #### CNTT 17-07
+  | Tên đề tài                                  | Người thực hiện                                                                       | Source code                                                                            | Nổi bật |
+  | ------------------------------------------- | ------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------| ------- |
+  | Chấm công + Tính lương                      | Vương Trọng Hải Quân, Vũ Duy Mạnh, Nguyễn Văn Thuyết                                  | [:octocat:github](https://github.com/ManhVuok/TTDN-17-07-N4)                           |         |
+  | Quản lý dự án + Quản lý công việc           | Nguyễn Tiến Lực, Nguyễn Vọng, Nguyễn Trung Sơn                                        | [:octocat:github](https://github.com/nguyen-tien-luc-dvelop23/Odoo)                                                                            |         |
+  | Quản lý khách hàng + Quản lý văn bản        | Trần Văn Lâm, Dương Ngọc Đông, Nguyễn Thị Thanh Nhã                                   | [:octocat:github](https://github.com/TVLlam/BTL_HN_PTDN)                               |         |
+  | Quản lý tài sản + Quản lý Tài chính/Kế toán | Ngọc Minh Kiên, Trần Đức Thanh, Vũ Việt Long                                          | [:octocat:github](https://github.com/ngocminhkien/NHOM_5_HN-QTPMDN_BTL)                |         |
+  | Quản lý tài sản + Phòng họp                 | Hoàng Văn Thi, Đoàn Duy Mạnh, Nguyễn Huy Hoàng                                        | [:octocat:github](https://github.com/HOANGTHI2509/ORM_CNTT-1707)                      |         |
+  | Quản lý khách hàng + Quản lý công việc      | Lê Anh Sơn, Đào Đức Phong, Lê Minh Hiếu, Nguyễn Quốc Huy                              | [:octocat:github](https://github.com/nielday/Nhhom7-odoo)                    |         |
+  | Chấm công + Tính lương                      | Ngọ Quang Huy, Vũ Chí Công, Nguyễn Minh Chiến, Phí Trường Giang                       | [:octocat:github](https://github.com/nhucccc/ERP_ChamCong_TinhLuong_Nhom08)  |         |
+  | Quản lý dự án + Quản lý công việc           | Nguyễn Ngọc Hiệp, Lương Quang Huy, Nguyễn Minh Sơn                                    | [:octocat:github](https://github.com/hiepnguyen05/Odoo-QuanLyDuAn-QuanLyCongViec) |         |
+  | Quản lý khách hàng + Quản lý văn bản        | Nguyễn Văn Mạnh, Bùi Đức Dương, Nguyễn Huy Hoàng                                      | [:octocat:github](https://github.com/tomzumbi/QTDN_BTL_nhom10)               |         |
+  | Quản lý tài sản + Quản lý Tài chính/Kế toán | Nguyễn Thành Trung, Đoàn Đình Hậu, Lương Quốc Bảo                                     | [:octocat:github](https://github.com/Trung1822/HN-QTDN_Bank_Management)      |         |
+  | Quản lý tài sản + Phòng họp                 | Nguyễn Phạm Hồng Lâm, Lê Duy Hòa, Nguyễn Đình Huy                                     | [:octocat:github](https://github.com/HuyNG25/NHOM_12-BTL)                    |         |
+  | Quản lý khách hàng + Quản lý công việc      | Nguyễn Tiến Dũng, Nguyễn Kim Hoàng Giang                                              | [:octocat:github](https://github.com/nguyen42005/Nhom13_De1)                 |         |
+  | Chấm công + Tính lương                      | Lò Văn Long, Vũ Anh Tuấn, Trần Hậu Huân, Nguyễn Mạnh Điềm                             | [:octocat:github](https://github.com/DiemManhNguyen/De2_ChamCong-TinhLuong)  |         |
+  | Quản lý dự án + Quản lý công việc           | Nguyễn Nam Anh, Lâm Duy Khánh, Lê Trung Hiếu                                          | [:octocat:github](https://github.com/LamKheng/QTPMDN)                        |         |
   
-  - #### CNTT 17-07
-  | Tên đề tài                                  | Người thực hiện                                           | Source code                                                                        | Nổi bật |
-  | ------------------------------------------- | --------------------------------------------------------- | ---------------------------------------------------------------------------------- | ------- |
-  | Quản lý khách hàng + Quản lý công việc      | Nguyễn Đào Phúc Nguyên, Đoàn Tuấn Nam, Nguyễn Thị Lan Anh | [:octocat:github](https://github.com/pnguyen1310/TTDN-16-01-N1)                    |         |
-  | Quản lý khách hàng + Quản lý công việc      | Đặng Trường Dương, Lê Ngọc Hưng, Trịnh Hoàng Hà           | [:octocat:github](https://github.com/DangTruongDuong/TTDN-16-01-N7)                |         |
-  | Quản lý khách hàng + Quản lý công việc      | Dương Xuân Thành, Ngô Thành Đạt, Nguyễn Trung Hiếu        | [:octocat:github](https://github.com/thanhdatdzhp/TTDN-16-01-N13)                  |         |
-  | Chấm công + Tính lương                      | Nguyễn Tiến Thái, Nguyễn Việt Đức, Lù Ngọc Tân            | [:octocat:github](https://github.com/mmr-09/TTDN-16-01-N2)                         |         |
-  | Chấm công + Tính lương                      | Lê Đức Mạnh, Đỗ Trường Anh, Phạm Trọng Toàn               | [:octocat:github](https://github.com/manhskillgood/TTDN-16-01-N8)                  |         |
-  | Chấm công + Tính lương                      | Nguyễn Đức Hoàn, Nguyễn Tiến Dũng, Trịnh Kế Quang         | [:octocat:github](https://github.com/duchoan25/TTDN-16-01-N14)                     |         |
-  | Quản lý dự án + Quản lý công việc           | Hồ Quang Huy, Nguyễn Thanh Sơn, Đinh Thế Thành            | [:octocat:github](https://github.com/Tank97king/TTDN-16-01-N3)                     |         |
-  | Quản lý dự án + Quản lý công việc           | Nguyễn Xuân Thuận, Nguyễn Quang Hiệp, Võ Vĩnh Thái        | [:octocat:github](https://github.com/NguyenQuangHiep234/TTDN-16-01-N9)             |         |
-  | Quản lý khách hàng + Quản lý văn bản        | Nguyễn Hữu Huy, Nguyễn Thanh Bình, Đào Thị Phương Long    | [:octocat:github](https://github.com/nguyenthanhbinh0411/TTDN-16-01-N4)            |         |
-  | Quản lý tài sản + Quản lý Tài chính/Kế toán | Phạm Đình Nghĩa, Đỗ Hoàng Quý, Vũ Đức Anh                 | [:octocat:github](https://github.com/dinhnghia204/TTDN-16-01-N5)                   |         |
-  | Quản lý tài sản + Quản lý Tài chính/Kế toán | Đặng Lê Hoàng Anh, Nguyễn Khôi Nguyên, Mai Đức Hoà        | [:octocat:github](https://github.com/danglehoanganh/DangLeHoangAnh-TTDN-16-01-N11) |         |
-  | Quản lý tài sản + Phòng họp                 | Lâm Ngọc Tú, Trịnh Thị Yến Mai, Ngô Văn Kiên              | [:octocat:github](https://github.com/lamngoctuu18/TTDN-16-01-N6.git)               |         |
-  | Quản lý tài sản + Phòng họp                 | Nguyễn Đức Duy, Nguyễn Minh Đức, Lê Thị Mỹ Duyên          | [:octocat:github](https://github.com/nguyenducduy2612/TTDN-16-01-N12)              |         |
-  | Quản lý văn bản + Quản lý khách hàng        | Nguyễn Văn Nguyên, Nguyễn Tất Toàn, Bùi Tuấn Đức          | [:octocat:github](https://github.com/Vnguiien/TTDN-16-01-N10.git)
-  
-  - #### CNTT 17-08
-  | Tên đề tài                                  | Người thực hiện                                           | Source code                                                                        | Nổi bật |
-  | ------------------------------------------- | --------------------------------------------------------- | ---------------------------------------------------------------------------------- | ------- |
-  | Quản lý khách hàng + Quản lý công việc      | Nguyễn Đào Phúc Nguyên, Đoàn Tuấn Nam, Nguyễn Thị Lan Anh | [:octocat:github](https://github.com/pnguyen1310/TTDN-16-01-N1)                    |         |
-  | Quản lý khách hàng + Quản lý công việc      | Đặng Trường Dương, Lê Ngọc Hưng, Trịnh Hoàng Hà           | [:octocat:github](https://github.com/DangTruongDuong/TTDN-16-01-N7)                |         |
-  | Quản lý khách hàng + Quản lý công việc      | Dương Xuân Thành, Ngô Thành Đạt, Nguyễn Trung Hiếu        | [:octocat:github](https://github.com/thanhdatdzhp/TTDN-16-01-N13)                  |         |
-  | Chấm công + Tính lương                      | Nguyễn Tiến Thái, Nguyễn Việt Đức, Lù Ngọc Tân            | [:octocat:github](https://github.com/mmr-09/TTDN-16-01-N2)                         |         |
-  | Chấm công + Tính lương                      | Lê Đức Mạnh, Đỗ Trường Anh, Phạm Trọng Toàn               | [:octocat:github](https://github.com/manhskillgood/TTDN-16-01-N8)                  |         |
-  | Chấm công + Tính lương                      | Nguyễn Đức Hoàn, Nguyễn Tiến Dũng, Trịnh Kế Quang         | [:octocat:github](https://github.com/duchoan25/TTDN-16-01-N14)                     |         |
-  | Quản lý dự án + Quản lý công việc           | Hồ Quang Huy, Nguyễn Thanh Sơn, Đinh Thế Thành            | [:octocat:github](https://github.com/Tank97king/TTDN-16-01-N3)                     |         |
-  | Quản lý dự án + Quản lý công việc           | Nguyễn Xuân Thuận, Nguyễn Quang Hiệp, Võ Vĩnh Thái        | [:octocat:github](https://github.com/NguyenQuangHiep234/TTDN-16-01-N9)             |         |
-  | Quản lý khách hàng + Quản lý văn bản        | Nguyễn Hữu Huy, Nguyễn Thanh Bình, Đào Thị Phương Long    | [:octocat:github](https://github.com/nguyenthanhbinh0411/TTDN-16-01-N4)            |         |
-  | Quản lý tài sản + Quản lý Tài chính/Kế toán | Phạm Đình Nghĩa, Đỗ Hoàng Quý, Vũ Đức Anh                 | [:octocat:github](https://github.com/dinhnghia204/TTDN-16-01-N5)                   |         |
-  | Quản lý tài sản + Quản lý Tài chính/Kế toán | Đặng Lê Hoàng Anh, Nguyễn Khôi Nguyên, Mai Đức Hoà        | [:octocat:github](https://github.com/danglehoanganh/DangLeHoangAnh-TTDN-16-01-N11) |         |
-  | Quản lý tài sản + Phòng họp                 | Lâm Ngọc Tú, Trịnh Thị Yến Mai, Ngô Văn Kiên              | [:octocat:github](https://github.com/lamngoctuu18/TTDN-16-01-N6.git)               |         |
-  | Quản lý tài sản + Phòng họp                 | Nguyễn Đức Duy, Nguyễn Minh Đức, Lê Thị Mỹ Duyên          | [:octocat:github](https://github.com/nguyenducduy2612/TTDN-16-01-N12)              |         |
-  | Quản lý văn bản + Quản lý khách hàng        | Nguyễn Văn Nguyên, Nguyễn Tất Toàn, Bùi Tuấn Đức          | [:octocat:github](https://github.com/Vnguiien/TTDN-16-01-N10.git)
+- #### CNTT 17-08
+  | Tên đề tài                                  | Người thực hiện                                                                       | Source code                                                                           | Nổi bật |
+  | ------------------------------------------- | ------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- | ------- |
   
 - #### CNTT 17-09
-  | Tên đề tài                                  | Người thực hiện                                           | Source code                                                                        | Nổi bật |
-  | ------------------------------------------- | --------------------------------------------------------- | ---------------------------------------------------------------------------------- | ------- |
-  | Quản lý khách hàng + Quản lý công việc      | Nguyễn Đào Phúc Nguyên, Đoàn Tuấn Nam, Nguyễn Thị Lan Anh | [:octocat:github](https://github.com/pnguyen1310/TTDN-16-01-N1)                    |         |
-  | Quản lý khách hàng + Quản lý công việc      | Đặng Trường Dương, Lê Ngọc Hưng, Trịnh Hoàng Hà           | [:octocat:github](https://github.com/DangTruongDuong/TTDN-16-01-N7)                |         |
-  | Quản lý khách hàng + Quản lý công việc      | Dương Xuân Thành, Ngô Thành Đạt, Nguyễn Trung Hiếu        | [:octocat:github](https://github.com/thanhdatdzhp/TTDN-16-01-N13)                  |         |
-  | Chấm công + Tính lương                      | Nguyễn Tiến Thái, Nguyễn Việt Đức, Lù Ngọc Tân            | [:octocat:github](https://github.com/mmr-09/TTDN-16-01-N2)                         |         |
-  | Chấm công + Tính lương                      | Lê Đức Mạnh, Đỗ Trường Anh, Phạm Trọng Toàn               | [:octocat:github](https://github.com/manhskillgood/TTDN-16-01-N8)                  |         |
-  | Chấm công + Tính lương                      | Nguyễn Đức Hoàn, Nguyễn Tiến Dũng, Trịnh Kế Quang         | [:octocat:github](https://github.com/duchoan25/TTDN-16-01-N14)                     |         |
-  | Quản lý dự án + Quản lý công việc           | Hồ Quang Huy, Nguyễn Thanh Sơn, Đinh Thế Thành            | [:octocat:github](https://github.com/Tank97king/TTDN-16-01-N3)                     |         |
-  | Quản lý dự án + Quản lý công việc           | Nguyễn Xuân Thuận, Nguyễn Quang Hiệp, Võ Vĩnh Thái        | [:octocat:github](https://github.com/NguyenQuangHiep234/TTDN-16-01-N9)             |         |
-  | Quản lý khách hàng + Quản lý văn bản        | Nguyễn Hữu Huy, Nguyễn Thanh Bình, Đào Thị Phương Long    | [:octocat:github](https://github.com/nguyenthanhbinh0411/TTDN-16-01-N4)            |         |
-  | Quản lý tài sản + Quản lý Tài chính/Kế toán | Phạm Đình Nghĩa, Đỗ Hoàng Quý, Vũ Đức Anh                 | [:octocat:github](https://github.com/dinhnghia204/TTDN-16-01-N5)                   |         |
-  | Quản lý tài sản + Quản lý Tài chính/Kế toán | Đặng Lê Hoàng Anh, Nguyễn Khôi Nguyên, Mai Đức Hoà        | [:octocat:github](https://github.com/danglehoanganh/DangLeHoangAnh-TTDN-16-01-N11) |         |
-  | Quản lý tài sản + Phòng họp                 | Lâm Ngọc Tú, Trịnh Thị Yến Mai, Ngô Văn Kiên              | [:octocat:github](https://github.com/lamngoctuu18/TTDN-16-01-N6.git)               |         |
-  | Quản lý tài sản + Phòng họp                 | Nguyễn Đức Duy, Nguyễn Minh Đức, Lê Thị Mỹ Duyên          | [:octocat:github](https://github.com/nguyenducduy2612/TTDN-16-01-N12)              |         |
-  | Quản lý văn bản + Quản lý khách hàng        | Nguyễn Văn Nguyên, Nguyễn Tất Toàn, Bùi Tuấn Đức          | [:octocat:github](https://github.com/Vnguiien/TTDN-16-01-N10.git)
-  
-  - #### CNTT 17-10
+  | Tên đề tài                                  | Người thực hiện                                                   | Source code                                                                   | Nổi bật |
+  | ------------------------------------------- | ----------------------------------------------------------------- | ----------------------------------------------------------------------------- | ------- |
+  | Chấm công + Tính lương                      | Nguyễn Xuân Anh, Tăng Tất Cương, Vũ Đức Nguyễn Chuấn              | [:octocat:github](https://github.com/CuongTang5/HNQTDN-CNTT-1709-N2)           |         |
+  | Quản lý dự án + Quản lý công việc           | Nguyễn Xuân Thành, Nguyễn Đức Hợp, Nguyễn Thái Sơn               | [:octocat:github](https://github.com/hopmini/ProjectManage-TaskManage)         |         |
+  | Quản lý khách hàng + Quản lý văn bản        | Dương Trung Sơn, Nguyễn Đình Bảo Linh, Nguyễn Kim Cường          | [:octocat:github](https://github.com/KimCuongNK/Nhom4-Quanlykhachhang-vanban) |         |                                                                            |         |
+  | Quản lý tài sản + Phòng họp                 | Nguyễn Xuân Ninh, Lê Hải Đăng, Trần Văn Tuấn Anh                 | [:octocat:github](https://github.com/Dawnggggg/NHOM_6_TSPH)                    |         |
+  | Quản lý khách hàng + Quản lý công việc      | Vũ Hồng Sơn, Hà Tuấn Huy, Trần Khắc Hồng                         | [:octocat:github](https://github.com/tkhong2/CNTT-17-09-N7)                    |         |
+  | Chấm công + Tính lương                      | Nguyễn Xuân Phúc, Nguyễn Thị Hảo Ngân, Nguyễn Kiều Phong         | [:octocat:github](https://github.com/MrPhong19/FIT-DNU_BTL_HRM-Payroll-Nhom8) |         |
+  | Quản lý dự án + Quản lý công việc           | Lê Thùy Dung, Cao Văn Thiện, Nguyễn Hương Giang                  | [:octocat:github](https://github.com/Hgiang306/Nhom9_QuanLyDuAn)               |         |
+  | Quản lý khách hàng + Quản lý văn bản        | Hoàng Anh Minh, Lê Cao Tất Thành, Nguyễn Nhật Quang             | [:octocat:github](https://github.com/TATTHANHZZ/CNTT-17-09-N10)                |         |
+  | Quản lý tài sản + Quản lý Tài chính/Kế toán | Lê Thị Bình, Lương Thị Thu Hương, Nguyễn Thị Thanh              | [:octocat:github](https://github.com/Huong1771020336-D/ql_taisan)                                                                              |         |
+  | Quản lý tài sản + Phòng họp                 | Nguyễn Quang Thắng, Nguyễn Trường Thịnh, Đỗ Mạnh Cường          | [:octocat:github](https://github.com/DoCuong2611/QLTS-PH-1709)                 |         |
+  | Quản lý khách hàng + Quản lý công việc      | Trịnh Việt Đức, Nguyễn Quang Đạt, Lê Quang Dũng                 | [:octocat:github](https://github.com/duct55600/CNTT_17-09_N13)                 |         |
+  | Chấm công + Tính lương                      | Nguyễn Hữu Hưng, Nguyễn Văn Được, Đỗ Quốc Khánh                 | [:octocat:github](https://github.com/Hungyeuemm/model_chamcong)                                                                              |         |
+  | Quản lý dự án + Quản lý công việc           | Trịnh Minh Quân, Phùng Thế Anh, Bùi Anh Đức                     | [:octocat:github](https://github.com/buianhduc2005/QLDA-CNTT-17-09)            |         |
+  | Quản lý khách hàng + Quản lý văn bản        | Nguyễn Quang Linh, Trần Văn Huy, Nguyễn Duy Mạnh                | [:octocat:github](https://github.com/ndm1703/CNTT-17-09-N16)                   |         |
+
+- #### CNTT 17-10
 
 | Tên đề tài| Người thực hiện | Source code | Nổi bật |
 |-------------------------------------------------|----------------------------------------------------------------|------------------------------------------------------------------|----------|
