@@ -105,4 +105,10 @@
 | Chấm công và Tính lương| Hà Tuấn Anh, Nguyễn Thành Phong, Nguyễn Đình Tráng |[:octocat:github](https://github.com/NguyenDinhTrang04/TTDN-16-06-N13.git)|
 
 - #### KHMT 16-01
-
+| Tên đề tài             | Người thực hiện     | Source code     | Nổi bật     |
+| ---------------------- | --------------------| --------------- | ----------- |
+| Quản lý dự án + Quản lý công việc| Nguyễn Nam Cường, Nguyễn Trung Thành, Lê Thị Ngọc Bích, Triệu Quốc Anh| [:octocat:github](https://github.com/cuongnam/HN-QTDN-16-01-N9)|
+| Quản lý Khách hàng + Quản lý Văn bản| Nguyễn Hòa Bình, Trần Trường Giang, Nguyễn Văn Huy, Lê Trọng Thanh Tùng| [:octocat:github](https://github.com/trggiang0704/HN-QTDN-16-01-N10)|
+| Hệ Thống Quản Lý Khách Hàng + Quản Lý Công Việc | Nguyễn Văn Đạt, Nguyễn Mạnh Duy, Phan Việt Hùng| [:octocat:github](https://github.com/manhduy04/HN-QTDN-16-01-N13.git)|
+| Quản lý dự án + Quản lý công việc| Đỗ Ngọc Trung, Nguyễn Mạnh Đông| [:octocat:github](https://github.com/Blackbin03/HN-QTDN-16-01-N15)| |
+| Quản lý khách hàng + Quản lý văn bản | Trần Minh Thành, Ngô Nguyễn Quang Linh, Đinh Tấn Phát| [:octocat:github](https://github.com/Macchiato285/odoo-fitdnu)| |
