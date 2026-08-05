@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- Form View -->
+        <record id="view_du_an_form" model="ir.ui.view">
+            <field name="name">du_an.form</field>
+            <field name="model">du_an</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <div class="oe_read_only" style="font-size:25px">Dự án</div>
+                        <group col="4" string="Thông tin cơ bản">
+                            <field name="ma_du_an"/>
+                            <field name="ten_du_an"/>
+                            <field name="nguoi_quan_ly_id" required="1"/>
+                            <field name="nguoi_phu_trach_id" help="Tương thích với module công việc"/>
+                            <field name="trang_thai" widget="statusbar" statusbar_visible="planned,in_progress,done"/>
+                            <field name="tien_do_du_an" readonly="1" help="Trạng thái tương thích với module công việc"/>
+                        </group>
+                        <group col="4" string="Thời gian">
+                            <field name="ngay_bat_dau"/>
+                            <field name="ngay_ket_thuc_du_kien"/>
+                            <field name="ngay_ket_thuc_thuc_te" readonly="1"/>
+                        </group>
+                        <group col="4" string="Ngân sách">
+                            <field name="ngan_sach_du_an" widget="monetary"/>
+                            <field name="ngan_sach_da_su_dung" widget="monetary" readonly="1"/>
+                            <field name="ngan_sach_con_lai" widget="monetary" readonly="1"/>
+                        </group>
+                        <group col="4" string="Tiến độ">
+                            <field name="tien_do" widget="progressbar" readonly="1"/>
+                        </group>
+                        <group col="4" string="Thông tin khác">
+                            <field name="khach_hang"/>
+                            <field name="mo_ta" colspan="4"/>
+                            <field name="ghi_chu" colspan="4"/>
+                        </group>
+                        <notebook>
+                            <page string="Thành viên dự án">
+                                <field name="du_an_nhan_vien_ids">
+                                    <tree>
+                                        <field name="nhan_vien_id"/>
+                                        <field name="vai_tro"/>
+                                        <field name="ty_le_tham_gia" widget="percentage"/>
+                                        <field name="luong_du_an" widget="monetary"/>
+                                        <field name="ngay_tham_gia"/>
+                                        <field name="ngay_roi"/>
+                                        <field name="chi_phi_du_kien" widget="monetary"/>
+                                    </tree>
+                                    <form>
+                                        <sheet>
+                                            <group col="4">
+                                                <field name="du_an_id" readonly="1"/>
+                                                <field name="nhan_vien_id"/>
+                                                <field name="vai_tro"/>
+                                                <field name="ty_le_tham_gia" widget="percentage"/>
+                                                <field name="luong_du_an" widget="monetary"/>
+                                                <field name="ngay_tham_gia"/>
+                                                <field name="ngay_roi"/>
+                                                <field name="chi_phi_du_kien" widget="monetary" readonly="1"/>
+                                                <field name="ghi_chu" colspan="4"/>
+                                            </group>
+                                        </sheet>
+                                    </form>
+                                </field>
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <!-- Tree View -->
+        <record id="view_du_an_tree" model="ir.ui.view">
+            <field name="name">du_an.tree</field>
+            <field name="model">du_an</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="ma_du_an"/>
+                    <field name="ten_du_an"/>
+                    <field name="nguoi_quan_ly_id"/>
+                    <field name="trang_thai"/>
+                    <field name="ngay_bat_dau"/>
+                    <field name="ngay_ket_thuc_du_kien"/>
+                    <field name="tien_do" widget="progressbar"/>
+                    <field name="ngan_sach_du_an" widget="monetary"/>
+                    <field name="ngan_sach_con_lai" widget="monetary"/>
+                </tree>
+            </field>
+        </record>
+
+        <!-- Search View -->
+        <record id="view_du_an_search" model="ir.ui.view">
+            <field name="name">du_an.search</field>
+            <field name="model">du_an</field>
+            <field name="arch" type="xml">
+                <search>
+                    <field name="ma_du_an"/>
+                    <field name="ten_du_an"/>
+                    <field name="nguoi_quan_ly_id"/>
+                    <field name="nhan_vien_ids"/>
+                    <field name="khach_hang"/>
+                    <filter string="Sắp bắt đầu" name="planned" domain="[('trang_thai', '=', 'planned')]"/>
+                    <filter string="Đang thực hiện" name="in_progress" domain="[('trang_thai', '=', 'in_progress')]"/>
+                    <filter string="Tạm dừng" name="on_hold" domain="[('trang_thai', '=', 'on_hold')]"/>
+                    <filter string="Hoàn thành" name="done" domain="[('trang_thai', '=', 'done')]"/>
+                    <filter string="Hủy bỏ" name="cancelled" domain="[('trang_thai', '=', 'cancelled')]"/>
+                    <separator/>
+                    <filter string="Dự án của tôi" name="my_projects" domain="[('nguoi_quan_ly_id', '=', uid)]"/>
+                    <filter string="Dự án tôi tham gia" name="my_participating" domain="[('nhan_vien_ids', 'in', [uid])]"/>
+                    <group expand="0" string="Nhóm">
+                        <filter string="Theo trạng thái" name="group_by_status" context="{'group_by': 'trang_thai'}"/>
+                        <filter string="Theo người quản lý" name="group_by_manager" context="{'group_by': 'nguoi_quan_ly_id'}"/>
+                        <filter string="Theo tháng bắt đầu" name="group_by_month" context="{'group_by': 'ngay_bat_dau'}"/>
+                    </group>
+                </search>
+            </field>
+        </record>
+
+        <!-- Action -->
+        <record id="action_du_an" model="ir.actions.act_window">
+            <field name="name">Dự án</field>
+            <field name="res_model">du_an</field>
+            <field name="view_mode">tree,form</field>
+            <field name="search_view_id" ref="view_du_an_search"/>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">
+                    Tạo dự án mới
+                </p>
+                <p>
+                    Quản lý các dự án, theo dõi tiến độ, ngân sách và phân công nhân viên.
+                </p>
+            </field>
+        </record>
+    </data>
+</odoo>

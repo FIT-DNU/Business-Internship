@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- Menu gốc riêng cho module Quản lý dự án -->
+        <menuitem id="menu_root_du_an" name="Quản lý dự án" sequence="20" />
+
+        <!-- Menu con dẫn tới danh sách dự án -->
+        <menuitem name="Dự án"
+                  id="menu_du_an"
+                  parent="menu_root_du_an"
+                  sequence="1"
+                  action="action_du_an"
+        />
+    </data>
+</odoo>

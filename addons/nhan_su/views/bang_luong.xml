@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="view_bang_luong_form" model="ir.ui.view">
+            <field name="name">bang_luong</field>
+            <field name="model">bang_luong</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <div class="oe_read_only" style="font-size:25px">Bảng lương</div>
+                        <group col="4" string="Thông tin cơ bản">
+                            <field name="nhan_vien_id"/>
+                            <field name="thang_nam_dau" help="Chọn tháng để tính lương (mặc định tháng hiện tại)"/>
+                            <field name="thang_nam_cuoi" readonly="1"/>
+                            <field name="luong_co_ban" widget="monetary" help="Lương cơ bản cho 1 ngày công (mặc định 500.000 VND)"/>
+                        </group>
+                        <group col="4" string="Thông tin chấm công">
+                            <field name="so_cong" readonly="1" help="Số công = số ngày chấm công trong tháng (1 ngày = 1 công)"/>
+                            <field name="tong_so_gio_lam" widget="float_time" readonly="1" help="Tổng số giờ làm trong tháng"/>
+                            <field name="so_ngay_dung_gio" readonly="1" help="Số ngày đi làm đúng giờ"/>
+                            <field name="so_ngay_muon" readonly="1" help="Số ngày đi làm muộn"/>
+                        </group>
+                        <group col="4" string="Tính toán lương">
+                            <field name="luong_thuc_nhan" readonly="1" widget="monetary" help="Lương cơ bản = Lương cơ bản 1 ngày công × Số công"/>
+                            <field name="thuong" readonly="1" widget="monetary" help="Thưởng tự động: 10.000 VND/ngày đúng giờ"/>
+                            <field name="phat" readonly="1" widget="monetary" help="Phạt tự động: 10.000 VND/ngày muộn"/>
+                            <field name="luong_nhan" readonly="1" widget="monetary" 
+                                   style="font-size: 18px; font-weight: bold; color: #007cba;"
+                                   help="Lương nhận = Lương cơ bản 1 ngày công × Số công + Thưởng - Phạt"/>
+                        </group>
+                        <group col="4" string="Ghi chú">
+                            <field name="ghi_chu" colspan="4"/>
+                        </group>
+                        <notebook>
+                            <page string="Danh sách chấm công trong tháng">
+                                <field name="cham_cong_ids" readonly="1">
+                                    <tree>
+                                        <field name="ngay_cham_cong"/>
+                                        <field name="gio_cham_cong" widget="float_time"/>
+                                        <field name="gio_vao" widget="float_time"/>
+                                        <field name="gio_ra" widget="float_time"/>
+                                        <field name="so_gio_lam" widget="float_time"/>
+                                        <field name="trang_thai"/>
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="view_bang_luong_tree" model="ir.ui.view">
+            <field name="name">bang_luong</field>
+            <field name="model">bang_luong</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="nhan_vien_id"/>
+                    <field name="thang_nam_dau"/>
+                    <field name="luong_co_ban" widget="monetary"/>
+                    <field name="so_cong"/>
+                    <field name="tong_so_gio_lam" widget="float_time"/>
+                    <field name="luong_thuc_nhan" widget="monetary"/>
+                    <field name="so_ngay_dung_gio"/>
+                    <field name="so_ngay_muon"/>
+                    <field name="thuong" widget="monetary"/>
+                    <field name="phat" widget="monetary"/>
+                    <field name="luong_nhan" widget="monetary"/>
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="bang_luong_search">
+            <field name="model">bang_luong</field>
+            <field name="arch" type="xml">
+                <search>
+                    <field name="nhan_vien_id"/>
+                    <field name="thang_nam_dau"/>
+                </search>
+            </field>
+        </record>
+
+        <record id="action_bang_luong" model="ir.actions.act_window">
+            <field name="name">Bảng lương</field>
+            <field name="res_model">bang_luong</field>
+            <field name="view_mode">tree,form</field>
+            <field name="search_view_id" ref = "bang_luong_search"/>
+        </record>
+    </data>
+</odoo>

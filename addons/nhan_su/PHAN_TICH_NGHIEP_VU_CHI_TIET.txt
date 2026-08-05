@@ -1,0 +1,669 @@
+================================================================================
+        PHÂN TÍCH NGHIỆP VỤ - HỆ THỐNG QUẢN LÝ NHÂN SỰ, DỰ ÁN VÀ CÔNG VIỆC
+================================================================================
+
+MỤC LỤC:
+--------
+I.   PHÂN TÍCH NGHIỆP VỤ MODULE "QUẢN LÝ NHÂN SỰ" (Hoàn thiện)
+II.  PHÂN TÍCH NGHIỆP VỤ MODULE "QUẢN LÝ DỰ ÁN"
+III. PHÂN TÍCH NGHIỆP VỤ MODULE "QUẢN LÝ CÔNG VIỆC"
+IV.  PHÂN TÍCH NGHIỆP VỤ KẾT HỢP GIỮA CÁC MODULE
+V.   SƠ ĐỒ QUAN HỆ VÀ LUỒNG DỮ LIỆU
+VI.   YÊU CẦU KỸ THUẬT VÀ CÔNG NGHỆ
+
+
+================================================================================
+I. PHÂN TÍCH NGHIỆP VỤ MODULE "QUẢN LÝ NHÂN SỰ" (Hoàn thiện)
+================================================================================
+
+1. TỔNG QUAN:
+-------------
+Module "Quản lý nhân sự" quản lý thông tin nhân viên, chấm công và tính lương.
+Đây là module cốt lõi mà các module khác phải tích hợp.
+
+2. CÁC CHỨC NĂNG HIỆN CÓ:
+--------------------------
+
+   a) Quản lý thông tin nhân viên:
+      - Thông tin cá nhân: Họ tên, ngày sinh, quê quán, email, số điện thoại
+      - Mã định danh: Tự động tạo từ tên
+      - Tính tuổi tự động
+      - Lương cơ bản
+      - Ảnh đại diện
+      
+   b) Quản lý đơn vị:
+      - Mã đơn vị, Tên đơn vị
+      
+   c) Quản lý chức vụ:
+      - Thông tin chức vụ
+      
+   d) Quản lý lịch sử công tác:
+      - Lịch sử làm việc của nhân viên
+      - Chức vụ, đơn vị, loại chức vụ (Chính/Kiêm nhiệm)
+      
+   e) Quản lý chứng chỉ, bằng cấp:
+      - Danh mục chứng chỉ, bằng cấp
+      - Danh sách chứng chỉ, bằng cấp của nhân viên
+      
+   f) Quản lý chấm công:
+      - Ngày chấm công
+      - Giờ chấm công cụ thể (để xác định muộn/đúng giờ)
+      - Giờ vào, giờ ra (mặc định 8:30, 17:30)
+      - Giờ nghỉ trưa (12:30 - 13:30)
+      - Tự động tính số giờ làm
+      - Tự động xác định trạng thái: Vắng, Đúng giờ, Muộn, Vi phạm
+      
+   g) Quản lý bảng lương:
+      - Tính lương theo tháng
+      - Tự động tính số công từ chấm công
+      - Tự động tính thưởng/phạt dựa trên trạng thái chấm công
+      - Công thức: Lương nhận = Lương cơ bản 1 ngày công × Số công + Thưởng - Phạt
+
+3. CÁC CHỨC NĂNG CẦN HOÀN THIỆN:
+---------------------------------
+
+   a) Báo cáo và thống kê:
+      - Báo cáo chấm công theo tháng/quý/năm
+      - Thống kê số ngày đi làm, vắng, muộn
+      - Báo cáo lương theo nhân viên/tháng
+      - Biểu đồ xu hướng chấm công
+      
+   b) Quản lý phép năm:
+      - Số ngày phép được phép
+      - Số ngày phép đã sử dụng
+      - Số ngày phép còn lại
+      - Lịch sử sử dụng phép
+      
+  # c) Quản lý ca làm việc:
+      - Định nghĩa các ca làm việc (Ca sáng, Ca chiều, Ca đêm)
+      - Phân công ca làm việc cho nhân viên
+      - Tính lương theo ca #
+      
+   d) Quản lý tăng ca:
+      - Ghi nhận giờ tăng ca
+      - Tính lương tăng ca (hệ số 1.5, 2.0, 3.0)
+      - Tích hợp vào bảng lương
+      
+   e) Quản lý khen thưởng/kỷ luật:
+      - Ghi nhận khen thưởng
+      - Ghi nhận kỷ luật
+      - Tích hợp vào tính lương
+      
+   f) Export/Import dữ liệu:
+      - Export bảng lương ra Excel
+      - Export chấm công ra Excel
+      - Import chấm công từ file Excel
+      
+   g) Thông báo và cảnh báo:
+      - Thông báo khi nhân viên muộn
+      - Cảnh báo số ngày vắng nhiều
+      - Thông báo đến hạn tính lương
+
+
+================================================================================
+II. PHÂN TÍCH NGHIỆP VỤ MODULE "QUẢN LÝ DỰ ÁN"
+================================================================================
+
+1. TỔNG QUAN:
+-------------
+Module "Quản lý dự án" quản lý các dự án, theo dõi tiến độ, ngân sách và phân công
+nhân viên. Module này bắt buộc phải tích hợp với module "Quản lý nhân sự".
+
+2. CÁC CHỨC NĂNG CHÍNH:
+------------------------
+
+   a) Quản lý thông tin dự án:
+      - Mã dự án (tự động hoặc thủ công)
+      - Tên dự án
+      - Mô tả dự án
+      - Ngày bắt đầu dự án
+      - Ngày kết thúc dự kiến
+      - Ngày kết thúc thực tế
+      - Trạng thái dự án: 
+        * Sắp bắt đầu
+        * Đang thực hiện
+        * Tạm dừng
+        * Hoàn thành
+        * Hủy bỏ
+      - Ngân sách dự án
+      - Ngân sách đã sử dụng
+      - Ngân sách còn lại
+      - Khách hàng/Đối tác
+      - Ghi chú
+      
+   b) Quản lý thành viên dự án:
+      - Phân công nhân viên vào dự án (liên kết với module Nhân sự)
+      - Vai trò trong dự án:
+        * Trưởng dự án
+        * Thành viên
+        * Cố vấn
+        * Quan sát viên
+      - Ngày tham gia dự án
+      - Ngày rời dự án
+
+      
+   c) Quản lý công việc trong dự án:
+      - Danh sách công việc thuộc dự án (liên kết với module Quản lý công việc)
+      - Tổng số công việc
+      - Số công việc đã hoàn thành
+      - Số công việc đang làm
+      - Số công việc chưa bắt đầu
+      - Tỷ lệ hoàn thành dự án (%)
+      
+   d) Quản lý tài nguyên dự án:
+      - Tài nguyên cần thiết
+      - Chi phí tài nguyên
+      - Lịch sử sử dụng tài nguyên
+      
+   e) Theo dõi tiến độ:
+      - Tiến độ dự án (%)
+      - Milestone (Cột mốc)
+      - Ngày hoàn thành milestone
+      - Cảnh báo chậm tiến độ
+      
+   f) Báo cáo dự án:
+      - Báo cáo tiến độ
+      - Báo cáo ngân sách
+      - Báo cáo nhân sự tham gia
+      - Báo cáo công việc
+
+3. QUAN HỆ VỚI MODULE NHÂN SỰ:
+-------------------------------
+   - Mỗi dự án có nhiều nhân viên tham gia (Many2many với nhan_vien)
+   - Theo dõi thời gian làm việc của nhân viên trên dự án
+   - Tính lương dự án (nếu có)
+   - Đánh giá hiệu quả làm việc của nhân viên trên dự án
+   - Lịch sử tham gia dự án của nhân viên
+
+
+================================================================================
+III. PHÂN TÍCH NGHIỆP VỤ MODULE "QUẢN LÝ CÔNG VIỆC"
+================================================================================
+
+1. TỔNG QUAN:
+-------------
+Module "Quản lý công việc" quản lý các công việc/task, chia nhỏ dự án thành các
+công việc cụ thể để theo dõi sát sao tiến độ và hiệu quả của từng cá nhân.
+Module này bắt buộc phải tích hợp với module "Quản lý nhân sự" và "Quản lý dự án".
+
+2. CÁC CHỨC NĂNG CHÍNH:
+------------------------
+
+   a) Quản lý thông tin công việc:
+      - Mã công việc (tự động)
+      - Tên công việc
+      - Mô tả công việc
+      - Dự án thuộc về (Many2one với du_an) - BẮT BUỘC
+      - Người được giao (Many2one với nhan_vien) - BẮT BUỘC
+      - Người tạo công việc
+      - Ngày bắt đầu dự kiến
+      - Ngày kết thúc dự kiến
+      - Ngày bắt đầu thực tế
+      - Ngày kết thúc thực tế
+      - Trạng thái công việc:
+        * Chưa bắt đầu
+        * Đang làm
+        * Tạm dừng
+        * Hoàn thành
+        * Hủy bỏ
+      - Độ ưu tiên:
+        * Thấp
+        * Trung bình
+        * Cao
+        * Khẩn cấp
+      - Ước tính thời gian (giờ)
+      - Thời gian thực tế (giờ)
+      - Tiến độ (%)
+      - Ghi chú
+      
+   b) Quản lý phụ thuộc công việc:
+      - Công việc phụ thuộc (công việc này phải hoàn thành trước)
+      - Công việc phụ thuộc vào (công việc này phải hoàn thành sau)
+      - Tự động cập nhật trạng thái khi công việc phụ thuộc thay đổi
+      
+   c) Quản lý checklist:
+      - Danh sách checklist cho công việc
+      - Đánh dấu hoàn thành từng mục
+      - Tự động tính tiến độ từ checklist
+      
+   d) Quản lý bình luận và cập nhật:
+      - Bình luận của người thực hiện
+      - Bình luận của người giao việc
+      - Lịch sử cập nhật trạng thái
+      - File đính kèm
+      
+   e) Quản lý thời gian làm việc:
+      - Ghi nhận thời gian làm việc trên công việc (liên kết với chấm công)
+      - Tổng thời gian đã làm
+      - So sánh với ước tính
+      - Cảnh báo vượt quá ước tính
+      
+   f) Đánh giá công việc:
+      - Đánh giá chất lượng hoàn thành
+      - Đánh giá đúng hạn
+      - Ghi nhận khen thưởng/kỷ luật liên quan
+      
+   g) Báo cáo công việc:
+      - Báo cáo công việc theo nhân viên
+      - Báo cáo công việc theo dự án
+      - Báo cáo hiệu quả làm việc
+      - Báo cáo công việc trễ hạn
+
+3. QUAN HỆ VỚI MODULE NHÂN SỰ:
+-------------------------------
+   - Mỗi công việc được giao cho một nhân viên (Many2one với nhan_vien)
+   - Theo dõi thời gian làm việc của nhân viên trên công việc
+   - Tích hợp với chấm công để ghi nhận thời gian
+   - Đánh giá hiệu quả làm việc của nhân viên
+   - Tính lương dựa trên công việc hoàn thành (nếu có)
+   - Lịch sử công việc của nhân viên
+
+4. QUAN HỆ VỚI MODULE DỰ ÁN:
+------------------------------
+   - Mỗi công việc thuộc về một dự án (Many2one với du_an)
+   - Tự động tính tiến độ dự án từ công việc
+   - Tổng hợp thời gian làm việc trên dự án
+   - Báo cáo công việc theo dự án
+
+
+================================================================================
+IV. PHÂN TÍCH NGHIỆP VỤ KẾT HỢP GIỮA CÁC MODULE
+================================================================================
+
+1. QUAN HỆ NHÂN SỰ ↔ DỰ ÁN:
+----------------------------
+
+   a) Phân công nhân viên vào dự án:
+      - Từ dự án: Chọn nhân viên tham gia
+      - Từ nhân viên: Xem danh sách dự án đang tham gia
+      - Vai trò trong dự án
+      
+   b) Theo dõi thời gian làm việc trên dự án:
+      - Ghi nhận thời gian làm việc của nhân viên trên dự án
+      - Tích hợp với chấm công
+      - Tính lương dự án (nếu khác lương cơ bản)
+      
+   c) Đánh giá hiệu quả nhân viên trên dự án:
+      - Số công việc hoàn thành
+      - Chất lượng công việc
+      - Đúng hạn
+      - Ghi nhận vào hồ sơ nhân viên
+      
+   d) Báo cáo:
+      - Báo cáo nhân sự tham gia dự án
+      - Báo cáo thời gian làm việc trên dự án
+      - Báo cáo chi phí nhân sự dự án
+
+2. QUAN HỆ NHÂN SỰ ↔ CÔNG VIỆC:
+--------------------------------
+
+   a) Giao công việc cho nhân viên:
+      - Từ công việc: Chọn nhân viên được giao
+      - Từ nhân viên: Xem danh sách công việc được giao
+      - Thông báo khi có công việc mới
+      
+   b) Theo dõi thời gian làm việc trên công việc:
+      - Ghi nhận thời gian làm việc trên công việc
+      - Tích hợp với chấm công
+      - So sánh với ước tính
+      - Cảnh báo vượt quá ước tính
+      
+   c) Đánh giá hiệu quả nhân viên:
+      - Số công việc hoàn thành
+      - Số công việc đúng hạn
+      - Số công việc trễ hạn
+      - Chất lượng công việc
+      - Tích hợp vào đánh giá nhân viên
+      
+   d) Tính lương dựa trên công việc:
+      - Lương theo công việc hoàn thành
+      - Thưởng cho công việc hoàn thành tốt
+      - Phạt cho công việc trễ hạn
+      - Tích hợp vào bảng lương
+
+3. QUAN HỆ DỰ ÁN ↔ CÔNG VIỆC:
+------------------------------
+
+   a) Chia nhỏ dự án thành công việc:
+      - Mỗi công việc thuộc về một dự án
+      - Tự động tính tiến độ dự án từ công việc
+      - Tổng hợp thời gian làm việc trên dự án
+
+   b) Quản lý phụ thuộc:
+      - Công việc phụ thuộc lẫn nhau
+      - Tự động cập nhật trạng thái
+      - Cảnh báo khi công việc phụ thuộc chậm
+      
+   c) Báo cáo:
+      - Báo cáo công việc theo dự án
+      - Báo cáo tiến độ dự án
+      - Báo cáo nhân sự trên dự án
+
+4. QUAN HỆ BA MODULE (NHÂN SỰ ↔ DỰ ÁN ↔ CÔNG VIỆC):
+----------------------------------------------------
+
+   a) Luồng nghiệp vụ chính:
+      1. Tạo dự án
+      2. Phân công nhân viên vào dự án
+      3. Chia dự án thành các công việc
+      4. Giao công việc cho nhân viên
+      5. Nhân viên thực hiện công việc
+      6. Ghi nhận thời gian làm việc (tích hợp chấm công)
+      7. Cập nhật tiến độ công việc
+      8. Tự động cập nhật tiến độ dự án
+      9. Đánh giá hiệu quả nhân viên
+      10. Tính lương (tích hợp bảng lương)
+      
+   b) Tích hợp chấm công:
+      - Ghi nhận thời gian làm việc trên công việc/dự án
+      - Tự động tạo chấm công từ công việc
+      - Tính số giờ làm việc trên dự án
+      - Tích hợp vào bảng lương
+      
+   c) Tích hợp tính lương:
+      - Lương cơ bản từ nhân sự
+      - Lương dự án (nếu có)
+      - Thưởng từ công việc hoàn thành tốt
+      - Phạt từ công việc trễ hạn
+      - Tổng hợp vào bảng lương
+
+
+================================================================================
+V. SƠ ĐỒ QUAN HỆ VÀ LUỒNG DỮ LIỆU
+================================================================================
+
+1. SƠ ĐỒ QUAN HỆ GIỮA CÁC MODEL:
+---------------------------------
+
+   NHAN_VIEN (Nhân viên)
+   │
+   ├── 1-N CHAM_CONG (Chấm công)
+   ├── 1-N BANG_LUONG (Bảng lương)
+   ├── M-N DU_AN (Dự án) [qua du_an_nhan_vien]
+   ├── 1-N CONG_VIEC (Công việc) [nguoi_duoc_giao]
+   └── 1-N LICH_SU_THAM_GIA_DU_AN (Lịch sử tham gia dự án)
+   
+   DU_AN (Dự án)
+   │
+   ├── 1-N CONG_VIEC (Công việc)
+   ├── M-N NHAN_VIEN (Nhân viên) [qua du_an_nhan_vien]
+   └── 1-N DU_AN_NHAN_VIEN (Thành viên dự án)
+   
+   CONG_VIEC (Công việc)
+   │
+   ├── N-1 DU_AN (Dự án)
+   ├── N-1 NHAN_VIEN (Người được giao)
+   ├── N-1 CONG_VIEC (Công việc phụ thuộc)
+   └── 1-N CONG_VIEC_THOI_GIAN (Thời gian làm việc)
+
+2. LUỒNG DỮ LIỆU CHÍNH:
+-----------------------
+
+   a) Luồng tạo và phân công:
+      NHAN_VIEN → DU_AN → CONG_VIEC
+      - Tạo nhân viên
+      - Tạo dự án
+      - Phân công nhân viên vào dự án
+      - Tạo công việc trong dự án
+      - Giao công việc cho nhân viên
+      
+   b) Luồng thực hiện và theo dõi:
+      CONG_VIEC → CHAM_CONG → BANG_LUONG
+      - Nhân viên thực hiện công việc
+      - Ghi nhận thời gian làm việc
+      - Tạo chấm công
+      - Tính lương
+      
+   c) Luồng đánh giá:
+      CONG_VIEC → DU_AN → NHAN_VIEN
+      - Đánh giá công việc
+      - Cập nhật tiến độ dự án
+      - Đánh giá nhân viên
+
+
+================================================================================
+VI. YÊU CẦU KỸ THUẬT VÀ CÔNG NGHỆ
+================================================================================
+
+1. NỀN TẢNG:
+------------
+   - Python Odoo 15
+   - PostgreSQL Database
+   - XML Views
+   - JavaScript (nếu cần)
+
+2. CẤU TRÚC MODULE:
+-------------------
+   - Module: nhan_su (đã có)
+   - Module: quan_ly_du_an (mới)
+   - Module: quan_ly_cong_viec (mới)
+   
+   Hoặc có thể tích hợp vào module nhan_su:
+   - Module: nhan_su (mở rộng)
+
+3. DEPENDENCIES:
+----------------
+   - nhan_su phụ thuộc: base
+   - quan_ly_du_an phụ thuộc: base, nhan_su
+   - quan_ly_cong_viec phụ thuộc: base, nhan_su, quan_ly_du_an
+
+4. QUAN HỆ DATABASE:
+--------------------
+   - Foreign Key constraints
+   - Indexes cho các trường tìm kiếm thường xuyên
+   - Store computed fields để tối ưu hiệu năng
+
+5. SECURITY:
+------------
+   - Access rights cho từng model
+   - Record rules nếu cần
+   - Menu permissions
+
+6. VIEWS:
+---------
+   - Form views với các nhóm thông tin rõ ràng
+   - Tree views với các cột quan trọng
+   - Search views với filters
+   - Kanban views (nếu cần)
+   - Graph views cho báo cáo
+
+7. TÍNH NĂNG NÂNG CAO (Khuyến khích):
+--------------------------------------
+   - Dashboard tổng quan
+   - Biểu đồ thống kê
+   - Export Excel
+   - Import Excel
+   - Email notifications
+   - Calendar integration
+
+
+================================================================================
+VII. CHI TIẾT CÁC MODEL CẦN TẠO
+================================================================================
+
+1. MODULE QUẢN LÝ DỰ ÁN:
+-------------------------
+
+   a) Model: du_an (Dự án)
+      - Các trường cơ bản: mã, tên, mô tả, ngày bắt đầu, ngày kết thúc
+      - Trạng thái: Selection field
+      - Ngân sách: Float fields
+      - Quan hệ: One2many với cong_viec, Many2many với nhan_vien
+      - Tính toán: Tiến độ, ngân sách đã dùng
+      
+   b) Model: du_an_nhan_vien (Thành viên dự án)
+      - Quan hệ: Many2one với du_an, Many2one với nhan_vien
+      - Vai trò: Selection field
+      - Tỷ lệ tham gia: Float
+      - Ngày tham gia, ngày rời
+      
+   c) Model: milestone (Cột mốc dự án)
+      - Quan hệ: Many2one với du_an
+      - Tên milestone, ngày hoàn thành dự kiến, thực tế
+      - Trạng thái
+
+2. MODULE QUẢN LÝ CÔNG VIỆC:
+-----------------------------
+
+   a) Model: cong_viec (Công việc)
+      - Các trường cơ bản: mã, tên, mô tả
+      - Quan hệ: Many2one với du_an, Many2one với nhan_vien
+      - Trạng thái, độ ưu tiên
+      - Thời gian: ước tính, thực tế
+      - Tiến độ: Float (0-100)
+      - Quan hệ phụ thuộc: Many2one với cong_viec (công việc phụ thuộc)
+      
+   b) Model: cong_viec_checklist (Checklist công việc)
+      - Quan hệ: Many2one với cong_viec
+      - Nội dung checklist
+      - Trạng thái hoàn thành
+      
+   c) Model: cong_viec_binh_luan (Bình luận công việc)
+      - Quan hệ: Many2one với cong_viec, Many2one với nhan_vien
+      - Nội dung bình luận
+      - Ngày bình luận
+      
+   d) Model: cong_viec_thoi_gian (Thời gian làm việc)
+      - Quan hệ: Many2one với cong_viec, Many2one với nhan_vien
+      - Ngày làm việc
+      - Số giờ làm việc
+      - Liên kết với cham_cong (nếu có)
+
+3. TÍCH HỢP VỚI MODULE NHÂN SỰ:
+--------------------------------
+
+   a) Mở rộng model nhan_vien:
+      - Thêm trường: du_an_ids (One2many với du_an_nhan_vien)
+      - Thêm trường: cong_viec_ids (One2many với cong_viec)
+      - Thêm trường: lich_su_tham_gia_du_an_ids
+      
+   b) Mở rộng model cham_cong:
+      - Thêm trường: du_an_id (Many2one, optional)
+      - Thêm trường: cong_viec_id (Many2one, optional)
+      - Ghi nhận thời gian làm việc trên dự án/công việc
+      
+   c) Mở rộng model bang_luong:
+      - Thêm trường: luong_du_an (tính từ thời gian làm việc trên dự án)
+      - Thêm trường: thuong_cong_viec (từ công việc hoàn thành tốt)
+      - Cập nhật công thức tính lương
+
+
+================================================================================
+VIII. KỊCH BẢN SỬ DỤNG (USE CASES)
+================================================================================
+
+1. KỊCH BẢN 1: Tạo dự án và phân công nhân viên
+-----------------------------------------------
+   Bước 1: Quản lý tạo dự án mới
+   Bước 2: Nhập thông tin dự án (tên, mô tả, ngày bắt đầu, ngân sách)
+   Bước 3: Phân công nhân viên vào dự án (chọn từ danh sách nhân viên)
+   Bước 4: Gán vai trò cho từng nhân viên
+   Bước 5: Hệ thống tự động tạo bản ghi du_an_nhan_vien
+   Kết quả: Dự án được tạo, nhân viên được phân công
+
+2. KỊCH BẢN 2: Chia dự án thành công việc và giao cho nhân viên
+---------------------------------------------------------------
+   Bước 1: Từ dự án, tạo công việc mới
+   Bước 2: Nhập thông tin công việc (tên, mô tả, ước tính thời gian)
+   Bước 3: Gán công việc cho nhân viên (chọn từ nhân viên trong dự án)
+   Bước 4: Thiết lập phụ thuộc (nếu có)
+   Bước 5: Hệ thống tự động cập nhật danh sách công việc của nhân viên
+   Kết quả: Công việc được tạo và giao cho nhân viên
+
+3. KỊCH BẢN 3: Nhân viên thực hiện công việc và ghi nhận thời gian
+-------------------------------------------------------------------
+   Bước 1: Nhân viên xem danh sách công việc được giao
+   Bước 2: Cập nhật tiến độ công việc
+   Bước 3: Ghi nhận thời gian làm việc trên công việc
+   Bước 4: Hệ thống tự động tạo/liên kết với chấm công
+   Bước 5: Tự động cập nhật tiến độ dự án
+   Kết quả: Công việc được cập nhật, thời gian được ghi nhận
+
+4. KỊCH BẢN 4: Tính lương tích hợp dự án và công việc
+-----------------------------------------------------
+   Bước 1: Hệ thống tự động tổng hợp thời gian làm việc trên dự án/công việc
+   Bước 2: Tính lương dự án (nếu có)
+   Bước 3: Tính thưởng từ công việc hoàn thành tốt
+   Bước 4: Tính phạt từ công việc trễ hạn
+   Bước 5: Tổng hợp vào bảng lương
+   Kết quả: Bảng lương bao gồm lương cơ bản + lương dự án + thưởng - phạt
+
+
+================================================================================
+IX. RÀNG BUỘC VÀ QUY TẮC NGHIỆP VỤ
+================================================================================
+
+1. RÀNG BUỘC DỮ LIỆU:
+---------------------
+   - Mã dự án phải duy nhất
+   - Mã công việc phải duy nhất
+   - Ngày kết thúc phải >= Ngày bắt đầu
+   - Tiến độ phải trong khoảng 0-100%
+   - Một nhân viên không thể tham gia cùng lúc quá X dự án (nếu có quy định)
+   - Một công việc phải thuộc về một dự án
+   - Một công việc phải được giao cho một nhân viên
+
+2. QUY TẮC NGHIỆP VỤ:
+---------------------
+   - Khi công việc hoàn thành → Tự động cập nhật tiến độ dự án
+   - Khi tất cả công việc hoàn thành → Tự động đánh dấu dự án hoàn thành
+   - Khi công việc trễ hạn → Cảnh báo và có thể tính phạt
+   - Khi công việc hoàn thành tốt → Có thể tính thưởng
+   - Thời gian làm việc trên công việc phải được ghi nhận qua chấm công
+   - Lương dự án chỉ tính khi nhân viên có tham gia dự án và có ghi nhận thời gian
+
+3. VALIDATION:
+--------------
+   - Kiểm tra ngày hợp lệ
+   - Kiểm tra tiến độ hợp lệ
+   - Kiểm tra thời gian ước tính > 0
+   - Kiểm tra ngân sách không âm
+   - Kiểm tra tỷ lệ tham gia trong khoảng 0-100%
+
+
+================================================================================
+X. BÁO CÁO VÀ THỐNG KÊ
+================================================================================
+
+1. BÁO CÁO DỰ ÁN:
+-----------------
+   - Báo cáo tiến độ dự án
+   - Báo cáo ngân sách dự án
+   - Báo cáo nhân sự tham gia dự án
+   - Báo cáo công việc theo dự án
+   - Báo cáo dự án trễ hạn
+
+2. BÁO CÁO CÔNG VIỆC:
+---------------------
+   - Báo cáo công việc theo nhân viên
+   - Báo cáo công việc theo dự án
+   - Báo cáo công việc trễ hạn
+   - Báo cáo hiệu quả làm việc của nhân viên
+   - Báo cáo thời gian làm việc trên công việc
+
+3. BÁO CÁO TÍCH HỢP:
+--------------------
+   - Báo cáo thời gian làm việc của nhân viên trên dự án
+   - Báo cáo lương tích hợp (lương cơ bản + dự án)
+   - Báo cáo đánh giá nhân viên từ công việc
+   - Dashboard tổng quan: Dự án, Công việc, Nhân sự
+
+
+================================================================================
+KẾT LUẬN
+================================================================================
+
+Phân tích nghiệp vụ trên đã bao quát:
+1. Module Quản lý nhân sự (hiện có và cần hoàn thiện)
+2. Module Quản lý dự án (mới)
+3. Module Quản lý công việc (mới)
+4. Nghiệp vụ kết hợp giữa các module
+5. Quan hệ và luồng dữ liệu
+6. Yêu cầu kỹ thuật
+
+Sẵn sàng để bắt đầu lập trình các module mới với sự tích hợp chặt chẽ với
+module Quản lý nhân sự hiện có.
+
+================================================================================
+                              KẾT THÚC TÀI LIỆU
+================================================================================

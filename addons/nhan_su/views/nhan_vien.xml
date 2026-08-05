@@ -18,6 +18,7 @@
                             <field name="so_nguoi_bang_tuoi"/>
                             <field name="que_quan"/>
                             <field name="email"/>
+                            <field name="luong_co_ban" widget="monetary"/>
                             <field name="anh" widget="image"/>
                         </group>
                         <notebook>
@@ -26,6 +27,29 @@
                             </page>
                             <page string="Danh sách chứng chỉ bằng cấp">
                                 <field name="danh_sach_chung_chi_bang_cap_ids"/>
+                            </page>
+                            <page string="Danh sách chấm công">
+                                <field name="cham_cong_ids">
+                                    <tree>
+                                        <field name="ngay_cham_cong"/>
+                                        <field name="gio_vao" widget="float_time"/>
+                                        <field name="gio_ra" widget="float_time"/>
+                                        <field name="so_gio_lam" widget="float_time"/>
+                                        <field name="trang_thai"/>
+                                    </tree>
+                                </field>
+                            </page>
+                            <page string="Danh sách bảng lương">
+                                <field name="bang_luong_ids">
+                                    <tree>
+                                        <field name="thang_nam_dau"/>
+                                        <field name="so_cong"/>
+                                        <field name="tong_so_gio_lam" widget="float_time"/>
+                                        <field name="thuong" widget="monetary"/>
+                                        <field name="phat" widget="monetary"/>
+                                        <field name="luong_nhan" widget="monetary"/>
+                                    </tree>
+                                </field>
                             </page>
                         </notebook>
                     </sheet>
@@ -48,6 +72,7 @@
                     <field name="so_nguoi_bang_tuoi"/>
                     <field name="que_quan"/>
                     <field name="email"/>
+                    <field name="luong_co_ban" widget="monetary"/>
                 </tree>
             </field>
         </record>

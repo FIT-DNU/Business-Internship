@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="view_cong_viec_tree" model="ir.ui.view">
+        <field name="name">cong_viec.tree</field>
+        <field name="model">cong_viec</field>
+        <field name="arch" type="xml">
+            <tree string="Công Việc Dự Án">
+                <field name="ten_cong_viec" string="Tên Công Việc"/>
+                <field name="du_an_id" string="Dự Án"/>
+                <field name="nhan_vien_ids" widget="many2many_tags" />
+                <field name="han_chot" string="Hạn Chót" widget="datetime"/>
+                <field name="giai_doan_id" string="Giai Đoạn"/>
+                <field name="phan_tram_cong_viec" widget="progressbar"/>
+                <field name="thoi_gian_con_lai" string="Ngày Còn"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_cong_viec_form" model="ir.ui.view">
+        <field name="name">cong_viec.form</field>
+        <field name="model">cong_viec</field>
+        <field name="arch" type="xml">
+            <form string="Công Việc Của Nhân Viên">
+                <sheet>
+                    <group col="4">
+                        <field name="ten_cong_viec" string="Tên Công Việc"/>
+                        <field name="du_an_id" string="Dự Án"/>
+                        <field name="nhan_vien_ids" widget="many2many_tags"/>
+                        <field name="han_chot" string="Hạn Chót" widget="datetime"/>
+                        <field name="giai_doan_id" string="Giai Đoạn"/>
+                        <field name="phan_tram_cong_viec" widget="progressbar"/>
+                        <field name="thoi_gian_con_lai" string="Ngày Còn"/> 
+                    </group>
+                    <group>
+                        <field name="mo_ta" string="Mô Tả Công Việc" colspan="2" widget="html"/>
+                    </group>
+                    <notebook>
+                        <page string="Nhật Ký Công Việc">
+                            <field name="nhat_ky_cong_viec_ids">
+                                <tree string="Nhật Ký Công Việc">
+                                    <field name="nhan_vien_ids" string="Tên Nhân Viên" widget="many2many_tags"/>
+                                    <field name="ngay_thuc_hien" string="Ngày Thực Hiện"/>
+                                    <field name="muc_do" string="Mức Độ Hoàn Thành"/>
+                                </tree>
+                            </field>
+                        </page>
+
+                        <page string="Đánh Giá Nhân Viên">
+                            <field name="danh_gia_nhan_vien_ids" mode="tree">
+                            <tree>
+                                <field name="nhan_vien_id" string="Nhân Viên"/>
+                                <field name="diem_so" string="Điểm Số"/>
+                                <field name="nhan_xet" string="Nhận Xét"/>
+                                <field name="ngay_danh_gia" string="Ngày Đánh Giá"/>
+                            </tree>
+                            </field>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_cong_viec_search" model="ir.ui.view">
+        <field name="name">cong_viec.search</field>
+        <field name="model">cong_viec</field>
+        <field name="arch" type="xml">
+            <search string="Tìm Kiếm Công Việc">
+                <field name="ten_cong_viec" string="Tên Công Việc"/>
+                <searchpanel>
+                    <field name="du_an_id" string="Dự Án" select="multi"/>
+                    <field name="giai_doan_id" string="Giai Đoạn" select="multi"/>
+                </searchpanel>
+            </search>
+        </field>
+    </record>
+
+    <record id="action_cong_viec" model="ir.actions.act_window">
+        <field name="name">Công Việc Của Nhân Viên</field>
+        <field name="res_model">cong_viec</field>
+        <field name="view_mode">tree,form</field>
+        <field name="search_view_id" ref="view_cong_viec_search"/>
+    </record>
+</odoo>

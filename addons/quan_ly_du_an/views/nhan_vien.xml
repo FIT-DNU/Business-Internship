@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- Extend nhan_vien form view to add du_an tab -->
+        <record id="view_nhan_vien_form_inherit_du_an" model="ir.ui.view">
+            <field name="name">nhan_vien.form.inherit.du_an</field>
+            <field name="model">nhan_vien</field>
+            <field name="inherit_id" ref="nhan_su.view_nhan_vien_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//notebook" position="inside">
+                    <page string="Danh sách dự án tham gia">
+                        <field name="du_an_ids" widget="many2many_tags"/>
+                    </page>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

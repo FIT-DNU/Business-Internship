@@ -29,6 +29,17 @@ class NhanVien(models.Model):
         "danh_sach_chung_chi_bang_cap", 
         inverse_name="nhan_vien_id", 
         string = "Danh sách chứng chỉ bằng cấp")
+    luong_co_ban = fields.Float("Lương cơ bản", help="Lương cơ bản của nhân viên")
+    cham_cong_ids = fields.One2many(
+        "cham_cong",
+        inverse_name="nhan_vien_id",
+        string="Danh sách chấm công"
+    )
+    bang_luong_ids = fields.One2many(
+        "bang_luong",
+        inverse_name="nhan_vien_id",
+        string="Danh sách bảng lương"
+    )
     so_nguoi_bang_tuoi = fields.Integer("Số người bằng tuổi", 
                                         compute="so_nguoi_bang_tuoi",
                                         store=True

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <!-- Tree View cho Giai Đoạn Công Việc -->
+    <record id="view_giai_doan_cong_viec_tree" model="ir.ui.view">
+        <field name="name">giai_doan_cong_viec.tree</field>
+        <field name="model">giai_doan_cong_viec</field>
+        <field name="arch" type="xml">
+            <tree string="Giai Đoạn Làm Việc">
+                <field name="ten_giai_doan"/>
+                <field name="thu_tu"/>
+                <!-- <field name="trang_thai"/> -->
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_giai_doan_cong_viec_form" model="ir.ui.view">
+        <field name="name">giai_doan_cong_viec.form</field>
+        <field name="model">giai_doan_cong_viec</field>
+        <field name="arch" type="xml">
+            <form string="Giai Đoạn Công Việc">
+                <sheet>
+                    <group col="4">
+                        <field name="ten_giai_doan"/>
+                        <field name="thu_tu"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- Action cho Giai Đoạn Công Việc -->
+    <record id="action_giai_doan_cong_viec" model="ir.actions.act_window">
+        <field name="name">Giai Đoạn Làm Việc</field>
+        <field name="res_model">giai_doan_cong_viec</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+</odoo>

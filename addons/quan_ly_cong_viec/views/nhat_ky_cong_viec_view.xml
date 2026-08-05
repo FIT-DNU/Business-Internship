@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="view_nhat_ky_tree" model="ir.ui.view">
+        <field name="name">nhatkycongviec.tree</field>
+        <field name="model">nhat_ky_cong_viec</field>
+        <field name="arch" type="xml">
+            <tree string="Nhật Ký Công Việc"
+                decoration-info="trang_thai == 'hoan_thanh'"
+                decoration-success="trang_thai == 'hoan_thanh_xuat_sac'"
+                decoration-danger="trang_thai == 'chua_hoan_thanh'">
+                <field name="cong_viec_id"/>
+                <field name="du_an_id"/> 
+                <field name="nhan_vien_ids" widget="many2many_tags"/>
+                <field name="ngay_thuc_hien"/>
+                <field name="muc_do"/>
+                <field name="trang_thai"/>
+                <field name="giai_doan_id" string="Giai Đoạn"/>
+            </tree>
+            <!-- <notebook>
+                <page string="Đánh Giá Nhân Viên">
+                    <field name="danh_gia_nhan_vien_ids">
+                    <tree editable="bottom">
+                        <field name="nhan_vien_id" domain="[('id', 'in', parent.nhan_vien_ids)]"/>
+                        <field name="diem_so"/>
+                        <field name="nhan_xet"/>
+                        <field name="ngay_danh_gia"/>
+                    </tree>
+                    </field>
+                </page>
+            </notebook> -->
+        </field>
+    </record>
+    
+    <record id="view_nhat_ky_form" model="ir.ui.view">
+        <field name="name">nhatkycongviec.form</field>
+        <field name="model">nhat_ky_cong_viec</field>
+        <field name="arch" type="xml">
+            <form string="Nhật Ký Công Việc">
+                <sheet>
+                    <group col="4">
+                        <field name="cong_viec_id"/>
+                        <field name="du_an_id"/> 
+                        <field name="nhan_vien_ids" widget="many2many_tags"/>
+                        <field name="ngay_thuc_hien"/>
+                        <field name="muc_do"/>
+                        <field name="trang_thai"/>
+                        <field name="giai_doan_id" string="Giai Đoạn"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_nhat_ky_search" model="ir.ui.view">
+        <field name="name">nhatkycongviec.search</field>
+        <field name="model">nhat_ky_cong_viec</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="cong_viec_id"/>
+                <field name="ngay_thuc_hien"/>
+                <searchpanel>
+                    <field name="du_an_id" select="multi"/>
+                </searchpanel>
+            </search>
+        </field>
+    </record>
+
+    <record id="action_nhat_ky" model="ir.actions.act_window">
+        <field name="name">Nhật Ký Công Việc</field>
+        <field name="res_model">nhat_ky_cong_viec</field>
+        <field name="view_mode">tree,form</field>
+        <field name="search_view_id" ref="view_nhat_ky_search"/>
+    </record>
+</odoo>

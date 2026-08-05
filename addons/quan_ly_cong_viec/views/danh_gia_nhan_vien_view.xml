@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="view_danh_gia_nhan_vien_form" model="ir.ui.view">
+        <field name="name">danh.gia.nhan.vien.form</field>
+        <field name="model">danh_gia_nhan_vien</field>
+        <field name="arch" type="xml">
+            <form string="Đánh Giá Nhân Viên">
+                <sheet>
+                    <group col="4">
+                        <field name="nhan_vien_id"/>
+                        <field name="cong_viec_id"/>
+                        <field name="du_an_id"/>
+                        <field name="diem_so"/>
+                        <field name="nhan_xet" widget="text"/>
+                        <field name="ngay_danh_gia"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_danh_gia_nhan_vien_tree" model="ir.ui.view">
+        <field name="name">danh.gia.nhan.vien.tree</field>
+        <field name="model">danh_gia_nhan_vien</field>
+        <field name="arch" type="xml">
+            <tree string="Danh Sách Đánh Giá Nhân Viên">
+                <field name="nhan_vien_id"/>
+                <field name="cong_viec_id"/>
+                <field name="du_an_id"/>
+                <field name="diem_so"/>
+                <field name="ngay_danh_gia"/>
+            </tree>
+        </field>
+    </record>
+
+
+    <record id="view_danh_gia_nhan_vien_search" model="ir.ui.view">
+        <field name="name">danh.gia.nhan.vien.search</field>
+        <field name="model">danh_gia_nhan_vien</field>
+        <field name="arch" type="xml">
+            <search string="Tìm kiếm Đánh Giá Nhân Viên">
+                <field name="nhan_vien_id"/>
+                <field name="cong_viec_id"/>
+                <field name="du_an_id"/>
+                <field name="diem_so"/>
+                <field name="ngay_danh_gia"/>
+                <searchpanel>
+                    <field name="du_an_id" string="Dự Án" select="multi"/>
+                    <field name="nhan_vien_id" string="Nhân Viên" select="multi"/>
+                </searchpanel>
+            </search>
+        </field>
+    </record>
+    <record id="action_danh_gia_nhan_vien" model="ir.actions.act_window">
+        <field name="name">Đánh Giá Nhân Viên</field>
+        <field name="res_model">danh_gia_nhan_vien</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+</odoo>
