@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="view_order_detail_tree" model="ir.ui.view">
+            <field name="name">chi_tiet_don_hang.tree</field>
+            <field name="model">chi_tiet_don_hang</field>
+            <field name="arch" type="xml">
+                <tree string="Chi tiết đơn hàng">
+                    <field name="order_id"/>
+                    <field name="ngay_dat_hang"/>
+                    <field name="product_id" string="Tên sản phẩm"/>
+                    <field name="quantity"/>
+                    <field name="price_unit"/>
+                    <field name="subtotal"/>
+                    <field name="trang_thai"/>
+                    <field name="khach_hang_id"/>
+                </tree>
+            </field>
+        </record>
+
+
+        <record id="view_order_detail_form" model="ir.ui.view">
+            <field name="name">chi_tiet_don_hang.form</field>
+            <field name="model">chi_tiet_don_hang</field>
+            <field name="arch" type="xml">
+                <form string="Chi tiết đơn hàng">
+                    <sheet>
+                        <group string="Thông tin đơn hàng">
+                            <field name="order_id" required="1"/>
+                            <field name="ngay_dat_hang"/>
+                            <field name="khach_hang_id" required="1"/>
+                        </group>
+                        <group string="Chi tiết sản phẩm">
+                            <field name="product_id" string="Tên sản phẩm" required="1"/>
+                            <field name="price_unit" readonly="1"/>
+                            <field name="quantity" required="1"/>
+                            <field name="subtotal" readonly="1"/>
+                        </group>
+                        <group string="Trạng thái đơn hàng">
+                            <field name="trang_thai"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+
+        <record id="action_order_detail" model="ir.actions.act_window">
+            <field name="name">Chi tiết đơn hàng</field>
+            <field name="res_model">chi_tiet_don_hang</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+    </data>
+</odoo>

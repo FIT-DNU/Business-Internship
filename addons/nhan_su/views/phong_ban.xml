@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="view_phong_ban_tree" model="ir.ui.view">
+            <field name="model">phong_ban</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="ma_phong"/>
+                    <field name="ten_phong"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="view_phong_ban_form" model="ir.ui.view">
+            <field name="model">phong_ban</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <field name="ma_phong"/>
+                            <field name="ten_phong"/>
+                            <field name="mo_ta"/>
+                        </group>
+                        <notebook>
+                            <page string="Nhân viên">
+                                <field name="nhan_vien_ids"/>
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="action_phong_ban" model="ir.actions.act_window">
+            <field name="name">Phòng ban</field>
+            <field name="res_model">phong_ban</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+    </data>
+</odoo>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Tree view cho Chi tiết sản phẩm -->
+    <record id="view_product_detail_tree" model="ir.ui.view">
+        <field name="name">chi_tiet_san_pham.tree</field>
+        <field name="model">chi_tiet_san_pham</field>
+        <field name="arch" type="xml">
+            <tree string="Chi tiết sản phẩm">
+                <field name="name" string="Tên sản phẩm"/>
+                <field name="category" string="Loại sản phẩm"/>
+                <field name="brand" string="Thương hiệu"/>
+                <field name="price_unit" string="Đơn giá"/>
+                <field name="stock_quantity" string="Số lượng tồn kho"/>
+                <field name="warranty" string="Bảo hành (tháng)"/>
+                <field name="total_value" string="Tổng giá trị kho"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- Form view cho Chi tiết sản phẩm -->
+    <record id="view_product_detail_form" model="ir.ui.view">
+        <field name="name">chi_tiet_san_pham.form</field>
+        <field name="model">chi_tiet_san_pham</field>
+        <field name="arch" type="xml">
+            <form string="Chi tiết sản phẩm">
+                <sheet>
+                    <group>
+                        <field name="name" string="Tên sản phẩm"/>
+                        <field name="category" string="Loại sản phẩm"/>
+                        <field name="brand" string="Thương hiệu"/>
+                    </group>
+                    <group>
+                        <field name="price_unit" string="Đơn giá"/>
+                        <field name="stock_quantity" string="Số lượng tồn kho"/>
+                        <field name="warranty" string="Bảo hành (tháng)"/>
+                    </group>
+                    <group>
+                        <field name="total_value" string="Tổng giá trị kho" readonly="1"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- Action mở tree view Chi tiết sản phẩm -->
+    <record id="action_product_detail" model="ir.actions.act_window">
+        <field name="name">Chi tiết sản phẩm</field>
+        <field name="res_model">chi_tiet_san_pham</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+</odoo>

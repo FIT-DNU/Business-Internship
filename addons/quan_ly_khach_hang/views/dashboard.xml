@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_dashboard_form" model="ir.ui.view">
+        <field name="name">dashboard.form</field>
+        <field name="model">dashboard</field>
+        <field name="arch" type="xml">
+            <form string="Dashboard Tổng Quan" create="0" delete="0" edit="0">
+                <sheet>
+                    <!-- Phần số liệu tổng quan -->
+                    <group>
+                        <div class="oe_title">
+                            <h1 style="text-align:center;">Dashboard Tổng Quan</h1>
+                        </div>
+
+                    </group>
+
+                    <separator string="Biểu đồ Thống Kê" full="1"/>
+
+                    <!-- Biểu đồ Thống Kê -->
+                    <group>
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <div style="width: 48%; max-width: 600px; height: 400px;" class="oe_box">
+                                <h3 style="text-align:center;">Thống kê Khách Hàng</h3>
+                                <canvas id="customerChart" style="max-height: 350px;"></canvas>
+                            </div>
+                            <div style="width: 48%; max-width: 600px; height: 400px;" class="oe_box">
+                                <h3 style="text-align:center;">Thống kê Chi Tiêu</h3>
+                                <canvas id="spendingChart" style="max-height: 350px;"></canvas>
+                            </div>
+                        </div>
+                    </group>
+
+                    <separator string="Xếp Hạng Khách Hàng" full="1"/>
+
+                    <!-- Biểu đồ xếp hạng khách hàng -->
+                    <div class="oe_box">
+                        <h2 style="text-align:center;">Biểu đồ xếp hạng khách hàng</h2>
+                        <canvas id="rankingChart" width="400" height="200" style="max-height: 350px;"></canvas>
+                    </div>
+
+                    <!-- Bảng xếp hạng khách hàng -->
+                    <div class="oe_box">
+                        <h2 style="text-align:center;">Bảng xếp hạng khách hàng</h2>
+                        <table id="rankingTable" class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Hạng</th>
+                                    <th>Khách Hàng</th>
+                                    <th>Tổng Tiền Chi Tiêu</th>
+                                </tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+                    </div>
+
+                    <separator string="Thống Kê Hỗ Trợ Nhân Viên" full="1"/>
+
+                    <!-- Biểu đồ thống kê hỗ trợ nhân viên -->
+                    <div class="oe_box">
+                        <h2 style="text-align:center;">Biểu đồ Thống Kê Hỗ Trợ Nhân Viên</h2>
+                        <canvas id="supportChart" width="400" height="200" style="max-height: 350px;"></canvas>
+                    </div>
+
+                    <!-- Bảng thống kê hỗ trợ -->
+                    <div class="oe_box">
+                        <h2 style="text-align:center;">Bảng Thống Kê Hỗ Trợ Nhân Viên</h2>
+                        <table id="supportStatsTable" class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Nhân Viên</th>
+                                    <th>Số Lần Hỗ Trợ</th>
+                                </tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+                    </div>
+
+                    <separator string="Cập nhật Dữ liệu" full="1"/>
+
+                    <!-- Footer với nút cập nhật -->
+<!--                    <group>-->
+<!--                        <div style="text-align: center; margin-top: 10px;">-->
+<!--                            <button name="_compute_dashboard" string="Cập nhật Dữ liệu" type="object" class="oe_highlight"/>-->
+<!--                        </div>-->
+<!--                    </group>-->
+
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_dashboard" model="ir.actions.act_window">
+        <field name="name">Dashboard</field>
+        <field name="res_model">dashboard</field>
+        <field name="view_mode">form</field>
+        <field name="view_id" ref="view_dashboard_form"/>
+        <field name="target">current</field>  <!-- Đảm bảo mở lại trang hiện tại -->
+    </record>
+
+
+
+</odoo>

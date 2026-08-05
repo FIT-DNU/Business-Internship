@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="view_cham_cong_tree" model="ir.ui.view">
+            <field name="model">cham_cong</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="nhan_vien_id"/>
+                    <field name="thang"/>
+                    <field name="nam"/>
+                    <field name="so_ngay_cong"/>
+                    <field name="tong_luong"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="view_cham_cong_form" model="ir.ui.view">
+            <field name="model">cham_cong</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <field name="nhan_vien_id"/>
+                            <field name="thang"/>
+                            <field name="nam"/>
+                            <field name="so_ngay_cong"/>
+                            <field name="tang_ca"/>
+                            <field name="tong_luong" readonly="1"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="action_cham_cong" model="ir.actions.act_window">
+            <field name="name">Chấm công</field>
+            <field name="res_model">cham_cong</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+    </data>
+</odoo>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <!-- Tree View (Danh sách xếp hạng) -->
+    <record id="view_bang_xep_hang_khach_hang_tree" model="ir.ui.view">
+        <field name="name">bang.xep.hang.khach.hang.tree</field>
+        <field name="model">bang_xep_hang_khach_hang</field>
+        <field name="arch" type="xml">
+            <tree string="Bảng xếp hạng khách hàng" create="0" edit="0">
+                <field name="xep_hang" string="Hạng"/>
+                <field name="khach_hang_id" string="Khách hàng"/>
+                <field name="tong_tien_chi_tieu" string="Tổng chi tiêu" widget="monetary"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- Form View (Chi tiết khách hàng) -->
+    <record id="view_bang_xep_hang_khach_hang_form" model="ir.ui.view">
+        <field name="name">bang.xep.hang.khach.hang.form</field>
+        <field name="model">bang_xep_hang_khach_hang</field>
+        <field name="arch" type="xml">
+            <form string="Chi tiết xếp hạng khách hàng">
+                <sheet>
+                    <group>
+                        <field name="xep_hang" readonly="1"/>
+                        <field name="khach_hang_id" readonly="1"/>
+                        <field name="tong_tien_chi_tieu" readonly="1" widget="monetary"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- Graph View (Biểu đồ mua hàng) -->
+    <record id="view_bang_xep_hang_khach_hang_graph" model="ir.ui.view">
+        <field name="name">bang.xep.hang.khach.hang.graph</field>
+        <field name="model">bang_xep_hang_khach_hang</field>
+        <field name="arch" type="xml">
+            <graph string="Bảng xếp hạng khách hàng">
+                <field name="khach_hang_id" type="row"/>
+                <field name="tong_tien_chi_tieu" type="measure"/>
+            </graph>
+        </field>
+    </record>
+
+    <!-- Action mở bảng xếp hạng -->
+    <record id="action_bang_xep_hang_khach_hang" model="ir.actions.act_window">
+        <field name="name">Bảng xếp hạng khách hàng</field>
+        <field name="res_model">bang_xep_hang_khach_hang</field>
+        <field name="view_mode">tree,form,graph</field>
+        <field name="view_id" ref="view_bang_xep_hang_khach_hang_tree"/>
+        <field name="context">{}</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">Chưa có dữ liệu thống kê.</p>
+        </field>
+    </record>
+</odoo>
